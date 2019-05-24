@@ -4,6 +4,7 @@
 ## Copyright (C) 1986-2018 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project Jacobi
+set_top jacobi_HLS
 add_files Jacobi/main.c
 open_solution "solution1"
 set_part {xc7z020clg400-1} -tool vivado
