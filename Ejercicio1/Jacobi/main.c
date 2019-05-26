@@ -1,23 +1,20 @@
 #include "math.h"
 #include "stdlib.h"
+#include "jacobi.h"
 
-void jacobi_HLS()
+void jacobi_HLS(int J[4][4],int b[4],int n,int iter,int x[16],double error)
 {
-	int J[4][4]={{1,2,3,4},{1,2,3,4},{1,2,3,4},{1,2,3,4}};
-	int b[4]={1,2,3,4};;
-	int n=4,iter=10;
-	int h[16];
-	double p;
 	int x_prev[16], x_new[16];
+
 	for(int i= 0;i<16;i++)
 	{
+
 		x_prev[i]=0;
 		x_new[i]=0;
 	}
 
 	for(int t=0; t<iter;t++)
 	{
-
 		for(int i=0; i<n; i++)
 		{
 			double sigma=0.0;
@@ -35,9 +32,9 @@ void jacobi_HLS()
 	double sum=0.0;
 	for(int q=0;q<16;q++)
 	{
-		h[q]=x_new[q];
+		x[q]=x_new[q];
 		sum+=(x_new[q]-x_prev[q])*(x_new[q]-x_prev[q]);
 	}
-	p=sqrt(sum);
+	error=sqrt(sum);
 }
 

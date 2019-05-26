@@ -12,7 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SYNCHK 200-77] The top function 'jacobi_HLS' (Jacobi/main.c:4) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops." projectName="Jacobi" solutionName="solution1" date="2019-05-24T10:40:26.214+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'jacobi_HLS/error' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="Jacobi" solutionName="solution1" date="2019-05-26T16:02:58.594+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

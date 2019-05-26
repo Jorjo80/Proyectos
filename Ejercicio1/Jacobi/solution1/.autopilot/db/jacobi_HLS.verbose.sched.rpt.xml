@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'jacobi_HLS'" level="0">
-<item name = "Date">Fri May 24 10:40:27 2019
+<item name = "Date">Sun May 26 16:02:58 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Jacobi</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 0.000, 1.25</column>
+<column name="ap_clk">10.00, 8.621, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">0, 0, 0, 0, none</column>
+<column name="">?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,6 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">16, 16, 1, -, -, 16, no</column>
+<column name="- Loop 2">?, ?, ?, -, -, ?, no</column>
+<column name=" + Loop 2.1">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ Loop 2.1.1">?, ?, 7, -, -, ?, no</column>
+<column name="- Loop 3">32, 32, 2, -, -, 16, no</column>
 </table>
 </item>
 </section>
