@@ -28,18 +28,18 @@
 <Interval-max>192</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<Loop1>
+<inicializacion>
 <TripCount>16</TripCount>
 <Latency>16</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
-</Loop1>
-<Loop2>
+</inicializacion>
+<calculo_error>
 <TripCount>16</TripCount>
 <Latency>88</Latency>
 <PipelineII>5</PipelineII>
 <PipelineDepth>14</PipelineDepth>
-</Loop2>
+</calculo_error>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 

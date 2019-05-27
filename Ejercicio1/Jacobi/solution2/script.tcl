@@ -5,13 +5,13 @@
 ############################################################
 open_project Jacobi
 set_top jacobi_HLS
-add_files Jacobi/main.c
 add_files Jacobi/jacobi.h
+add_files Jacobi/main.c
 add_files -tb Jacobi/testbench.c -cflags "-Wno-unknown-pragmas"
 open_solution "solution2"
 set_part {xc7z020clg400-1}
 create_clock -period 10 -name default
-#source "./Jacobi/solution2/directives.tcl"
+source "./Jacobi/solution2/directives.tcl"
 csim_design -O
 csynth_design
 cosim_design

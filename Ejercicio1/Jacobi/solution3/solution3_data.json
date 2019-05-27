@@ -13,7 +13,16 @@
     "Speed": "-1"
   },
   "HlsSolution": {
-    
+    "DirectiveTcl": [
+      "set_directive_pipeline jacobi_HLS\/inicializacion ",
+      "set_directive_pipeline jacobi_HLS\/calculo_error ",
+      "set_directive_unroll jacobi_HLS\/Iteracciones "
+    ],
+    "DirectiveInfo": [
+      "pipeline jacobi_HLS\/inicializacion {} {}",
+      "pipeline jacobi_HLS\/calculo_error {} {}",
+      "unroll jacobi_HLS\/Iteracciones {} {}"
+    ]
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
@@ -293,7 +302,7 @@
       "ModuleName": "jacobi_HLS",
       "Instances": [{
           "ModuleName": "p_hls_fptosi_double_s",
-          "InstanceName": "grp_p_hls_fptosi_double_s_fu_1231"
+          "InstanceName": "grp_p_hls_fptosi_double_s_fu_1233"
         }]
     },
     "Metrics": {
@@ -334,7 +343,7 @@
         },
         "Loops": [
           {
-            "Name": "Loop 1",
+            "Name": "inicializacion",
             "TripCount": "16",
             "Latency": "16",
             "PipelineII": "1",
@@ -565,7 +574,7 @@
               }]
           },
           {
-            "Name": "Loop 18",
+            "Name": "calculo_error",
             "TripCount": "16",
             "Latency": "88",
             "PipelineII": "5",
@@ -591,7 +600,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-05-27 13:05:13 +0200",
+    "Time": "2019-05-27 21:59:18 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

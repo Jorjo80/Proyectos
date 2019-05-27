@@ -13,14 +13,29 @@
     "Speed": "-1"
   },
   "HlsSolution": {
-    
+    "DirectiveTcl": [
+      "set_directive_pipeline jacobi_HLS\/inicializacion ",
+      "set_directive_pipeline jacobi_HLS\/calculo_error ",
+      "set_directive_unroll jacobi_HLS\/Iteracciones ",
+      "set_directive_unroll jacobi_HLS\/Columnas ",
+      "set_directive_unroll jacobi_HLS\/filas ",
+      "set_directive_unroll jacobi_HLS\/calculo_error "
+    ],
+    "DirectiveInfo": [
+      "pipeline jacobi_HLS\/inicializacion {} {}",
+      "pipeline jacobi_HLS\/calculo_error {} {}",
+      "unroll jacobi_HLS\/Iteracciones {} {}",
+      "unroll jacobi_HLS\/Columnas {} {}",
+      "unroll jacobi_HLS\/filas {} {}",
+      "unroll jacobi_HLS\/calculo_error {} {}"
+    ]
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "191",
+    "Latency": "183",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -233,6 +248,24 @@
           "Width": "4"
         }}
     },
+    "x_address1": {
+      "type": "data",
+      "dir": "out",
+      "width": "4",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "4"
+        }}
+    },
+    "x_ce1": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
     "x_d0": {
       "type": "data",
       "dir": "out",
@@ -240,6 +273,24 @@
       "ctype": {"DATA": {
           "Type": "integer signed",
           "Width": "32"
+        }}
+    },
+    "x_d1": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "32"
+        }}
+    },
+    "x_we1": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
         }}
     }
   },
@@ -337,6 +388,24 @@
     "x_d0": {
       "dir": "out",
       "width": "32"
+    },
+    "x_address1": {
+      "dir": "out",
+      "width": "4"
+    },
+    "x_ce1": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "x_we1": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "x_d1": {
+      "dir": "out",
+      "width": "32"
     }
   },
   "CPorts": {
@@ -378,39 +447,30 @@
     "Hierarchy": {"ModuleName": "jacobi_HLS"},
     "Metrics": {"jacobi_HLS": {
         "Latency": {
-          "LatencyBest": "191",
-          "LatencyAvg": "191",
-          "LatencyWorst": "191",
-          "PipelineII": "192",
+          "LatencyBest": "183",
+          "LatencyAvg": "183",
+          "LatencyWorst": "183",
+          "PipelineII": "184",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.623"
+          "Estimate": "10.355"
         },
-        "Loops": [
-          {
-            "Name": "Loop 1",
+        "Loops": [{
+            "Name": "inicializacion",
             "TripCount": "16",
             "Latency": "16",
             "PipelineII": "1",
             "PipelineDepth": "1"
-          },
-          {
-            "Name": "Loop 2",
-            "TripCount": "16",
-            "Latency": "88",
-            "PipelineII": "5",
-            "PipelineDepth": "14"
-          }
-        ],
+          }],
         "Area": {
           "BRAM_18K": "4",
-          "DSP48E": "43",
-          "FF": "13338",
-          "LUT": "19759"
+          "DSP48E": "67",
+          "FF": "13875",
+          "LUT": "20679"
         }
       }}
   },
@@ -424,7 +484,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-05-27 13:10:20 +0200",
+    "Time": "2019-05-27 22:01:52 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

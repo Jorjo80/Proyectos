@@ -13,7 +13,20 @@
     "Speed": "-1"
   },
   "HlsSolution": {
-    
+    "DirectiveTcl": [
+      "set_directive_pipeline jacobi_HLS\/inicializacion ",
+      "set_directive_pipeline jacobi_HLS\/calculo_error ",
+      "set_directive_unroll jacobi_HLS\/Iteracciones ",
+      "set_directive_unroll jacobi_HLS\/Columnas ",
+      "set_directive_unroll jacobi_HLS\/filas "
+    ],
+    "DirectiveInfo": [
+      "pipeline jacobi_HLS\/inicializacion {} {}",
+      "pipeline jacobi_HLS\/calculo_error {} {}",
+      "unroll jacobi_HLS\/Iteracciones {} {}",
+      "unroll jacobi_HLS\/Columnas {} {}",
+      "unroll jacobi_HLS\/filas {} {}"
+    ]
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
@@ -392,14 +405,14 @@
         },
         "Loops": [
           {
-            "Name": "Loop 1",
+            "Name": "inicializacion",
             "TripCount": "16",
             "Latency": "16",
             "PipelineII": "1",
             "PipelineDepth": "1"
           },
           {
-            "Name": "Loop 2",
+            "Name": "calculo_error",
             "TripCount": "16",
             "Latency": "88",
             "PipelineII": "5",
@@ -424,7 +437,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-05-27 13:05:57 +0200",
+    "Time": "2019-05-27 22:01:04 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

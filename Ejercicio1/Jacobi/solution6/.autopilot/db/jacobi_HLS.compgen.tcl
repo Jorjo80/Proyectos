@@ -1,9 +1,9 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 1
-set name jacobi_HLS_dadddsbkb
-set corename simcore_dadddsub
-set op dadddsub
+set name jacobi_HLS_dadd_6bkb
+set corename simcore_dadd
+set op dadd
 set stage_num 5
 set max_latency -1
 set registered_input 1
@@ -17,14 +17,12 @@ set in0_width 64
 set in0_signed 0
 set in1_width 64
 set in1_signed 0
-set opcode_width 2
-set opcode_signed 0
 set ce_width 1
 set ce_signed 0
 set out_width 64
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_dadddsub] == "ap_gen_simcore_dadddsub"} {
-eval "ap_gen_simcore_dadddsub { \
+if {[info proc ap_gen_simcore_dadd] == "ap_gen_simcore_dadd"} {
+eval "ap_gen_simcore_dadd { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -44,14 +42,12 @@ eval "ap_gen_simcore_dadddsub { \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
-    opcode_width ${opcode_width} \
-    opcode_signed ${opcode_signed} \
     ce_width ${ce_width} \
     ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_dadddsub, check your AutoPilot builtin lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_dadd, check your AutoPilot builtin lib"
 }
 }
 
@@ -61,7 +57,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set op dadddsub
+set op dadd
 set corename DAddSub
 if {${::AESL::PGuard_autocg_gen} && (${::AESL::PGuard_autocg_fpip} || ${::AESL::PGuard_autocg_fpv6en} || ${::AESL::PGuard_autocg_hpen})} {
 if {[info proc ::AESL_LIB_XILINX_FPV6::fpv6_gen] == "::AESL_LIB_XILINX_FPV6::fpv6_gen"} {
@@ -85,8 +81,6 @@ eval "::AESL_LIB_XILINX_FPV6::fpv6_gen { \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
-    opcode_width ${opcode_width} \
-    opcode_signed ${opcode_signed} \
     ce_width ${ce_width} \
     ce_signed ${ce_signed} \
     out_width ${out_width} \
@@ -98,98 +92,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 
 
 set id 2
-set name jacobi_HLS_dsub_6cud
-set corename simcore_dsub
-set op dsub
-set stage_num 5
-set max_latency -1
-set registered_input 1
-set impl_style full_dsp
-set Futype4reduceCEFanout 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 64
-set in0_signed 0
-set in1_width 64
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 64
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_dsub] == "ap_gen_simcore_dsub"} {
-eval "ap_gen_simcore_dsub { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    style ${impl_style} \
-    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_dsub, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op dsub
-set corename DAddSub
-if {${::AESL::PGuard_autocg_gen} && (${::AESL::PGuard_autocg_fpip} || ${::AESL::PGuard_autocg_fpv6en} || ${::AESL::PGuard_autocg_hpen})} {
-if {[info proc ::AESL_LIB_XILINX_FPV6::fpv6_gen] == "::AESL_LIB_XILINX_FPV6::fpv6_gen"} {
-eval "::AESL_LIB_XILINX_FPV6::fpv6_gen { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    style ${impl_style} \
-    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your platform lib"
-}
-}
-
-
-set id 3
-set name jacobi_HLS_dmul_6dEe
+set name jacobi_HLS_dmul_6cud
 set corename simcore_dmul
 set op dmul
 set stage_num 6
@@ -279,8 +182,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 5
-set name jacobi_HLS_ddiv_6eOg
+set id 4
+set name jacobi_HLS_ddiv_6dEe
 set corename simcore_ddiv
 set op ddiv
 set stage_num 31
@@ -367,8 +270,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 7
-set name jacobi_HLS_sitodpfYi
+set id 6
+set name jacobi_HLS_sitodpeOg
 set corename simcore_sitodp
 set op sitodp
 set stage_num 6
@@ -449,8 +352,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 11
-set name jacobi_HLS_dsqrt_g8j
+set id 10
+set name jacobi_HLS_dsqrt_fYi
 set corename simcore_dsqrt
 set op dsqrt
 set stage_num 31
@@ -538,11 +441,11 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 18
+set ID 16
 set hasByteEnable 0
-set MemName jacobi_HLS_x_prev
+set MemName jacobi_HLS_x_new
 set CoreName ap_simcore_mem
-set PortList { 2 2 }
+set PortList { 2 0 }
 set DataWd 32
 set AddrRange 16
 set AddrWd 4
@@ -633,7 +536,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 19 \
+    id 17 \
     name J \
     reset_level 1 \
     sync_rst true \
@@ -652,7 +555,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 20 \
+    id 18 \
     name b \
     reset_level 1 \
     sync_rst true \
@@ -671,14 +574,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 21 \
+    id 19 \
     name x \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename x \
     op interface \
-    ports { x_address0 { O 4 vector } x_ce0 { O 1 bit } x_we0 { O 1 bit } x_d0 { O 32 vector } x_address1 { O 4 vector } x_ce1 { O 1 bit } x_we1 { O 1 bit } x_d1 { O 32 vector } } \
+    ports { x_address0 { O 4 vector } x_ce0 { O 1 bit } x_we0 { O 1 bit } x_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x'"

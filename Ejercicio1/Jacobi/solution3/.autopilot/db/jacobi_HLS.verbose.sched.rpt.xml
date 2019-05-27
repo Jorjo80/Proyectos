@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'jacobi_HLS'" level="0">
-<item name = "Date">Mon May 27 13:05:00 2019
+<item name = "Date">Mon May 27 21:59:05 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Jacobi</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">16, 16, 1, 1, 1, 16, yes</column>
+<column name="- inicializacion">16, 16, 1, 1, 1, 16, yes</column>
 <column name="- Loop 2">356, 356, 89, -, -, 4, no</column>
 <column name=" + Loop 2.1">28, 28, 7, -, -, 4, no</column>
 <column name="- Loop 3">356, 356, 89, -, -, 4, no</column>
@@ -68,7 +68,7 @@
 <column name=" + Loop 16.1">28, 28, 7, -, -, 4, no</column>
 <column name="- Loop 17">356, 356, 89, -, -, 4, no</column>
 <column name=" + Loop 17.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 18">88, 88, 14, 5, 1, 16, yes</column>
+<column name="- calculo_error">88, 88, 14, 5, 1, 16, yes</column>
 </table>
 </item>
 </section>

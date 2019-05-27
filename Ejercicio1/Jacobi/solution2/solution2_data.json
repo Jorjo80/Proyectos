@@ -13,7 +13,14 @@
     "Speed": "-1"
   },
   "HlsSolution": {
-    
+    "DirectiveTcl": [
+      "set_directive_pipeline jacobi_HLS\/inicializacion ",
+      "set_directive_pipeline jacobi_HLS\/calculo_error "
+    ],
+    "DirectiveInfo": [
+      "pipeline jacobi_HLS\/inicializacion {} {}",
+      "pipeline jacobi_HLS\/calculo_error {} {}"
+    ]
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
@@ -304,7 +311,7 @@
         },
         "Loops": [
           {
-            "Name": "Loop 1",
+            "Name": "inicializacion",
             "TripCount": "16",
             "Latency": "16",
             "PipelineII": "1",
@@ -332,7 +339,7 @@
               }]
           },
           {
-            "Name": "Loop 3",
+            "Name": "calculo_error",
             "TripCount": "16",
             "Latency": "88",
             "PipelineII": "5",
@@ -357,7 +364,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-05-27 13:01:52 +0200",
+    "Time": "2019-05-27 21:58:01 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

@@ -5,9 +5,9 @@
 <ModuleName>jacobi_HLS</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_p_hls_fptosi_double_s_fu_1231</InstName>
+<InstName>grp_p_hls_fptosi_double_s_fu_1233</InstName>
 <ModuleName>p_hls_fptosi_double_s</ModuleName>
-<ID>1231</ID>
+<ID>1233</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -145,13 +145,13 @@
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<Loop1>
-<Name>Loop 1</Name>
+<inicializacion>
+<Name>inicializacion</Name>
 <TripCount>16</TripCount>
 <Latency>16</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
-</Loop1>
+</inicializacion>
 <Loop2>
 <Name>Loop 2</Name>
 <TripCount>4</TripCount>
@@ -376,13 +376,13 @@
 <PipelineDepth>7</PipelineDepth>
 </Loop17.1>
 </Loop17>
-<Loop18>
-<Name>Loop 18</Name>
+<calculo_error>
+<Name>calculo_error</Name>
 <TripCount>16</TripCount>
 <Latency>88</Latency>
 <PipelineII>5</PipelineII>
 <PipelineDepth>14</PipelineDepth>
-</Loop18>
+</calculo_error>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>

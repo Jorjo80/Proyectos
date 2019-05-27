@@ -6,26 +6,21 @@ double jacobi_HLS(int J[4][4],int b[4],int x[16])
 {
 	int x_prev[16], x_new[16];
 	double error;
-	for(int i= 0;i<iter;i++)
+	inicializacion:for(int i= 0;i<iter;i++)
 	{
-#pragma HLS PIPELINE
 		x_prev[i]=0;
 		x_new[i]=1;
 	}
 
-	for(int t=0; t<iter;t++)
+	Iteracciones:for(int t=0; t<iter;t++)
 	{
-#pragma HLS UNROLL
 
 		x_prev[iter]=x_new[iter];
-		for(int i=0; i<n; i++)
+		Columnas:for(int i=0; i<n; i++)
 		{
-#pragma HLS UNROLL
 			double sigma=0.0;
-			for(int j=0; j<n;j++)
+			filas:for(int j=0; j<n;j++)
 			{
-#pragma HLS PIPELINE
-#pragma HLS UNROLL
 
 				if(j==i)
 				{
@@ -37,10 +32,8 @@ double jacobi_HLS(int J[4][4],int b[4],int x[16])
 	}
 
 	double sum=0.0;
-	for(int q=0;q<iter;q++)
+	calculo_error:for(int q=0;q<iter;q++)
 	{
-#pragma HLS UNROLL
-#pragma HLS PIPELINE
 		x[q]=x_new[q];
 		sum+=(x_new[q]-x_prev[q])*(x_new[q]-x_prev[q]);
 	}

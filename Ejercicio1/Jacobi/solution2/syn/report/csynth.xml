@@ -28,12 +28,12 @@
 <Interval-max>5820</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<Loop1>
+<inicializacion>
 <TripCount>16</TripCount>
 <Latency>16</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
-</Loop1>
+</inicializacion>
 <Loop2>
 <TripCount>16</TripCount>
 <Latency>5680</Latency>
@@ -49,12 +49,12 @@
 </Loop2.1.1>
 </Loop2.1>
 </Loop2>
-<Loop3>
+<calculo_error>
 <TripCount>16</TripCount>
 <Latency>88</Latency>
 <PipelineII>5</PipelineII>
 <PipelineDepth>14</PipelineDepth>
-</Loop3>
+</calculo_error>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 

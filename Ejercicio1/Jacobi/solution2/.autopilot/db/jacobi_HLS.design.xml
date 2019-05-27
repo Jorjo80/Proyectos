@@ -23,13 +23,13 @@
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<Loop1>
-<Name>Loop 1</Name>
+<inicializacion>
+<Name>inicializacion</Name>
 <TripCount>16</TripCount>
 <Latency>16</Latency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
-</Loop1>
+</inicializacion>
 <Loop2>
 <Name>Loop 2</Name>
 <TripCount>16</TripCount>
@@ -51,13 +51,13 @@
 </Loop2.1.1>
 </Loop2.1>
 </Loop2>
-<Loop3>
-<Name>Loop 3</Name>
+<calculo_error>
+<Name>calculo_error</Name>
 <TripCount>16</TripCount>
 <Latency>88</Latency>
 <PipelineII>5</PipelineII>
 <PipelineDepth>14</PipelineDepth>
-</Loop3>
+</calculo_error>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>

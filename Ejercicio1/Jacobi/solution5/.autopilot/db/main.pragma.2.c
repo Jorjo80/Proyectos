@@ -1254,28 +1254,35 @@ double jacobi_HLS(int J[4][4],int b[4],int x[16])
 {_ssdm_SpecArrayDimSize(J, 4);_ssdm_SpecArrayDimSize(b, 4);_ssdm_SpecArrayDimSize(x, 16);
  int x_prev[16], x_new[16];
  double error;
- for(int i= 0;i<16;i++)
+ inicializacion:for(int i= 0;i<16;i++)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- x_prev[i]=0;
+# 10 "Jacobi/main.c"
+
+  x_prev[i]=0;
   x_new[i]=1;
  }
 
- for(int t=0; t<16;t++)
+ Iteracciones:for(int t=0; t<16;t++)
  {
 _ssdm_Unroll(0,0,0, "");
+# 16 "Jacobi/main.c"
 
- x_prev[16]=x_new[16];
-  for(int i=0; i<4; i++)
+
+  x_prev[16]=x_new[16];
+  Columnas:for(int i=0; i<4; i++)
   {
 _ssdm_Unroll(0,0,0, "");
- double sigma=0.0;
-   for(int j=0; j<4;j++)
-   {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-_ssdm_Unroll(0,0,0, "");
+# 20 "Jacobi/main.c"
 
- if(j==i)
+   double sigma=0.0;
+   filas:for(int j=0; j<4;j++)
+   {
+_ssdm_Unroll(0,0,0, "");
+# 23 "Jacobi/main.c"
+
+
+    if(j==i)
     {
      sigma=sigma+(J[i-1][j]*x_prev[j]);
     }
@@ -1285,10 +1292,15 @@ _ssdm_Unroll(0,0,0, "");
  }
 
  double sum=0.0;
- for(int q=0;q<16;q++)
+ calculo_error:for(int q=0;q<16;q++)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- x[q]=x_new[q];
+# 36 "Jacobi/main.c"
+
+_ssdm_Unroll(0,0,0, "");
+# 36 "Jacobi/main.c"
+
+  x[q]=x_new[q];
   sum+=(x_new[q]-x_prev[q])*(x_new[q]-x_prev[q]);
  }
  error=sqrt(sum);
