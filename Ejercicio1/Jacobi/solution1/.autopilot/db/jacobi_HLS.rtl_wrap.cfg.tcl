@@ -28,42 +28,18 @@ set Interface2 "wire"
 set DataType2 "int"
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2
-set PortName3 "n"
-set BitWidth3 "32"
+set PortName3 "x"
+set BitWidth3 "64"
 set ArrayOpt3 ""
 set Const3 "0"
 set Volatile3 "0"
 set Pointer3 "0"
 set Reference3 "0"
-set Dims3 [list 0]
+set Dims3 [list 16]
 set Interface3 "wire"
 set DataType3 "int"
 set Port3 [list $PortName3 $Interface3 $DataType3 $Pointer3 $Dims3 $Const3 $Volatile3 $ArrayOpt3]
 lappend PortList $Port3
-set PortName4 "iter"
-set BitWidth4 "32"
-set ArrayOpt4 ""
-set Const4 "0"
-set Volatile4 "0"
-set Pointer4 "0"
-set Reference4 "0"
-set Dims4 [list 0]
-set Interface4 "wire"
-set DataType4 "int"
-set Port4 [list $PortName4 $Interface4 $DataType4 $Pointer4 $Dims4 $Const4 $Volatile4 $ArrayOpt4]
-lappend PortList $Port4
-set PortName5 "x"
-set BitWidth5 "64"
-set ArrayOpt5 ""
-set Const5 "0"
-set Volatile5 "0"
-set Pointer5 "0"
-set Reference5 "0"
-set Dims5 [list 16]
-set Interface5 "wire"
-set DataType5 "int"
-set Port5 [list $PortName5 $Interface5 $DataType5 $Pointer5 $Dims5 $Const5 $Volatile5 $ArrayOpt5]
-lappend PortList $Port5
 set PortName0 "return"
 set BitWidth0 "64"
 set ArrayOpt0 ""

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'jacobi_HLS'" level="0">
-<item name = "Date">Mon May 27 12:27:30 2019
+<item name = "Date">Mon May 27 12:50:49 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Jacobi</item>
@@ -22,7 +22,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, none</column>
+<column name="">5953, 5953, 5953, 5953, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -33,11 +33,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">?, ?, 1, -, -, ?, no</column>
-<column name="- Loop 2">?, ?, ?, -, -, ?, no</column>
-<column name=" + Loop 2.1">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Loop 2.1.1">?, ?, 7, -, -, ?, no</column>
-<column name="- Loop 3">?, ?, 14, -, -, ?, no</column>
+<column name="- Loop 1">16, 16, 1, -, -, 16, no</column>
+<column name="- Loop 2">5680, 5680, 355, -, -, 16, no</column>
+<column name=" + Loop 2.1">352, 352, 88, -, -, 4, no</column>
+<column name="  ++ Loop 2.1.1">28, 28, 7, -, -, 4, no</column>
+<column name="- Loop 3">224, 224, 14, -, -, 16, no</column>
 </table>
 </item>
 </section>
@@ -50,14 +50,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, 6, 0, 1246</column>
+<column name="Expression">-, 6, 0, 1075</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, 14, 6217, 8210</column>
 <column name="Memory">0, -, 128, 16</column>
 <column name="Multiplexer">-, -, -, 731</column>
-<column name="Register">-, -, 1074, -</column>
+<column name="Register">-, -, 737, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">0, 9, 6, 19</specialColumn>
+<specialColumn name="Utilization (%)">0, 9, 6, 18</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -87,47 +87,47 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="tmp_16_fu_413_p2">*, 3, 0, 20, 32, 32</column>
-<column name="tmp_9_fu_608_p2">*, 3, 0, 20, 32, 32</column>
-<column name="i_1_fu_328_p2">+, 0, 0, 38, 31, 1</column>
-<column name="i_2_fu_369_p2">+, 0, 0, 38, 31, 1</column>
-<column name="j_1_fu_422_p2">+, 0, 0, 39, 32, 1</column>
-<column name="q_1_fu_590_p2">+, 0, 0, 38, 31, 1</column>
-<column name="sh_assign_fu_483_p2">+, 0, 0, 12, 11, 12</column>
-<column name="t_1_fu_354_p2">+, 0, 0, 38, 31, 1</column>
-<column name="tmp_20_fu_402_p2">+, 0, 0, 15, 6, 6</column>
-<column name="tmp_8_fu_379_p2">+, 0, 0, 13, 2, 4</column>
-<column name="result_V_1_fu_569_p2">-, 0, 0, 39, 1, 32</column>
-<column name="tmp_2_fu_602_p2">-, 0, 0, 39, 32, 32</column>
-<column name="tmp_i_i_i_fu_497_p2">-, 0, 0, 13, 10, 11</column>
-<column name="exitcond_fu_417_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="tmp_18_fu_428_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="tmp_4_fu_349_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="tmp_5_fu_364_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="tmp_6_fu_585_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="tmp_fu_323_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="r_V_fu_527_p2">lshr, 0, 0, 162, 54, 54</column>
-<column name="p_Val2_5_fu_561_p3">select, 0, 0, 32, 1, 32</column>
-<column name="p_Val2_6_fu_574_p3">select, 0, 0, 32, 1, 32</column>
-<column name="sigma_1_fu_433_p3">select, 0, 0, 64, 1, 64</column>
-<column name="ush_fu_507_p3">select, 0, 0, 12, 1, 12</column>
-<column name="r_V_1_fu_533_p2">shl, 0, 0, 474, 137, 137</column>
+<column name="tmp_4_fu_592_p2">*, 3, 0, 20, 32, 32</column>
+<column name="tmp_s_fu_398_p2">*, 3, 0, 20, 32, 32</column>
+<column name="i_1_fu_324_p2">+, 0, 0, 15, 5, 1</column>
+<column name="i_2_fu_354_p2">+, 0, 0, 12, 3, 1</column>
+<column name="j_1_fu_408_p2">+, 0, 0, 12, 3, 1</column>
+<column name="q_1_fu_574_p2">+, 0, 0, 15, 5, 1</column>
+<column name="sh_assign_fu_470_p2">+, 0, 0, 12, 11, 12</column>
+<column name="t_1_fu_342_p2">+, 0, 0, 15, 5, 1</column>
+<column name="tmp_14_fu_387_p2">+, 0, 0, 15, 6, 6</column>
+<column name="tmp_9_fu_360_p2">+, 0, 0, 12, 3, 2</column>
+<column name="result_V_1_fu_556_p2">-, 0, 0, 39, 1, 32</column>
+<column name="tmp_3_fu_586_p2">-, 0, 0, 39, 32, 32</column>
+<column name="tmp_i_i_i_fu_484_p2">-, 0, 0, 13, 10, 11</column>
+<column name="exitcond1_fu_402_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="exitcond2_fu_348_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="exitcond3_fu_336_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="exitcond4_fu_318_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="exitcond_fu_568_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="tmp_12_fu_414_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="r_V_fu_514_p2">lshr, 0, 0, 162, 54, 54</column>
+<column name="p_Val2_5_fu_548_p3">select, 0, 0, 32, 1, 32</column>
+<column name="p_Val2_6_fu_561_p3">select, 0, 0, 32, 1, 32</column>
+<column name="sigma_1_fu_420_p3">select, 0, 0, 64, 1, 64</column>
+<column name="ush_fu_494_p3">select, 0, 0, 12, 1, 12</column>
+<column name="r_V_1_fu_520_p2">shl, 0, 0, 474, 137, 137</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">506, 115, 1, 115</column>
-<column name="grp_fu_280_opcode">15, 3, 2, 6</column>
-<column name="grp_fu_280_p0">21, 4, 64, 256</column>
-<column name="grp_fu_280_p1">15, 3, 64, 192</column>
-<column name="grp_fu_296_p0">27, 5, 32, 160</column>
-<column name="i1_reg_223">9, 2, 31, 62</column>
-<column name="i_reg_201">9, 2, 31, 62</column>
-<column name="j_reg_246">9, 2, 32, 64</column>
-<column name="q_reg_269">9, 2, 31, 62</column>
-<column name="sigma_reg_234">9, 2, 64, 128</column>
-<column name="sum_reg_257">9, 2, 64, 128</column>
-<column name="t_reg_212">9, 2, 31, 62</column>
+<column name="grp_fu_279_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_279_p0">21, 4, 64, 256</column>
+<column name="grp_fu_279_p1">15, 3, 64, 192</column>
+<column name="grp_fu_295_p0">27, 5, 32, 160</column>
+<column name="i1_reg_221">9, 2, 3, 6</column>
+<column name="i_reg_199">9, 2, 5, 10</column>
+<column name="j_reg_245">9, 2, 3, 6</column>
+<column name="q_reg_268">9, 2, 5, 10</column>
+<column name="sigma_reg_233">9, 2, 64, 128</column>
+<column name="sum_reg_256">9, 2, 64, 128</column>
+<column name="t_reg_210">9, 2, 5, 10</column>
 <column name="x_new_address0">27, 5, 4, 20</column>
 <column name="x_new_d0">15, 3, 32, 96</column>
 <column name="x_prev_address0">27, 5, 4, 20</column>
@@ -136,35 +136,32 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="J_load_reg_681">32, 0, 32, 0</column>
+<column name="J_load_reg_646">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">114, 0, 114, 0</column>
-<column name="i1_cast_reg_652">31, 0, 32, 1</column>
-<column name="i1_reg_223">31, 0, 31, 0</column>
-<column name="i_2_reg_660">31, 0, 31, 0</column>
-<column name="i_reg_201">31, 0, 31, 0</column>
-<column name="j_1_reg_700">32, 0, 32, 0</column>
-<column name="j_reg_246">32, 0, 32, 0</column>
-<column name="p_Result_s_reg_735">1, 0, 1, 0</column>
-<column name="p_Val2_5_reg_740">32, 0, 32, 0</column>
-<column name="q_1_reg_749">31, 0, 31, 0</column>
-<column name="q_reg_269">31, 0, 31, 0</column>
-<column name="reg_306">64, 0, 64, 0</column>
-<column name="reg_313">64, 0, 64, 0</column>
-<column name="sigma_reg_234">64, 0, 64, 0</column>
-<column name="sum_reg_257">64, 0, 64, 0</column>
-<column name="t_1_reg_647">31, 0, 31, 0</column>
-<column name="t_reg_212">31, 0, 31, 0</column>
-<column name="tmp_11_reg_665">31, 0, 64, 33</column>
-<column name="tmp_15_reg_725">64, 0, 64, 0</column>
-<column name="tmp_16_reg_692">32, 0, 32, 0</column>
-<column name="tmp_18_reg_705">1, 0, 1, 0</column>
-<column name="tmp_2_reg_769">32, 0, 32, 0</column>
-<column name="tmp_9_reg_775">32, 0, 32, 0</column>
-<column name="tmp_s_reg_754">31, 0, 64, 33</column>
-<column name="x_assign_reg_730">64, 0, 64, 0</column>
-<column name="x_new_addr_1_reg_634">4, 0, 4, 0</column>
-<column name="x_prev_addr_1_reg_639">4, 0, 4, 0</column>
-<column name="x_prev_load_1_reg_687">32, 0, 32, 0</column>
+<column name="i1_reg_221">3, 0, 3, 0</column>
+<column name="i_2_reg_625">3, 0, 3, 0</column>
+<column name="i_reg_199">5, 0, 5, 0</column>
+<column name="j_1_reg_665">3, 0, 3, 0</column>
+<column name="j_reg_245">3, 0, 3, 0</column>
+<column name="p_Result_s_reg_700">1, 0, 1, 0</column>
+<column name="p_Val2_5_reg_705">32, 0, 32, 0</column>
+<column name="q_1_reg_714">5, 0, 5, 0</column>
+<column name="q_reg_268">5, 0, 5, 0</column>
+<column name="reg_305">64, 0, 64, 0</column>
+<column name="reg_312">64, 0, 64, 0</column>
+<column name="sigma_reg_233">64, 0, 64, 0</column>
+<column name="sum_reg_256">64, 0, 64, 0</column>
+<column name="t_1_reg_617">5, 0, 5, 0</column>
+<column name="t_reg_210">5, 0, 5, 0</column>
+<column name="tmp_10_reg_690">64, 0, 64, 0</column>
+<column name="tmp_12_reg_670">1, 0, 1, 0</column>
+<column name="tmp_1_reg_630">3, 0, 64, 61</column>
+<column name="tmp_2_reg_719">5, 0, 64, 59</column>
+<column name="tmp_3_reg_734">32, 0, 32, 0</column>
+<column name="tmp_4_reg_740">32, 0, 32, 0</column>
+<column name="tmp_s_reg_657">32, 0, 32, 0</column>
+<column name="x_assign_reg_695">64, 0, 64, 0</column>
+<column name="x_prev_load_1_reg_652">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -187,8 +184,6 @@
 <column name="b_address0">out, 2, ap_memory, b, array</column>
 <column name="b_ce0">out, 1, ap_memory, b, array</column>
 <column name="b_q0">in, 32, ap_memory, b, array</column>
-<column name="n">in, 32, ap_none, n, scalar</column>
-<column name="iter">in, 32, ap_none, iter, scalar</column>
 <column name="x_address0">out, 4, ap_memory, x, array</column>
 <column name="x_ce0">out, 1, ap_memory, x, array</column>
 <column name="x_we0">out, 1, ap_memory, x, array</column>
@@ -201,8 +196,8 @@
 <item name = "Max Delay">8.62</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'sum'">phi, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, &apos;sum&apos;, Jacobi/main.c:36</column>
-<column name="'error', Jacobi/main.c:38">dsqrt, 8.62, 8.62, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sum'">phi, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, &apos;sum&apos;, Jacobi/main.c:38</column>
+<column name="'error', Jacobi/main.c:40">dsqrt, 8.62, 8.62, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

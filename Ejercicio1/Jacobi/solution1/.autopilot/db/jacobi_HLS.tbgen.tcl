@@ -14,19 +14,15 @@ set C_modelType { double 64 }
 set C_modelArgList {
 	{ J int 32 regular {array 16 { 1 3 } 1 1 }  }
 	{ b int 32 regular {array 4 { 1 3 } 1 1 }  }
-	{ n int 32 regular  }
-	{ iter int 32 regular  }
 	{ x int 32 regular {array 16 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "J", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "J","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 3,"step" : 1},{"low" : 0,"up" : 3,"step" : 1}]}]}]} , 
  	{ "Name" : "b", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "b","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 3,"step" : 1}]}]}]} , 
- 	{ "Name" : "n", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "n","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "iter", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "iter","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "x", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "x","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 15,"step" : 1}]}]}]} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 64,"bitSlice":[{"low":0,"up":63,"cElement": [{"cName": "return","cData": "double","bit_use": { "low": 0,"up": 63},"cArray": [{"low" : 0,"up" : 1,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 19
+set portNum 17
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -40,12 +36,10 @@ set portList {
 	{ b_address0 sc_out sc_lv 2 signal 1 } 
 	{ b_ce0 sc_out sc_logic 1 signal 1 } 
 	{ b_q0 sc_in sc_lv 32 signal 1 } 
-	{ n sc_in sc_lv 32 signal 2 } 
-	{ iter sc_in sc_lv 32 signal 3 } 
-	{ x_address0 sc_out sc_lv 4 signal 4 } 
-	{ x_ce0 sc_out sc_logic 1 signal 4 } 
-	{ x_we0 sc_out sc_logic 1 signal 4 } 
-	{ x_d0 sc_out sc_lv 32 signal 4 } 
+	{ x_address0 sc_out sc_lv 4 signal 2 } 
+	{ x_ce0 sc_out sc_logic 1 signal 2 } 
+	{ x_we0 sc_out sc_logic 1 signal 2 } 
+	{ x_d0 sc_out sc_lv 32 signal 2 } 
 	{ ap_return sc_out sc_lv 64 signal -1 } 
 }
 set NewPortList {[ 
@@ -61,8 +55,6 @@ set NewPortList {[
  	{ "name": "b_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "b", "role": "address0" }} , 
  	{ "name": "b_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b", "role": "ce0" }} , 
  	{ "name": "b_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "b", "role": "q0" }} , 
- 	{ "name": "n", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "n", "role": "default" }} , 
- 	{ "name": "iter", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "iter", "role": "default" }} , 
  	{ "name": "x_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "x", "role": "address0" }} , 
  	{ "name": "x_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "ce0" }} , 
  	{ "name": "x_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "we0" }} , 
@@ -76,7 +68,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5953", "EstimateLatencyMax" : "5953",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -86,8 +78,6 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "J", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "n", "Type" : "None", "Direction" : "I"},
-			{"Name" : "iter", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x", "Type" : "Memory", "Direction" : "O"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_prev_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_new_U", "Parent" : "0"},
@@ -102,15 +92,13 @@ set ArgLastReadFirstWriteLatency {
 	jacobi_HLS {
 		J {Type I LastRead 4 FirstWrite -1}
 		b {Type I LastRead 13 FirstWrite -1}
-		n {Type I LastRead 0 FirstWrite -1}
-		iter {Type I LastRead 0 FirstWrite -1}
 		x {Type O LastRead -1 FirstWrite 4}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "-1", "Max" : "-1"}
-	, {"Name" : "Interval", "Min" : "0", "Max" : "0"}
+	{"Name" : "Latency", "Min" : "5953", "Max" : "5953"}
+	, {"Name" : "Interval", "Min" : "5954", "Max" : "5954"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -119,8 +107,6 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	J { ap_memory {  { J_address0 mem_address 1 4 }  { J_ce0 mem_ce 1 1 }  { J_q0 mem_dout 0 32 } } }
 	b { ap_memory {  { b_address0 mem_address 1 2 }  { b_ce0 mem_ce 1 1 }  { b_q0 mem_dout 0 32 } } }
-	n { ap_none {  { n in_data 0 32 } } }
-	iter { ap_none {  { iter in_data 0 32 } } }
 	x { ap_memory {  { x_address0 mem_address 1 4 }  { x_ce0 mem_ce 1 1 }  { x_we0 mem_we 1 1 }  { x_d0 mem_din 1 32 } } }
 }
 

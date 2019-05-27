@@ -12,12 +12,10 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("b_address0", 2, hls_out, 1, "ap_memory", "mem_address", 1),
 	Port_Property("b_ce0", 1, hls_out, 1, "ap_memory", "mem_ce", 1),
 	Port_Property("b_q0", 32, hls_in, 1, "ap_memory", "mem_dout", 1),
-	Port_Property("n", 32, hls_in, 2, "ap_none", "in_data", 1),
-	Port_Property("iter", 32, hls_in, 3, "ap_none", "in_data", 1),
-	Port_Property("x_address0", 4, hls_out, 4, "ap_memory", "mem_address", 1),
-	Port_Property("x_ce0", 1, hls_out, 4, "ap_memory", "mem_ce", 1),
-	Port_Property("x_we0", 1, hls_out, 4, "ap_memory", "mem_we", 1),
-	Port_Property("x_d0", 32, hls_out, 4, "ap_memory", "mem_din", 1),
+	Port_Property("x_address0", 4, hls_out, 2, "ap_memory", "mem_address", 1),
+	Port_Property("x_ce0", 1, hls_out, 2, "ap_memory", "mem_ce", 1),
+	Port_Property("x_we0", 1, hls_out, 2, "ap_memory", "mem_we", 1),
+	Port_Property("x_d0", 32, hls_out, 2, "ap_memory", "mem_din", 1),
 	Port_Property("ap_return", 64, hls_out, -1, "", "", 1),
 };
 const char* HLS_Design_Meta::dut_name = "jacobi_HLS";

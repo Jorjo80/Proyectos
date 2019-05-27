@@ -6,6 +6,5 @@ int main()
 	int b[4]={1,2,3,4};
 	int x[16];
 	double error;
-	int n=4,iter=16;
-	error=jacobi_HLS(A,b,n,iter,x);
+	error=jacobi_HLS(A,b,x);
 }
