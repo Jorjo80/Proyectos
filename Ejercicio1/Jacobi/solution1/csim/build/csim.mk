@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Sun May 26 15:03:55 +0200 2019
+# File generated on Mon May 27 12:10:38 +0200 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -58,6 +58,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -78,7 +79,7 @@ AUTOCC := cmd //c apcc.bat
 
 $(ObjDir)/testbench.o: ../../../testbench.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../testbench.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(AUTOCC) -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/testbench.d
 

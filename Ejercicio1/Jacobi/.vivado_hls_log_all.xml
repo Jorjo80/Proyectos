@@ -12,7 +12,13 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Port 'jacobi_HLS/error' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="Jacobi" solutionName="solution1" date="2019-05-26T16:13:24.999+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 4)&#xD;&#xA;   between 'dadd' operation ('sum', Jacobi/main.c:45) and 'dadd' operation ('sum', Jacobi/main.c:45)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.259+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 3)&#xD;&#xA;   between 'dadd' operation ('sum', Jacobi/main.c:45) and 'dadd' operation ('sum', Jacobi/main.c:45)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.251+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 2)&#xD;&#xA;   between 'dadd' operation ('sum', Jacobi/main.c:45) and 'dadd' operation ('sum', Jacobi/main.c:45)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.248+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 1)&#xD;&#xA;   between 'dadd' operation ('sum', Jacobi/main.c:45) and 'dadd' operation ('sum', Jacobi/main.c:45)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.238+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'jacobi_HLS': Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)&#xD;&#xA;   between 'select' operation ('sigma', Jacobi/main.c:31) and 'dadd' operation ('sigma', Jacobi/main.c:33)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.238+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'jacobi_HLS': Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xD;&#xA;   between 'select' operation ('sigma', Jacobi/main.c:31) and 'dadd' operation ('sigma', Jacobi/main.c:33)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.238+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'jacobi_HLS': Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0)&#xD;&#xA;   between 'select' operation ('sigma', Jacobi/main.c:31) and 'dadd' operation ('sigma', Jacobi/main.c:33)." projectName="Jacobi" solutionName="solution3" date="2019-05-27T12:40:03.238+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

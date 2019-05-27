@@ -1244,22 +1244,22 @@ void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
 
 
 
-void jacobi_HLS(int J[4][4],int b[4],int n,int iter,int x[16],double error);
+double jacobi_HLS(int J[4][4],int b[4],int n,int iter,int x[16]);
 # 4 "Jacobi/main.c" 2
 
-void jacobi_HLS(int J[4][4],int b[4],int n,int iter,int x[16],double error)
+double jacobi_HLS(int J[4][4],int b[4],int n,int iter,int x[16])
 {_ssdm_SpecArrayDimSize(J, 4);_ssdm_SpecArrayDimSize(b, 4);_ssdm_SpecArrayDimSize(x, 16);
  int x_prev[16], x_new[16];
-
- for(int i= 0;i<16;i++)
+ double error;
+ for(int i= 0;i<iter;i++)
  {
-
   x_prev[i]=0;
-  x_new[i]=0;
+  x_new[i]=1;
  }
 
  for(int t=0; t<iter;t++)
  {
+  x_prev[iter]=x_new[iter];
   for(int i=0; i<n; i++)
   {
    double sigma=0.0;
@@ -1275,10 +1275,11 @@ void jacobi_HLS(int J[4][4],int b[4],int n,int iter,int x[16],double error)
  }
 
  double sum=0.0;
- for(int q=0;q<16;q++)
+ for(int q=0;q<iter;q++)
  {
   x[q]=x_new[q];
   sum+=(x_new[q]-x_prev[q])*(x_new[q]-x_prev[q]);
  }
  error=sqrt(sum);
+ return error;
 }

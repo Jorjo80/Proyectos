@@ -134,12 +134,12 @@ double fmod(double, double);
 float fmodf(float, float);
 long double fmodl(long double, long double);
 signed int main(void);
-signed int jacobi_HLS();
+double jacobi_HLS(signed int (*)[4], signed int *, signed int , signed int , signed int *);
 
 
 /* Global Variable Definitions and Initialization */
-static signed int aesl_internal_main_OC_A[4][4] = { { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u } };
 static signed int aesl_internal_main_OC_b[4] = { 1u, 2u, 3u, 4u };
+static signed int aesl_internal_main_OC_A[4][4] = { { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u } };
 
 
 /* Function Bodies */
@@ -183,8 +183,9 @@ signed int main(void) {
   static  unsigned long long aesl_llvm_cbe_10_count = 0;
   signed int *llvm_cbe_tmp__7;
   static  unsigned long long aesl_llvm_cbe_11_count = 0;
-  unsigned int llvm_cbe_tmp__8;
+  double llvm_cbe_tmp__8;
   static  unsigned long long aesl_llvm_cbe_12_count = 0;
+  static  unsigned long long aesl_llvm_cbe_13_count = 0;
 
   CODE_FOR_MAIN();
 const char* AESL_DEBUG_TRACE = getenv("DEBUG_TRACE");
@@ -238,13 +239,12 @@ printf("\n  %%7 = getelementptr inbounds [16 x i32]* %%x, i64 0, i64 0, !dbg !3 
 if (AESL_DEBUG_TRACE) {
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%8 = call i32 bitcast (i32 (...)* @jacobi_HLS to i32 ([4 x i32]*, i32*, i32, i32, i32*, double)*)([4 x i32]* %%5, i32* %%6, i32 undef, i32 undef, i32* %%7, double undef) nounwind, !dbg !3 for 0x%I64xth hint within @main  --> \n", ++aesl_llvm_cbe_11_count);
-  jacobi_HLS(llvm_cbe_tmp__5, (signed int *)llvm_cbe_tmp__6, ((unsigned int )/*UNDEF*/0), ((unsigned int )/*UNDEF*/0), (signed int *)llvm_cbe_tmp__7, ((double )/*UNDEF*/0));
+printf("\n  %%8 = call double @jacobi_HLS([4 x i32]* %%5, i32* %%6, i32 undef, i32 undef, i32* %%7) nounwind, !dbg !3 for 0x%I64xth hint within @main  --> \n", ++aesl_llvm_cbe_11_count);
+  jacobi_HLS(llvm_cbe_tmp__5, (signed int *)llvm_cbe_tmp__6, ((unsigned int )/*UNDEF*/0), ((unsigned int )/*UNDEF*/0), (signed int *)llvm_cbe_tmp__7);
 if (AESL_DEBUG_TRACE) {
 printf("\nArgument  = 0x%X",((unsigned int )/*UNDEF*/0));
 printf("\nArgument  = 0x%X",((unsigned int )/*UNDEF*/0));
-printf("\nArgument  = %lf",((double )/*UNDEF*/0));
-printf("\nReturn  = 0x%X",llvm_cbe_tmp__8);
+printf("\nReturn  = %lf",llvm_cbe_tmp__8);
 }
   if (AESL_DEBUG_TRACE)
       printf("\nEND @main}\n");

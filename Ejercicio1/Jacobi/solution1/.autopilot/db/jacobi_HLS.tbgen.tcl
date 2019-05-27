@@ -10,14 +10,13 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set C_modelName {jacobi_HLS}
-set C_modelType { void 0 }
+set C_modelType { double 64 }
 set C_modelArgList {
 	{ J int 32 regular {array 16 { 1 3 } 1 1 }  }
 	{ b int 32 regular {array 4 { 1 3 } 1 1 }  }
 	{ n int 32 regular  }
 	{ iter int 32 regular  }
 	{ x int 32 regular {array 16 { 0 3 } 0 1 }  }
-	{ error double 64 unused  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "J", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "J","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 3,"step" : 1},{"low" : 0,"up" : 3,"step" : 1}]}]}]} , 
@@ -25,7 +24,7 @@ set C_modelArgMapList {[
  	{ "Name" : "n", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "n","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "iter", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "iter","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "x", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "x","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 15,"step" : 1}]}]}]} , 
- 	{ "Name" : "error", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY", "bitSlice":[{"low":0,"up":63,"cElement": [{"cName": "error","cData": "double","bit_use": { "low": 0,"up": 63},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 64,"bitSlice":[{"low":0,"up":63,"cElement": [{"cName": "return","cData": "double","bit_use": { "low": 0,"up": 63},"cArray": [{"low" : 0,"up" : 1,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
 set portNum 19
 set portList { 
@@ -47,7 +46,7 @@ set portList {
 	{ x_ce0 sc_out sc_logic 1 signal 4 } 
 	{ x_we0 sc_out sc_logic 1 signal 4 } 
 	{ x_d0 sc_out sc_lv 32 signal 4 } 
-	{ error sc_in sc_lv 64 signal 5 } 
+	{ ap_return sc_out sc_lv 64 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -68,10 +67,10 @@ set NewPortList {[
  	{ "name": "x_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "ce0" }} , 
  	{ "name": "x_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "we0" }} , 
  	{ "name": "x_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x", "role": "d0" }} , 
- 	{ "name": "error", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "error", "role": "default" }}  ]}
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7"],
 		"CDFG" : "jacobi_HLS",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -89,23 +88,23 @@ set RtlHierarchyInfo {[
 			{"Name" : "b", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "n", "Type" : "None", "Direction" : "I"},
 			{"Name" : "iter", "Type" : "None", "Direction" : "I"},
-			{"Name" : "x", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "error", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_new_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_dadddsbkb_U1", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_dmul_6cud_U2", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_ddiv_6dEe_U3", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_sitodpeOg_U4", "Parent" : "0"}]}
+			{"Name" : "x", "Type" : "Memory", "Direction" : "O"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_prev_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_new_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_dadddsbkb_U1", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_dmul_6cud_U2", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_ddiv_6dEe_U3", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_sitodpeOg_U4", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.jacobi_HLS_dsqrt_fYi_U5", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	jacobi_HLS {
-		J {Type I LastRead 9 FirstWrite -1}
-		b {Type I LastRead 4 FirstWrite -1}
+		J {Type I LastRead 4 FirstWrite -1}
+		b {Type I LastRead 13 FirstWrite -1}
 		n {Type I LastRead 0 FirstWrite -1}
 		iter {Type I LastRead 0 FirstWrite -1}
-		x {Type O LastRead -1 FirstWrite 4}
-		error {Type I LastRead -1 FirstWrite -1}}}
+		x {Type O LastRead -1 FirstWrite 4}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -123,7 +122,6 @@ set Spec2ImplPortList {
 	n { ap_none {  { n in_data 0 32 } } }
 	iter { ap_none {  { iter in_data 0 32 } } }
 	x { ap_memory {  { x_address0 mem_address 1 4 }  { x_ce0 mem_ce 1 1 }  { x_we0 mem_we 1 1 }  { x_d0 mem_din 1 32 } } }
-	error { ap_none {  { error in_data 0 64 } } }
 }
 
 set busDeadlockParameterList { 

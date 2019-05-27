@@ -2,13 +2,13 @@ INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling(apcc) ../../../testbench.c in debug mode
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/apcc.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Sun May 26 15:03:57 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Mon May 27 12:10:40 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution1/csim/build'
 INFO: [APCC 202-3] Tmp directory is apcc_db
 INFO: [APCC 202-1] APCC is done.
    Compiling(apcc) ../../../main.c in debug mode
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/apcc.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Sun May 26 15:04:04 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Mon May 27 12:10:46 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution1/csim/build'
 INFO: [APCC 202-3] Tmp directory is apcc_db
 INFO: [APCC 202-1] APCC is done.

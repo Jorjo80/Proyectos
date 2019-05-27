@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.621</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.623</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -29,8 +29,8 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
-<TripCount>16</TripCount>
-<Latency>16</Latency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
 <IterationLatency>1</IterationLatency>
 </Loop1>
 <Loop2>
@@ -49,9 +49,9 @@
 </Loop2.1>
 </Loop2>
 <Loop3>
-<TripCount>16</TripCount>
-<Latency>32</Latency>
-<IterationLatency>2</IterationLatency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>14</IterationLatency>
 </Loop3>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -59,9 +59,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>14</DSP48E>
-<FF>5146</FF>
-<LUT>7568</LUT>
+<DSP48E>20</DSP48E>
+<FF>7419</FF>
+<LUT>10203</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>
@@ -137,6 +137,17 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return</name>
+<Object>jacobi_HLS</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>64</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>J_address0</name>
@@ -281,18 +292,6 @@
 <Bits>32</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>error</name>
-<Object>error</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-<CType>double</CType>
 </RtlPorts>
 </InterfaceSummary>
 

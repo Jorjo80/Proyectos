@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="jacobi.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio1\Jacobi\jacobi.h"/>
     <originFiles name="main.c" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio1\Jacobi\main.c"/>
+    <originFiles name="jacobi.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio1\Jacobi\jacobi.h"/>
   </source>
   <testbench>
     <originFiles name="testbench.c" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio1\Jacobi\testbench.c"/>

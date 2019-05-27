@@ -41,16 +41,18 @@
       "impl\/vhdl\/jacobi_HLS_dadddsbkb.vhd",
       "impl\/vhdl\/jacobi_HLS_ddiv_6dEe.vhd",
       "impl\/vhdl\/jacobi_HLS_dmul_6cud.vhd",
+      "impl\/vhdl\/jacobi_HLS_dsqrt_fYi.vhd",
       "impl\/vhdl\/jacobi_HLS_sitodpeOg.vhd",
-      "impl\/vhdl\/jacobi_HLS_x_new.vhd",
+      "impl\/vhdl\/jacobi_HLS_x_prev.vhd",
       "impl\/vhdl\/jacobi_HLS.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/jacobi_HLS_dadddsbkb.v",
       "impl\/verilog\/jacobi_HLS_ddiv_6dEe.v",
       "impl\/verilog\/jacobi_HLS_dmul_6cud.v",
+      "impl\/verilog\/jacobi_HLS_dsqrt_fYi.v",
       "impl\/verilog\/jacobi_HLS_sitodpeOg.v",
-      "impl\/verilog\/jacobi_HLS_x_new.v",
+      "impl\/verilog\/jacobi_HLS_x_prev.v",
       "impl\/verilog\/jacobi_HLS.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
@@ -58,6 +60,7 @@
       "impl\/misc\/jacobi_HLS_ap_dadddsub_3_full_dsp_64_ip.tcl",
       "impl\/misc\/jacobi_HLS_ap_ddiv_29_no_dsp_64_ip.tcl",
       "impl\/misc\/jacobi_HLS_ap_dmul_4_max_dsp_64_ip.tcl",
+      "impl\/misc\/jacobi_HLS_ap_dsqrt_29_no_dsp_64_ip.tcl",
       "impl\/misc\/jacobi_HLS_ap_sitodp_4_no_dsp_32_ip.tcl"
     ],
     "DesignXml": "H:\/Jorge\/UPM\/master\/2oCuatri\/HLS\/Proyectos\/Proyectos\/Ejercicio1\/Jacobi\/solution1\/.autopilot\/db\/jacobi_HLS.design.xml"
@@ -80,6 +83,11 @@
         "name": "jacobi_HLS_ap_dmul_4_max_dsp_64",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
         "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name jacobi_HLS_ap_dmul_4_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "jacobi_HLS_ap_dsqrt_29_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 29 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name jacobi_HLS_ap_dsqrt_29_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Square_Root CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
       },
       {
         "name": "jacobi_HLS_ap_sitodp_4_no_dsp_32",
@@ -122,6 +130,15 @@
         "ready": {"Type": "bool"}
       }
     },
+    "ap_return": {
+      "type": "data",
+      "dir": "out",
+      "width": "64",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "64"
+        }}
+    },
     "ap_rst": {
       "type": "reset",
       "polarity": "ACTIVE_HIGH",
@@ -143,15 +160,6 @@
       "ctype": {"DATA": {
           "Type": "integer signed",
           "Width": "32"
-        }}
-    },
-    "error": {
-      "type": "data",
-      "dir": "in",
-      "width": "64",
-      "ctype": {"DATA": {
-          "Type": "real float",
-          "Width": "64"
         }}
     },
     "iter": {
@@ -216,6 +224,10 @@
       "dir": "out",
       "width": "1"
     },
+    "ap_return": {
+      "dir": "out",
+      "width": "64"
+    },
     "J_address0": {
       "dir": "out",
       "width": "4"
@@ -263,16 +275,17 @@
     "x_d0": {
       "dir": "out",
       "width": "32"
-    },
-    "error": {
-      "dir": "in",
-      "width": "64"
     }
   },
   "CPorts": {
     "ap_ctrl": {
       "interfaceRef": "ap_ctrl",
       "dir": "out"
+    },
+    "ap_return": {
+      "interfaceRef": "ap_return",
+      "dir": "out",
+      "dataWidth": "64"
     },
     "J_q0": {
       "interfaceRef": "J_q0",
@@ -309,12 +322,6 @@
       "busTypeRef": "ap_memory",
       "arraySize": "16",
       "handshakeRef": "ap_none"
-    },
-    "error": {
-      "interfaceRef": "error",
-      "dir": "in",
-      "dataWidth": "64",
-      "handshakeRef": "ap_none"
     }
   },
   "ModuleInfo": {
@@ -331,13 +338,13 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.621"
+          "Estimate": "8.623"
         },
         "Loops": [
           {
             "Name": "Loop 1",
-            "TripCount": "16",
-            "Latency": "16",
+            "TripCount": "",
+            "Latency": "",
             "PipelineII": "",
             "PipelineDepth": "1"
           },
@@ -364,17 +371,17 @@
           },
           {
             "Name": "Loop 3",
-            "TripCount": "16",
-            "Latency": "32",
+            "TripCount": "",
+            "Latency": "",
             "PipelineII": "",
-            "PipelineDepth": "2"
+            "PipelineDepth": "14"
           }
         ],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "14",
-          "FF": "5146",
-          "LUT": "7568"
+          "DSP48E": "20",
+          "FF": "7419",
+          "LUT": "10203"
         }
       }}
   },
@@ -388,7 +395,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-05-26 16:13:26 +0200",
+    "Time": "2019-05-27 12:27:32 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }
