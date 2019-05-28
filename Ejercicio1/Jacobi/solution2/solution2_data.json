@@ -318,19 +318,19 @@
             "PipelineDepth": "1"
           },
           {
-            "Name": "Loop 2",
+            "Name": "Iteracciones",
             "TripCount": "16",
             "Latency": "5680",
             "PipelineII": "",
             "PipelineDepth": "355",
             "Loops": [{
-                "Name": "Loop 2.1",
+                "Name": "Columnas",
                 "TripCount": "4",
                 "Latency": "352",
                 "PipelineII": "",
                 "PipelineDepth": "88",
                 "Loops": [{
-                    "Name": "Loop 2.1.1",
+                    "Name": "filas",
                     "TripCount": "4",
                     "Latency": "28",
                     "PipelineII": "",
@@ -364,7 +364,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-05-27 21:58:01 +0200",
+    "Time": "2019-05-28 11:38:32 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

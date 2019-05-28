@@ -30,27 +30,27 @@
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
 </inicializacion>
-<Loop2>
-<Name>Loop 2</Name>
+<Iteracciones>
+<Name>Iteracciones</Name>
 <TripCount>16</TripCount>
 <Latency>5680</Latency>
 <IterationLatency>355</IterationLatency>
 <PipelineDepth>355</PipelineDepth>
-<Loop2.1>
-<Name>Loop 2.1</Name>
+<Columnas>
+<Name>Columnas</Name>
 <TripCount>4</TripCount>
 <Latency>352</Latency>
 <IterationLatency>88</IterationLatency>
 <PipelineDepth>88</PipelineDepth>
-<Loop2.1.1>
-<Name>Loop 2.1.1</Name>
+<filas>
+<Name>filas</Name>
 <TripCount>4</TripCount>
 <Latency>28</Latency>
 <IterationLatency>7</IterationLatency>
 <PipelineDepth>7</PipelineDepth>
-</Loop2.1.1>
-</Loop2.1>
-</Loop2>
+</filas>
+</Columnas>
+</Iteracciones>
 <calculo_error>
 <Name>calculo_error</Name>
 <TripCount>16</TripCount>

@@ -60,14 +60,14 @@ architecture behav of p_hls_fptosi_double_s is
     signal tmp_i_i_cast_fu_108_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal ush_fu_112_p3 : STD_LOGIC_VECTOR (11 downto 0);
     signal sh_assign_2_cast_fu_120_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_i_i_cast_80_fu_128_p1 : STD_LOGIC_VECTOR (53 downto 0);
+    signal tmp_i_i_cast_96_fu_128_p1 : STD_LOGIC_VECTOR (53 downto 0);
     signal mantissa_V_1_cast_fu_80_p1 : STD_LOGIC_VECTOR (136 downto 0);
-    signal tmp_i_i_79_fu_124_p1 : STD_LOGIC_VECTOR (136 downto 0);
+    signal tmp_i_i_95_fu_124_p1 : STD_LOGIC_VECTOR (136 downto 0);
     signal r_V_fu_132_p2 : STD_LOGIC_VECTOR (53 downto 0);
     signal tmp_fu_144_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal r_V_1_fu_138_p2 : STD_LOGIC_VECTOR (136 downto 0);
     signal tmp_s_fu_152_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_65_fu_156_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_81_fu_156_p4 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal result_V_1_fu_174_p2 : STD_LOGIC_VECTOR (31 downto 0);
@@ -155,20 +155,20 @@ begin
     mantissa_V_fu_70_p4 <= ((ap_const_lv1_1 & tmp_V_1_fu_66_p1) & ap_const_lv1_0);
     p_Val2_5_fu_166_p3 <= 
         tmp_s_fu_152_p1 when (isNeg_fu_94_p3(0) = '1') else 
-        tmp_65_fu_156_p4;
+        tmp_81_fu_156_p4;
     p_Val2_s_fu_44_p1 <= x;
-    r_V_1_fu_138_p2 <= std_logic_vector(shift_left(unsigned(mantissa_V_1_cast_fu_80_p1),to_integer(unsigned('0' & tmp_i_i_79_fu_124_p1(31-1 downto 0)))));
-    r_V_fu_132_p2 <= std_logic_vector(shift_right(unsigned(mantissa_V_fu_70_p4),to_integer(unsigned('0' & tmp_i_i_cast_80_fu_128_p1(31-1 downto 0)))));
+    r_V_1_fu_138_p2 <= std_logic_vector(shift_left(unsigned(mantissa_V_1_cast_fu_80_p1),to_integer(unsigned('0' & tmp_i_i_95_fu_124_p1(31-1 downto 0)))));
+    r_V_fu_132_p2 <= std_logic_vector(shift_right(unsigned(mantissa_V_fu_70_p4),to_integer(unsigned('0' & tmp_i_i_cast_96_fu_128_p1(31-1 downto 0)))));
     result_V_1_fu_174_p2 <= std_logic_vector(unsigned(ap_const_lv32_0) - unsigned(p_Val2_5_reg_190));
         sh_assign_2_cast_fu_120_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(ush_fu_112_p3),32));
 
     sh_assign_fu_88_p2 <= std_logic_vector(signed(ap_const_lv12_C01) + signed(tmp_i_i_i_cast1_fu_84_p1));
-    tmp_65_fu_156_p4 <= r_V_1_fu_138_p2(84 downto 53);
+    tmp_81_fu_156_p4 <= r_V_1_fu_138_p2(84 downto 53);
     tmp_V_1_fu_66_p1 <= p_Val2_s_fu_44_p1(52 - 1 downto 0);
     tmp_V_fu_56_p4 <= p_Val2_s_fu_44_p1(62 downto 52);
     tmp_fu_144_p3 <= r_V_fu_132_p2(53 downto 53);
-    tmp_i_i_79_fu_124_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_assign_2_cast_fu_120_p1),137));
-    tmp_i_i_cast_80_fu_128_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_assign_2_cast_fu_120_p1),54));
+    tmp_i_i_95_fu_124_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_assign_2_cast_fu_120_p1),137));
+    tmp_i_i_cast_96_fu_128_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_assign_2_cast_fu_120_p1),54));
         tmp_i_i_cast_fu_108_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_i_i_fu_102_p2),12));
 
     tmp_i_i_fu_102_p2 <= std_logic_vector(unsigned(ap_const_lv11_3FF) - unsigned(tmp_V_fu_56_p4));

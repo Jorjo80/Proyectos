@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'jacobi_HLS'
 ================================================================
-* Date:           Mon May 27 22:04:59 2019
+* Date:           Tue May 28 11:40:34 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Jacobi
@@ -1412,7 +1412,7 @@ The critical path consists of the following:
 
  <State 46>: 2.34ns
 The critical path consists of the following:
-	'add' operation ('sh', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [69]  (1.64 ns)
+	'sub' operation ('tmp_i_i_i', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [71]  (1.64 ns)
 	'select' operation ('sh', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [73]  (0.697 ns)
 
  <State 47>: 7.86ns

@@ -1,9 +1,9 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Mon May 27 22:09:35 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Tue May 28 11:40:57 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi'.
-INFO: [HLS 200-10] Adding design file 'Jacobi/jacobi.h' to the project
 INFO: [HLS 200-10] Adding design file 'Jacobi/main.c' to the project
+INFO: [HLS 200-10] Adding design file 'Jacobi/jacobi.h' to the project
 INFO: [HLS 200-10] Adding test bench file 'Jacobi/testbench.c' to the project
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution11'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -24,10 +24,10 @@ Jacobi/main.c:7:2: note: array 'x_new' declared here
  int x_prev[16], x_new[16];
  ^
 2 warnings generated.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 102.906 ; gain = 18.086
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 102.906 ; gain = 18.086
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 102.820 ; gain = 17.871
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 102.820 ; gain = 17.871
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 151.066 ; gain = 66.246
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 152.063 ; gain = 67.113
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
@@ -37,7 +37,7 @@ INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into
 INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'jacobi_HLS' (Jacobi/main.c:30) automatically.
 WARNING: [SYNCHK 200-62] Jacobi/main.c:18: warning: out of bound array access on variable 'x_new'.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 180.148 ; gain = 95.328
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 180.289 ; gain = 95.340
 INFO: [HLS 200-489] Unrolling loop 'Iteracciones' (Jacobi/main.c:16) in function 'jacobi_HLS' completely with a factor of 16.
 WARNING: [XFORM 203-505] Pipeline directive for loop 'Iteracciones' (Jacobi/main.c:16) in function 'jacobi_HLS' has been removed because the loop is unrolled completely.
 INFO: [HLS 200-489] Unrolling loop 'Columnas' (Jacobi/main.c:20) in function 'jacobi_HLS' completely with a factor of 4.
@@ -49,8 +49,8 @@ INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'gen
 INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
 INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'jacobi_HLS' (Jacobi/main.c:30) automatically.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 239.340 ; gain = 154.520
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 254.418 ; gain = 169.598
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 239.469 ; gain = 154.520
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 254.281 ; gain = 169.332
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'jacobi_HLS' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -70,13 +70,13 @@ WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 4)
    between 'dadd' operation ('sum', Jacobi/main.c:38) and 'dadd' operation ('sum', Jacobi/main.c:38).
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 14.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 9.791 seconds; current allocated memory: 194.599 MB.
+INFO: [HLS 200-111]  Elapsed time: 9.896 seconds; current allocated memory: 194.599 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.437 seconds; current allocated memory: 195.833 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.399 seconds; current allocated memory: 195.833 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'jacobi_HLS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -97,10 +97,10 @@ INFO: [RTGEN 206-100] Generating core module 'jacobi_HLS_dsqrt_g8j': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'jacobi_HLS_dsub_6cud': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'jacobi_HLS_sitodpfYi': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'jacobi_HLS'.
-INFO: [HLS 200-111]  Elapsed time: 0.582 seconds; current allocated memory: 197.788 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.648 seconds; current allocated memory: 197.788 MB.
 INFO: [RTMG 210-278] Implementing memory 'jacobi_HLS_x_prev_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 257.238 ; gain = 172.418
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 257.453 ; gain = 172.504
 INFO: [SYSC 207-301] Generating SystemC RTL for jacobi_HLS.
 INFO: [VHDL 208-304] Generating VHDL RTL for jacobi_HLS.
 INFO: [VLOG 209-307] Generating Verilog RTL for jacobi_HLS.
-INFO: [HLS 200-112] Total elapsed time: 13.813 seconds; peak allocated memory: 197.788 MB.
+INFO: [HLS 200-112] Total elapsed time: 13.87 seconds; peak allocated memory: 197.788 MB.

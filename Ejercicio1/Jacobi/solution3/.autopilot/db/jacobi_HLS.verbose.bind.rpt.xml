@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'jacobi_HLS'" level="0">
-<item name = "Date">Mon May 27 21:59:09 2019
+<item name = "Date">Tue May 28 11:38:52 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Jacobi</item>
@@ -31,44 +31,44 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_p_hls_fptosi_double_s_fu_1233">p_hls_fptosi_double_s, 1, 1, 1, 1, none</column>
+<column name="grp_p_hls_fptosi_double_s_fu_1237">p_hls_fptosi_double_s, 1, 1, 1, 1, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- inicializacion">16, 16, 1, 1, 1, 16, yes</column>
-<column name="- Loop 2">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 2.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 3">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 3.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 4">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 4.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 5">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 5.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 6">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 6.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 7">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 7.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 8">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 8.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 9">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 9.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 10">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 10.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 11">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 11.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 12">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 12.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 13">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 13.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 14">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 14.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 15">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 15.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 16">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 16.1">28, 28, 7, -, -, 4, no</column>
-<column name="- Loop 17">356, 356, 89, -, -, 4, no</column>
-<column name=" + Loop 17.1">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
+<column name="- Columnas">356, 356, 89, -, -, 4, no</column>
+<column name=" + filas">28, 28, 7, -, -, 4, no</column>
 <column name="- calculo_error">88, 88, 14, 5, 1, 16, yes</column>
 </table>
 </item>

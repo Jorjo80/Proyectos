@@ -1263,14 +1263,14 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
   x_new[i]=1;
  }
 
- for(int t=0; t<16;t++)
+ Iteracciones:for(int t=0; t<16;t++)
  {
 
   x_prev[16]=x_new[16];
-  for(int i=0; i<4; i++)
+  Columnas:for(int i=0; i<4; i++)
   {
    double sigma=0.0;
-   for(int j=0; j<4;j++)
+   filas:for(int j=0; j<4;j++)
    {
 
     if(j==i)

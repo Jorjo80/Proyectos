@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'p_hls_fptosi_double_s'
 ================================================================
-* Date:           Mon May 27 21:59:11 2019
+* Date:           Tue May 28 11:38:54 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Jacobi
@@ -183,14 +183,14 @@ ST_1 : Operation 13 [1/1] (1.63ns)   --->   "%tmp_i_i = sub i11 1023, %tmp_V" [r
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_i_i_cast = sext i11 %tmp_i_i to i12" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 14 'sext' 'tmp_i_i_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.69ns)   --->   "%ush = select i1 %isNeg, i12 %tmp_i_i_cast, i12 %sh_assign" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 15 'select' 'ush' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%sh_assign_2_cast = sext i12 %ush to i32" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 16 'sext' 'sh_assign_2_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_i_i_79 = zext i32 %sh_assign_2_cast to i137" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 17 'zext' 'tmp_i_i_79' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_i_i_cast_80 = zext i32 %sh_assign_2_cast to i54" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 18 'zext' 'tmp_i_i_cast_80' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%r_V = lshr i54 %mantissa_V, %tmp_i_i_cast_80" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 19 'lshr' 'r_V' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.61> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%r_V_1 = shl i137 %mantissa_V_1_cast, %tmp_i_i_79" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 20 'shl' 'r_V_1' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.61> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_i_i_95 = zext i32 %sh_assign_2_cast to i137" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 17 'zext' 'tmp_i_i_95' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_i_i_cast_96 = zext i32 %sh_assign_2_cast to i54" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 18 'zext' 'tmp_i_i_cast_96' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%r_V = lshr i54 %mantissa_V, %tmp_i_i_cast_96" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 19 'lshr' 'r_V' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.61> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%r_V_1 = shl i137 %mantissa_V_1_cast, %tmp_i_i_95" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 20 'shl' 'r_V_1' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.61> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i54.i32(i54 %r_V, i32 53)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 21 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_s = zext i1 %tmp to i32" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 22 'zext' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_65 = call i32 @_ssdm_op_PartSelect.i32.i137.i32.i32(i137 %r_V_1, i32 53, i32 84)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 23 'partselect' 'tmp_65' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (4.61ns) (out node of the LUT)   --->   "%p_Val2_5 = select i1 %isNeg, i32 %tmp_s, i32 %tmp_65" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 24 'select' 'p_Val2_5' <Predicate = true> <Delay = 4.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_81 = call i32 @_ssdm_op_PartSelect.i32.i137.i32.i32(i137 %r_V_1, i32 53, i32 84)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 23 'partselect' 'tmp_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (4.61ns) (out node of the LUT)   --->   "%p_Val2_5 = select i1 %isNeg, i32 %tmp_s, i32 %tmp_81" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 24 'select' 'p_Val2_5' <Predicate = true> <Delay = 4.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 2 <SV = 1> <Delay = 3.25>
 ST_2 : Operation 25 [1/1] (2.55ns)   --->   "%result_V_1 = sub i32 0, %p_Val2_5" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54]   --->   Operation 25 'sub' 'result_V_1' <Predicate = (p_Result_s)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -230,13 +230,13 @@ tmp_i_i           (sub           ) [ 000]
 tmp_i_i_cast      (sext          ) [ 000]
 ush               (select        ) [ 000]
 sh_assign_2_cast  (sext          ) [ 000]
-tmp_i_i_79        (zext          ) [ 000]
-tmp_i_i_cast_80   (zext          ) [ 000]
+tmp_i_i_95        (zext          ) [ 000]
+tmp_i_i_cast_96   (zext          ) [ 000]
 r_V               (lshr          ) [ 000]
 r_V_1             (shl           ) [ 000]
 tmp               (bitselect     ) [ 000]
 tmp_s             (zext          ) [ 000]
-tmp_65            (partselect    ) [ 000]
+tmp_81            (partselect    ) [ 000]
 p_Val2_5          (select        ) [ 001]
 result_V_1        (sub           ) [ 000]
 p_Val2_6          (select        ) [ 000]
@@ -586,25 +586,25 @@ StgValue_27       (ret           ) [ 000]
 </bind>
 </comp>
 
-<comp id="124" class="1004" name="tmp_i_i_79_fu_124">
+<comp id="124" class="1004" name="tmp_i_i_95_fu_124">
 <pin_list>
 <pin id="125" dir="0" index="0" bw="12" slack="0"/>
 <pin id="126" dir="1" index="1" bw="137" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_i_i_79/1 "/>
+<opset="tmp_i_i_95/1 "/>
 </bind>
 </comp>
 
-<comp id="128" class="1004" name="tmp_i_i_cast_80_fu_128">
+<comp id="128" class="1004" name="tmp_i_i_cast_96_fu_128">
 <pin_list>
 <pin id="129" dir="0" index="0" bw="12" slack="0"/>
 <pin id="130" dir="1" index="1" bw="54" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_i_i_cast_80/1 "/>
+<opset="tmp_i_i_cast_96/1 "/>
 </bind>
 </comp>
 
@@ -656,7 +656,7 @@ StgValue_27       (ret           ) [ 000]
 </bind>
 </comp>
 
-<comp id="156" class="1004" name="tmp_65_fu_156">
+<comp id="156" class="1004" name="tmp_81_fu_156">
 <pin_list>
 <pin id="157" dir="0" index="0" bw="32" slack="0"/>
 <pin id="158" dir="0" index="1" bw="137" slack="0"/>
@@ -666,7 +666,7 @@ StgValue_27       (ret           ) [ 000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_65/1 "/>
+<opset="tmp_81/1 "/>
 </bind>
 </comp>
 
@@ -860,13 +860,13 @@ StgValue_27       (ret           ) [ 000]
 		tmp_i_i_cast : 3
 		ush : 5
 		sh_assign_2_cast : 6
-		tmp_i_i_79 : 7
-		tmp_i_i_cast_80 : 7
+		tmp_i_i_95 : 7
+		tmp_i_i_cast_96 : 7
 		r_V : 8
 		r_V_1 : 8
 		tmp : 9
 		tmp_s : 10
-		tmp_65 : 9
+		tmp_81 : 9
 		p_Val2_5 : 11
 	State 2
 		p_Val2_6 : 1
@@ -901,7 +901,7 @@ StgValue_27       (ret           ) [ 000]
 |          |        tmp_fu_144       |    0    |    0    |
 |----------|-------------------------|---------|---------|
 |partselect|       tmp_V_fu_56       |    0    |    0    |
-|          |      tmp_65_fu_156      |    0    |    0    |
+|          |      tmp_81_fu_156      |    0    |    0    |
 |----------|-------------------------|---------|---------|
 |   trunc  |      tmp_V_1_fu_66      |    0    |    0    |
 |----------|-------------------------|---------|---------|
@@ -909,8 +909,8 @@ StgValue_27       (ret           ) [ 000]
 |----------|-------------------------|---------|---------|
 |          | mantissa_V_1_cast_fu_80 |    0    |    0    |
 |          |  tmp_i_i_i_cast1_fu_84  |    0    |    0    |
-|   zext   |    tmp_i_i_79_fu_124    |    0    |    0    |
-|          |  tmp_i_i_cast_80_fu_128 |    0    |    0    |
+|   zext   |    tmp_i_i_95_fu_124    |    0    |    0    |
+|          |  tmp_i_i_cast_96_fu_128 |    0    |    0    |
 |          |       tmp_s_fu_152      |    0    |    0    |
 |----------|-------------------------|---------|---------|
 |   sext   |   tmp_i_i_cast_fu_108   |    0    |    0    |

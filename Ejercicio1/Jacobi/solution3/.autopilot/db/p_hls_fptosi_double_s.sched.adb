@@ -958,7 +958,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>tmp_i_i_79</name>
+						<name>tmp_i_i_95</name>
 						<fileName>r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
 						<fileDirectory>r:\builds\2018.3\continuous\2018_12_06_2405991\src\products</fileDirectory>
 						<lineNumber>17</lineNumber>
@@ -1020,7 +1020,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>tmp_i_i_cast_80</name>
+						<name>tmp_i_i_cast_96</name>
 						<fileName>r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
 						<fileDirectory>r:\builds\2018.3\continuous\2018_12_06_2405991\src\products</fileDirectory>
 						<lineNumber>17</lineNumber>
@@ -1334,7 +1334,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_65</name>
+						<name>tmp_81</name>
 						<fileName>r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
 						<fileDirectory>r:\builds\2018.3\continuous\2018_12_06_2405991\src\products</fileDirectory>
 						<lineNumber>20</lineNumber>

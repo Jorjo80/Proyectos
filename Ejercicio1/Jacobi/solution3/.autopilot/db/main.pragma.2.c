@@ -1270,10 +1270,10 @@ _ssdm_Unroll(0,0,0, "");
 
 
   x_prev[16]=x_new[16];
-  for(int i=0; i<4; i++)
+  Columnas:for(int i=0; i<4; i++)
   {
    double sigma=0.0;
-   for(int j=0; j<4;j++)
+   filas:for(int j=0; j<4;j++)
    {
 
     if(j==i)
