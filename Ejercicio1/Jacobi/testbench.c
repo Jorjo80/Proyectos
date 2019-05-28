@@ -1,4 +1,5 @@
 #include "jacobi.h"
+#include "stdlib.h"
 
 int main()
 {
@@ -7,4 +8,11 @@ int main()
 	int x[16];
 	double error;
 	error=jacobi_HLS(A,b,x);
+	printf("error = %f\n",error);
+	printf("x[]=  { ");
+	for(int i=0; i<15;i++)
+	{
+		printf("%d,",x[i]);
+	}
+	printf("%d }\n",x[15]);
 }
