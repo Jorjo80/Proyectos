@@ -1265,6 +1265,9 @@ double jacobi_HLS(int J[4][4],int b[4],int x[16])
 
  Iteracciones:for(int t=0; t<16;t++)
  {
+#pragma HLS PIPELINE
+# 16 "Jacobi/main.c"
+
 #pragma HLS UNROLL
 # 16 "Jacobi/main.c"
 
@@ -1278,6 +1281,9 @@ double jacobi_HLS(int J[4][4],int b[4],int x[16])
    double sigma=0.0;
    filas:for(int j=0; j<4;j++)
    {
+#pragma HLS PIPELINE
+# 23 "Jacobi/main.c"
+
 #pragma HLS UNROLL
 # 23 "Jacobi/main.c"
 
@@ -1295,9 +1301,6 @@ double jacobi_HLS(int J[4][4],int b[4],int x[16])
  calculo_error:for(int q=0;q<16;q++)
  {
 #pragma HLS PIPELINE
-# 36 "Jacobi/main.c"
-
-#pragma HLS UNROLL
 # 36 "Jacobi/main.c"
 
   x[q]=x_new[q];

@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
-  <sourceFile>
-    <directive functionName="jacobi_HLS" label="Iteracciones" functionLabel="">
-      <pragma name="PIPELINE"/>
-    </directive>
-    <directive functionName="jacobi_HLS" label="Columnas" functionLabel="">
-      <pragma name="UNROLL"/>
-    </directive>
-    <directive functionName="jacobi_HLS" label="filas" functionLabel="">
-      <pragma name="UNROLL"/>
-    </directive>
-    <directive functionName="jacobi_HLS" label="inicializacion" functionLabel="">
-      <pragma name="PIPELINE"/>
-    </directive>
-    <directive functionName="jacobi_HLS" label="calculo_error" functionLabel="">
-      <pragma name="PIPELINE"/>
-    </directive>
-    <directive functionName="jacobi_HLS" label="Iteracciones" functionLabel="">
-      <pragma name="UNROLL"/>
-    </directive>
-    <directive functionName="jacobi_HLS" label="filas" functionLabel="">
-      <pragma name="PIPELINE"/>
-    </directive>
-  </sourceFile>
+    <sourceFile name="">
+        <directive functionName="jacobi_HLS" label="Iteracciones" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="jacobi_HLS" label="Columnas" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="jacobi_HLS" label="filas" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="jacobi_HLS" label="inicializacion" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="jacobi_HLS" label="calculo_error" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="jacobi_HLS" label="Iteracciones" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="jacobi_HLS" label="filas" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
 </AutoPilot:ProjectResources>
+

@@ -3,6 +3,24 @@
       "directive": [
         {
           "functionName": "jacobi_HLS",
+          "label": "Iteracciones",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "jacobi_HLS",
+          "label": "Columnas",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "jacobi_HLS",
+          "label": "filas",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "jacobi_HLS",
           "label": "inicializacion",
           "functionLabel": "",
           "pragma": {"name": "PIPELINE"}
@@ -21,21 +39,9 @@
         },
         {
           "functionName": "jacobi_HLS",
-          "label": "Columnas",
-          "functionLabel": "",
-          "pragma": {"name": "UNROLL"}
-        },
-        {
-          "functionName": "jacobi_HLS",
           "label": "filas",
           "functionLabel": "",
-          "pragma": {"name": "UNROLL"}
-        },
-        {
-          "functionName": "jacobi_HLS",
-          "label": "calculo_error",
-          "functionLabel": "",
-          "pragma": {"name": "UNROLL"}
+          "pragma": {"name": "PIPELINE"}
         }
       ]
     }]}

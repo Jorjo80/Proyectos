@@ -1265,6 +1265,9 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 
  Iteracciones:for(int t=0; t<16;t++)
  {
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+# 16 "Jacobi/main.c"
+
 _ssdm_Unroll(0,0,0, "");
 # 16 "Jacobi/main.c"
 
@@ -1278,6 +1281,9 @@ _ssdm_Unroll(0,0,0, "");
    double sigma=0.0;
    filas:for(int j=0; j<4;j++)
    {
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+# 23 "Jacobi/main.c"
+
 _ssdm_Unroll(0,0,0, "");
 # 23 "Jacobi/main.c"
 
@@ -1295,9 +1301,6 @@ _ssdm_Unroll(0,0,0, "");
  calculo_error:for(int q=0;q<16;q++)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-# 36 "Jacobi/main.c"
-
-_ssdm_Unroll(0,0,0, "");
 # 36 "Jacobi/main.c"
 
   x[q]=x_new[q];
