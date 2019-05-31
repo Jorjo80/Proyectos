@@ -1,0 +1,1377 @@
+
+
+================================================================
+== Vivado HLS Report for 'jacobi_HLS'
+================================================================
+* Date:           Fri May 31 12:09:15 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Jacobi
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.623|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  5953|  5953|  5953|  5953|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+------+------+----------+-----------+-----------+------+----------+
+        |                  |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+------+------+----------+-----------+-----------+------+----------+
+        |- inicializacion  |    16|    16|         1|          -|          -|    16|    no    |
+        |- Iteracciones    |  5680|  5680|       355|          -|          -|    16|    no    |
+        | + Columnas       |   352|   352|        88|          -|          -|     4|    no    |
+        |  ++ filas        |    28|    28|         7|          -|          -|     4|    no    |
+        |- calculo_error   |   224|   224|        14|          -|          -|    16|    no    |
+        +------------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 114
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!exitcond4)
+	3  / (exitcond4)
+3 --> 
+	4  / (!exitcond3)
+	71  / (exitcond3)
+4 --> 
+	5  / true
+5 --> 
+	6  / (!exitcond2)
+	3  / (exitcond2)
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / (!exitcond1)
+	21  / (exitcond1)
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	14  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	54  / true
+54 --> 
+	55  / true
+55 --> 
+	56  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	62  / true
+62 --> 
+	63  / true
+63 --> 
+	64  / true
+64 --> 
+	65  / true
+65 --> 
+	66  / true
+66 --> 
+	67  / true
+67 --> 
+	68  / true
+68 --> 
+	69  / true
+69 --> 
+	70  / true
+70 --> 
+	5  / true
+71 --> 
+	72  / (!exitcond)
+	85  / (exitcond)
+72 --> 
+	73  / true
+73 --> 
+	74  / true
+74 --> 
+	75  / true
+75 --> 
+	76  / true
+76 --> 
+	77  / true
+77 --> 
+	78  / true
+78 --> 
+	79  / true
+79 --> 
+	80  / true
+80 --> 
+	81  / true
+81 --> 
+	82  / true
+82 --> 
+	83  / true
+83 --> 
+	84  / true
+84 --> 
+	71  / true
+85 --> 
+	86  / true
+86 --> 
+	87  / true
+87 --> 
+	88  / true
+88 --> 
+	89  / true
+89 --> 
+	90  / true
+90 --> 
+	91  / true
+91 --> 
+	92  / true
+92 --> 
+	93  / true
+93 --> 
+	94  / true
+94 --> 
+	95  / true
+95 --> 
+	96  / true
+96 --> 
+	97  / true
+97 --> 
+	98  / true
+98 --> 
+	99  / true
+99 --> 
+	100  / true
+100 --> 
+	101  / true
+101 --> 
+	102  / true
+102 --> 
+	103  / true
+103 --> 
+	104  / true
+104 --> 
+	105  / true
+105 --> 
+	106  / true
+106 --> 
+	107  / true
+107 --> 
+	108  / true
+108 --> 
+	109  / true
+109 --> 
+	110  / true
+110 --> 
+	111  / true
+111 --> 
+	112  / true
+112 --> 
+	113  / true
+113 --> 
+	114  / true
+114 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([16 x i32]* %J) nounwind, !map !7"   --->   Operation 115 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([4 x i32]* %b) nounwind, !map !13"   --->   Operation 116 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([16 x i32]* %x) nounwind, !map !18"   --->   Operation 117 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(double 0.000000e+00) nounwind, !map !24"   --->   Operation 118 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @jacobi_HLS_str) nounwind"   --->   Operation 119 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%x_prev = alloca [16 x i32], align 16" [Jacobi/main.c:7]   --->   Operation 120 'alloca' 'x_prev' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%x_new = alloca [16 x i32], align 16" [Jacobi/main.c:7]   --->   Operation 121 'alloca' 'x_new' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 122 [1/1] (1.76ns)   --->   "br label %1" [Jacobi/main.c:9]   --->   Operation 122 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 123 [1/1] (0.00ns)   --->   "%i = phi i5 [ 0, %0 ], [ %i_1, %2 ]"   --->   Operation 123 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 124 [1/1] (1.36ns)   --->   "%exitcond4 = icmp eq i5 %i, -16" [Jacobi/main.c:9]   --->   Operation 124 'icmp' 'exitcond4' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 125 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16) nounwind"   --->   Operation 125 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 126 [1/1] (1.78ns)   --->   "%i_1 = add i5 %i, 1" [Jacobi/main.c:9]   --->   Operation 126 'add' 'i_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 127 [1/1] (0.00ns)   --->   "br i1 %exitcond4, label %.preheader5.preheader, label %2" [Jacobi/main.c:9]   --->   Operation 127 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 128 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str) nounwind" [Jacobi/main.c:10]   --->   Operation 128 'specloopname' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_2 : Operation 129 [1/1] (0.00ns)   --->   "%tmp = zext i5 %i to i64" [Jacobi/main.c:11]   --->   Operation 129 'zext' 'tmp' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_2 : Operation 130 [1/1] (0.00ns)   --->   "%x_prev_addr_1 = getelementptr inbounds [16 x i32]* %x_prev, i64 0, i64 %tmp" [Jacobi/main.c:11]   --->   Operation 130 'getelementptr' 'x_prev_addr_1' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_2 : Operation 131 [1/1] (2.32ns)   --->   "store i32 0, i32* %x_prev_addr_1, align 4" [Jacobi/main.c:11]   --->   Operation 131 'store' <Predicate = (!exitcond4)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 132 [1/1] (0.00ns)   --->   "%x_new_addr_1 = getelementptr inbounds [16 x i32]* %x_new, i64 0, i64 %tmp" [Jacobi/main.c:12]   --->   Operation 132 'getelementptr' 'x_new_addr_1' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_2 : Operation 133 [1/1] (2.32ns)   --->   "store i32 1, i32* %x_new_addr_1, align 4" [Jacobi/main.c:12]   --->   Operation 133 'store' <Predicate = (!exitcond4)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 134 [1/1] (0.00ns)   --->   "br label %1" [Jacobi/main.c:9]   --->   Operation 134 'br' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_2 : Operation 135 [1/1] (0.00ns)   --->   "%x_new_addr = getelementptr inbounds [16 x i32]* %x_new, i64 0, i64 16" [Jacobi/main.c:18]   --->   Operation 135 'getelementptr' 'x_new_addr' <Predicate = (exitcond4)> <Delay = 0.00>
+ST_2 : Operation 136 [1/1] (0.00ns)   --->   "%x_prev_addr = getelementptr inbounds [16 x i32]* %x_prev, i64 0, i64 16" [Jacobi/main.c:18]   --->   Operation 136 'getelementptr' 'x_prev_addr' <Predicate = (exitcond4)> <Delay = 0.00>
+ST_2 : Operation 137 [1/1] (1.76ns)   --->   "br label %.preheader5" [Jacobi/main.c:15]   --->   Operation 137 'br' <Predicate = (exitcond4)> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 2.32>
+ST_3 : Operation 138 [1/1] (0.00ns)   --->   "%t = phi i5 [ %t_1, %8 ], [ 0, %.preheader5.preheader ]"   --->   Operation 138 'phi' 't' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 139 [1/1] (1.36ns)   --->   "%exitcond3 = icmp eq i5 %t, -16" [Jacobi/main.c:15]   --->   Operation 139 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 140 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16) nounwind"   --->   Operation 140 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 141 [1/1] (1.78ns)   --->   "%t_1 = add i5 %t, 1" [Jacobi/main.c:15]   --->   Operation 141 'add' 't_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 142 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %.preheader.preheader, label %3" [Jacobi/main.c:15]   --->   Operation 142 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 143 [2/2] (2.32ns)   --->   "%x_new_load = load i32* %x_new_addr, align 16" [Jacobi/main.c:18]   --->   Operation 143 'load' 'x_new_load' <Predicate = (!exitcond3)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_3 : Operation 144 [1/1] (1.76ns)   --->   "br label %.preheader" [Jacobi/main.c:35]   --->   Operation 144 'br' <Predicate = (exitcond3)> <Delay = 1.76>
+
+State 4 <SV = 3> <Delay = 4.64>
+ST_4 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([13 x i8]* @p_str1) nounwind" [Jacobi/main.c:16]   --->   Operation 145 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 146 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str1) nounwind" [Jacobi/main.c:16]   --->   Operation 146 'specregionbegin' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 147 [1/2] (2.32ns)   --->   "%x_new_load = load i32* %x_new_addr, align 16" [Jacobi/main.c:18]   --->   Operation 147 'load' 'x_new_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_4 : Operation 148 [1/1] (2.32ns)   --->   "store i32 %x_new_load, i32* %x_prev_addr, align 16" [Jacobi/main.c:18]   --->   Operation 148 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_4 : Operation 149 [1/1] (1.76ns)   --->   "br label %4" [Jacobi/main.c:19]   --->   Operation 149 'br' <Predicate = true> <Delay = 1.76>
+
+State 5 <SV = 4> <Delay = 5.75>
+ST_5 : Operation 150 [1/1] (0.00ns)   --->   "%i1 = phi i3 [ 0, %3 ], [ %i_2, %7 ]"   --->   Operation 150 'phi' 'i1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 151 [1/1] (1.13ns)   --->   "%exitcond2 = icmp eq i3 %i1, -4" [Jacobi/main.c:19]   --->   Operation 151 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 152 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 152 'speclooptripcount' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 153 [1/1] (1.65ns)   --->   "%i_2 = add i3 %i1, 1" [Jacobi/main.c:19]   --->   Operation 153 'add' 'i_2' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 154 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %8, label %5" [Jacobi/main.c:19]   --->   Operation 154 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 155 [1/1] (1.65ns)   --->   "%tmp_9 = add i3 %i1, -1" [Jacobi/main.c:27]   --->   Operation 155 'add' 'tmp_9' <Predicate = (!exitcond2)> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_11 = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %tmp_9, i2 0)" [Jacobi/main.c:27]   --->   Operation 156 'bitconcatenate' 'tmp_11' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 157 [1/1] (0.00ns)   --->   "%tmp_16_cast = sext i5 %tmp_11 to i6" [Jacobi/main.c:27]   --->   Operation 157 'sext' 'tmp_16_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_12 = zext i3 %i1 to i64" [Jacobi/main.c:27]   --->   Operation 158 'zext' 'tmp_12' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 159 [1/1] (0.00ns)   --->   "%tmp_12_cast = zext i3 %i1 to i6" [Jacobi/main.c:27]   --->   Operation 159 'zext' 'tmp_12_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 160 [1/1] (1.78ns)   --->   "%tmp_16 = add i6 %tmp_12_cast, %tmp_16_cast" [Jacobi/main.c:27]   --->   Operation 160 'add' 'tmp_16' <Predicate = (!exitcond2)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 161 [1/1] (0.00ns)   --->   "%tmp_17_cast = sext i6 %tmp_16 to i64" [Jacobi/main.c:27]   --->   Operation 161 'sext' 'tmp_17_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 162 [1/1] (0.00ns)   --->   "%J_addr = getelementptr [16 x i32]* %J, i64 0, i64 %tmp_17_cast" [Jacobi/main.c:27]   --->   Operation 162 'getelementptr' 'J_addr' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 163 [2/2] (2.32ns)   --->   "%J_load = load i32* %J_addr, align 4" [Jacobi/main.c:27]   --->   Operation 163 'load' 'J_load' <Predicate = (!exitcond2)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_5 : Operation 164 [1/1] (0.00ns)   --->   "%x_prev_addr_3 = getelementptr inbounds [16 x i32]* %x_prev, i64 0, i64 %tmp_12" [Jacobi/main.c:27]   --->   Operation 164 'getelementptr' 'x_prev_addr_3' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_5 : Operation 165 [2/2] (2.32ns)   --->   "%x_prev_load_1 = load i32* %x_prev_addr_3, align 4" [Jacobi/main.c:27]   --->   Operation 165 'load' 'x_prev_load_1' <Predicate = (!exitcond2)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_5 : Operation 166 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str1, i32 %tmp_1) nounwind" [Jacobi/main.c:32]   --->   Operation 166 'specregionend' 'empty_13' <Predicate = (exitcond2)> <Delay = 0.00>
+ST_5 : Operation 167 [1/1] (0.00ns)   --->   "br label %.preheader5" [Jacobi/main.c:15]   --->   Operation 167 'br' <Predicate = (exitcond2)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 2.32>
+ST_6 : Operation 168 [1/2] (2.32ns)   --->   "%J_load = load i32* %J_addr, align 4" [Jacobi/main.c:27]   --->   Operation 168 'load' 'J_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_6 : Operation 169 [1/2] (2.32ns)   --->   "%x_prev_load_1 = load i32* %x_prev_addr_3, align 4" [Jacobi/main.c:27]   --->   Operation 169 'load' 'x_prev_load_1' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 7 <SV = 6> <Delay = 8.51>
+ST_7 : Operation 170 [1/1] (8.51ns)   --->   "%tmp_14 = mul nsw i32 %J_load, %x_prev_load_1" [Jacobi/main.c:27]   --->   Operation 170 'mul' 'tmp_14' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.28>
+ST_8 : Operation 171 [6/6] (6.28ns)   --->   "%tmp_15 = sitofp i32 %tmp_14 to double" [Jacobi/main.c:27]   --->   Operation 171 'sitodp' 'tmp_15' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.28>
+ST_9 : Operation 172 [5/6] (6.28ns)   --->   "%tmp_15 = sitofp i32 %tmp_14 to double" [Jacobi/main.c:27]   --->   Operation 172 'sitodp' 'tmp_15' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.28>
+ST_10 : Operation 173 [4/6] (6.28ns)   --->   "%tmp_15 = sitofp i32 %tmp_14 to double" [Jacobi/main.c:27]   --->   Operation 173 'sitodp' 'tmp_15' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.28>
+ST_11 : Operation 174 [3/6] (6.28ns)   --->   "%tmp_15 = sitofp i32 %tmp_14 to double" [Jacobi/main.c:27]   --->   Operation 174 'sitodp' 'tmp_15' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.28>
+ST_12 : Operation 175 [2/6] (6.28ns)   --->   "%tmp_15 = sitofp i32 %tmp_14 to double" [Jacobi/main.c:27]   --->   Operation 175 'sitodp' 'tmp_15' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 6.28>
+ST_13 : Operation 176 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str2) nounwind" [Jacobi/main.c:20]   --->   Operation 176 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 177 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str2) nounwind" [Jacobi/main.c:20]   --->   Operation 177 'specregionbegin' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 178 [1/6] (6.28ns)   --->   "%tmp_15 = sitofp i32 %tmp_14 to double" [Jacobi/main.c:27]   --->   Operation 178 'sitodp' 'tmp_15' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_13 : Operation 179 [1/1] (1.76ns)   --->   "br label %6" [Jacobi/main.c:22]   --->   Operation 179 'br' <Predicate = true> <Delay = 1.76>
+
+State 14 <SV = 13> <Delay = 2.32>
+ST_14 : Operation 180 [1/1] (0.00ns)   --->   "%sigma = phi double [ 0.000000e+00, %5 ], [ %sigma_1, %_ifconv ]"   --->   Operation 180 'phi' 'sigma' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 181 [1/1] (0.00ns)   --->   "%j = phi i3 [ 0, %5 ], [ %j_1, %_ifconv ]"   --->   Operation 181 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 182 [1/1] (1.13ns)   --->   "%exitcond1 = icmp eq i3 %j, -4" [Jacobi/main.c:22]   --->   Operation 182 'icmp' 'exitcond1' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 183 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 183 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 184 [1/1] (1.65ns)   --->   "%j_1 = add i3 %j, 1" [Jacobi/main.c:22]   --->   Operation 184 'add' 'j_1' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 185 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %7, label %_ifconv" [Jacobi/main.c:22]   --->   Operation 185 'br' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 186 [1/1] (1.13ns)   --->   "%tmp_13 = icmp eq i3 %j, %i1" [Jacobi/main.c:25]   --->   Operation 186 'icmp' 'tmp_13' <Predicate = (!exitcond1)> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 187 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [4 x i32]* %b, i64 0, i64 %tmp_12" [Jacobi/main.c:30]   --->   Operation 187 'getelementptr' 'b_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_14 : Operation 188 [2/2] (2.32ns)   --->   "%b_load = load i32* %b_addr, align 4" [Jacobi/main.c:30]   --->   Operation 188 'load' 'b_load' <Predicate = (exitcond1)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 15 <SV = 14> <Delay = 8.23>
+ST_15 : Operation 189 [5/5] (8.23ns)   --->   "%sigma_2 = fadd double %sigma, %tmp_15" [Jacobi/main.c:27]   --->   Operation 189 'dadd' 'sigma_2' <Predicate = (tmp_13)> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 8.23>
+ST_16 : Operation 190 [4/5] (8.23ns)   --->   "%sigma_2 = fadd double %sigma, %tmp_15" [Jacobi/main.c:27]   --->   Operation 190 'dadd' 'sigma_2' <Predicate = (tmp_13)> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 8.23>
+ST_17 : Operation 191 [3/5] (8.23ns)   --->   "%sigma_2 = fadd double %sigma, %tmp_15" [Jacobi/main.c:27]   --->   Operation 191 'dadd' 'sigma_2' <Predicate = (tmp_13)> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 8.23>
+ST_18 : Operation 192 [2/5] (8.23ns)   --->   "%sigma_2 = fadd double %sigma, %tmp_15" [Jacobi/main.c:27]   --->   Operation 192 'dadd' 'sigma_2' <Predicate = (tmp_13)> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 8.23>
+ST_19 : Operation 193 [1/5] (8.23ns)   --->   "%sigma_2 = fadd double %sigma, %tmp_15" [Jacobi/main.c:27]   --->   Operation 193 'dadd' 'sigma_2' <Predicate = (tmp_13)> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 1.48>
+ST_20 : Operation 194 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([6 x i8]* @p_str3) nounwind" [Jacobi/main.c:23]   --->   Operation 194 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 195 [1/1] (1.48ns)   --->   "%sigma_1 = select i1 %tmp_13, double %sigma_2, double %sigma" [Jacobi/main.c:25]   --->   Operation 195 'select' 'sigma_1' <Predicate = true> <Delay = 1.48> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_20 : Operation 196 [1/1] (0.00ns)   --->   "br label %6" [Jacobi/main.c:22]   --->   Operation 196 'br' <Predicate = true> <Delay = 0.00>
+
+State 21 <SV = 14> <Delay = 8.60>
+ST_21 : Operation 197 [1/2] (2.32ns)   --->   "%b_load = load i32* %b_addr, align 4" [Jacobi/main.c:30]   --->   Operation 197 'load' 'b_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_21 : Operation 198 [6/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %b_load to double" [Jacobi/main.c:30]   --->   Operation 198 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 22 <SV = 15> <Delay = 6.28>
+ST_22 : Operation 199 [5/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %b_load to double" [Jacobi/main.c:30]   --->   Operation 199 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 23 <SV = 16> <Delay = 6.28>
+ST_23 : Operation 200 [4/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %b_load to double" [Jacobi/main.c:30]   --->   Operation 200 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 24 <SV = 17> <Delay = 6.28>
+ST_24 : Operation 201 [3/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %b_load to double" [Jacobi/main.c:30]   --->   Operation 201 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 25 <SV = 18> <Delay = 6.28>
+ST_25 : Operation 202 [2/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %b_load to double" [Jacobi/main.c:30]   --->   Operation 202 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 26 <SV = 19> <Delay = 6.28>
+ST_26 : Operation 203 [6/6] (6.28ns)   --->   "%tmp_6 = sitofp i32 %J_load to double" [Jacobi/main.c:30]   --->   Operation 203 'sitodp' 'tmp_6' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_26 : Operation 204 [1/6] (6.28ns)   --->   "%tmp_7 = sitofp i32 %b_load to double" [Jacobi/main.c:30]   --->   Operation 204 'sitodp' 'tmp_7' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 27 <SV = 20> <Delay = 8.23>
+ST_27 : Operation 205 [5/6] (6.28ns)   --->   "%tmp_6 = sitofp i32 %J_load to double" [Jacobi/main.c:30]   --->   Operation 205 'sitodp' 'tmp_6' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_27 : Operation 206 [5/5] (8.23ns)   --->   "%tmp_8 = fsub double %tmp_7, %sigma" [Jacobi/main.c:30]   --->   Operation 206 'dsub' 'tmp_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 21> <Delay = 8.23>
+ST_28 : Operation 207 [4/6] (6.28ns)   --->   "%tmp_6 = sitofp i32 %J_load to double" [Jacobi/main.c:30]   --->   Operation 207 'sitodp' 'tmp_6' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_28 : Operation 208 [4/5] (8.23ns)   --->   "%tmp_8 = fsub double %tmp_7, %sigma" [Jacobi/main.c:30]   --->   Operation 208 'dsub' 'tmp_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 22> <Delay = 8.23>
+ST_29 : Operation 209 [3/6] (6.28ns)   --->   "%tmp_6 = sitofp i32 %J_load to double" [Jacobi/main.c:30]   --->   Operation 209 'sitodp' 'tmp_6' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_29 : Operation 210 [3/5] (8.23ns)   --->   "%tmp_8 = fsub double %tmp_7, %sigma" [Jacobi/main.c:30]   --->   Operation 210 'dsub' 'tmp_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 23> <Delay = 8.23>
+ST_30 : Operation 211 [2/6] (6.28ns)   --->   "%tmp_6 = sitofp i32 %J_load to double" [Jacobi/main.c:30]   --->   Operation 211 'sitodp' 'tmp_6' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_30 : Operation 212 [2/5] (8.23ns)   --->   "%tmp_8 = fsub double %tmp_7, %sigma" [Jacobi/main.c:30]   --->   Operation 212 'dsub' 'tmp_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 24> <Delay = 8.23>
+ST_31 : Operation 213 [1/6] (6.28ns)   --->   "%tmp_6 = sitofp i32 %J_load to double" [Jacobi/main.c:30]   --->   Operation 213 'sitodp' 'tmp_6' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+ST_31 : Operation 214 [1/5] (8.23ns)   --->   "%tmp_8 = fsub double %tmp_7, %sigma" [Jacobi/main.c:30]   --->   Operation 214 'dsub' 'tmp_8' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 25> <Delay = 7.78>
+ST_32 : Operation 215 [6/6] (7.78ns)   --->   "%tmp_10 = fmul double %tmp_6, %tmp_8" [Jacobi/main.c:30]   --->   Operation 215 'dmul' 'tmp_10' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 26> <Delay = 7.78>
+ST_33 : Operation 216 [5/6] (7.78ns)   --->   "%tmp_10 = fmul double %tmp_6, %tmp_8" [Jacobi/main.c:30]   --->   Operation 216 'dmul' 'tmp_10' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 27> <Delay = 7.78>
+ST_34 : Operation 217 [4/6] (7.78ns)   --->   "%tmp_10 = fmul double %tmp_6, %tmp_8" [Jacobi/main.c:30]   --->   Operation 217 'dmul' 'tmp_10' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 28> <Delay = 7.78>
+ST_35 : Operation 218 [3/6] (7.78ns)   --->   "%tmp_10 = fmul double %tmp_6, %tmp_8" [Jacobi/main.c:30]   --->   Operation 218 'dmul' 'tmp_10' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 29> <Delay = 7.78>
+ST_36 : Operation 219 [2/6] (7.78ns)   --->   "%tmp_10 = fmul double %tmp_6, %tmp_8" [Jacobi/main.c:30]   --->   Operation 219 'dmul' 'tmp_10' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 30> <Delay = 7.78>
+ST_37 : Operation 220 [1/6] (7.78ns)   --->   "%tmp_10 = fmul double %tmp_6, %tmp_8" [Jacobi/main.c:30]   --->   Operation 220 'dmul' 'tmp_10' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 115 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 31> <Delay = 8.62>
+ST_38 : Operation 221 [31/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 221 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 32> <Delay = 8.62>
+ST_39 : Operation 222 [30/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 222 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 33> <Delay = 8.62>
+ST_40 : Operation 223 [29/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 223 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 34> <Delay = 8.62>
+ST_41 : Operation 224 [28/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 224 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 35> <Delay = 8.62>
+ST_42 : Operation 225 [27/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 225 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 36> <Delay = 8.62>
+ST_43 : Operation 226 [26/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 226 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 37> <Delay = 8.62>
+ST_44 : Operation 227 [25/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 227 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 38> <Delay = 8.62>
+ST_45 : Operation 228 [24/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 228 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 39> <Delay = 8.62>
+ST_46 : Operation 229 [23/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 229 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 40> <Delay = 8.62>
+ST_47 : Operation 230 [22/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 230 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 41> <Delay = 8.62>
+ST_48 : Operation 231 [21/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 231 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 42> <Delay = 8.62>
+ST_49 : Operation 232 [20/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 232 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 43> <Delay = 8.62>
+ST_50 : Operation 233 [19/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 233 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 44> <Delay = 8.62>
+ST_51 : Operation 234 [18/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 234 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 45> <Delay = 8.62>
+ST_52 : Operation 235 [17/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 235 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 46> <Delay = 8.62>
+ST_53 : Operation 236 [16/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 236 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 47> <Delay = 8.62>
+ST_54 : Operation 237 [15/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 237 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 48> <Delay = 8.62>
+ST_55 : Operation 238 [14/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 238 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 49> <Delay = 8.62>
+ST_56 : Operation 239 [13/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 239 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 50> <Delay = 8.62>
+ST_57 : Operation 240 [12/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 240 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 51> <Delay = 8.62>
+ST_58 : Operation 241 [11/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 241 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 52> <Delay = 8.62>
+ST_59 : Operation 242 [10/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 242 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 53> <Delay = 8.62>
+ST_60 : Operation 243 [9/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 243 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 54> <Delay = 8.62>
+ST_61 : Operation 244 [8/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 244 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 55> <Delay = 8.62>
+ST_62 : Operation 245 [7/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 245 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 56> <Delay = 8.62>
+ST_63 : Operation 246 [6/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 246 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 57> <Delay = 8.62>
+ST_64 : Operation 247 [5/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 247 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 58> <Delay = 8.62>
+ST_65 : Operation 248 [4/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 248 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 59> <Delay = 8.62>
+ST_66 : Operation 249 [3/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 249 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 60> <Delay = 8.62>
+ST_67 : Operation 250 [2/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 250 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 61> <Delay = 8.62>
+ST_68 : Operation 251 [1/31] (8.62ns)   --->   "%x_assign = fdiv double 1.000000e+00, %tmp_10" [Jacobi/main.c:30]   --->   Operation 251 'ddiv' 'x_assign' <Predicate = true> <Delay = 8.62> <Core = "DDiv">   --->   Core 116 'DDiv' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 62> <Delay = 6.94>
+ST_69 : Operation 252 [1/1] (0.00ns)   --->   "%p_Val2_s = bitcast double %x_assign to i64" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:475->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 252 'bitcast' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 253 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_s, i32 63)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:475->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 253 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 254 [1/1] (0.00ns)   --->   "%tmp_V = call i11 @_ssdm_op_PartSelect.i11.i64.i32.i32(i64 %p_Val2_s, i32 52, i32 62) nounwind" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:477->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 254 'partselect' 'tmp_V' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 255 [1/1] (0.00ns)   --->   "%tmp_V_1 = trunc i64 %p_Val2_s to i52" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:478->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 255 'trunc' 'tmp_V_1' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 256 [1/1] (0.00ns)   --->   "%mantissa_V = call i54 @_ssdm_op_BitConcatenate.i54.i1.i52.i1(i1 true, i52 %tmp_V_1, i1 false)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 256 'bitconcatenate' 'mantissa_V' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 257 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%mantissa_V_1_cast = zext i54 %mantissa_V to i137" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 257 'zext' 'mantissa_V_1_cast' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 258 [1/1] (0.00ns)   --->   "%tmp_i_i_i_i_cast2 = zext i11 %tmp_V to i12" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 258 'zext' 'tmp_i_i_i_i_cast2' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 259 [1/1] (1.63ns)   --->   "%sh_assign = add i12 -1023, %tmp_i_i_i_i_cast2" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 259 'add' 'sh_assign' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 260 [1/1] (0.00ns)   --->   "%isNeg = call i1 @_ssdm_op_BitSelect.i1.i12.i32(i12 %sh_assign, i32 11)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 260 'bitselect' 'isNeg' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 261 [1/1] (1.63ns)   --->   "%tmp_i_i_i = sub i11 1023, %tmp_V" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 261 'sub' 'tmp_i_i_i' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 262 [1/1] (0.00ns)   --->   "%tmp_i_i_i_cast = sext i11 %tmp_i_i_i to i12" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 262 'sext' 'tmp_i_i_i_cast' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 263 [1/1] (0.69ns)   --->   "%ush = select i1 %isNeg, i12 %tmp_i_i_i_cast, i12 %sh_assign" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 263 'select' 'ush' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_69 : Operation 264 [1/1] (0.00ns)   --->   "%sh_assign_2_cast = sext i12 %ush to i32" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 264 'sext' 'sh_assign_2_cast' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 265 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_i_i_i_10 = zext i32 %sh_assign_2_cast to i137" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 265 'zext' 'tmp_i_i_i_10' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 266 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_i_i_i_cast_11 = zext i32 %sh_assign_2_cast to i54" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 266 'zext' 'tmp_i_i_i_cast_11' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 267 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%r_V = lshr i54 %mantissa_V, %tmp_i_i_i_cast_11" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 267 'lshr' 'r_V' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.61> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 268 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%r_V_1 = shl i137 %mantissa_V_1_cast, %tmp_i_i_i_10" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 268 'shl' 'r_V_1' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.61> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 269 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_22 = call i1 @_ssdm_op_BitSelect.i1.i54.i32(i54 %r_V, i32 53)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 269 'bitselect' 'tmp_22' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 270 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_17 = zext i1 %tmp_22 to i32" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 270 'zext' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 271 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_5)   --->   "%tmp_18 = call i32 @_ssdm_op_PartSelect.i32.i137.i32.i32(i137 %r_V_1, i32 53, i32 84)" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 271 'partselect' 'tmp_18' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 272 [1/1] (4.61ns) (out node of the LUT)   --->   "%p_Val2_5 = select i1 %isNeg, i32 %tmp_17, i32 %tmp_18" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 272 'select' 'p_Val2_5' <Predicate = true> <Delay = 4.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 70 <SV = 63> <Delay = 5.57>
+ST_70 : Operation 273 [1/1] (2.55ns)   --->   "%result_V_1 = sub i32 0, %p_Val2_5" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 273 'sub' 'result_V_1' <Predicate = (p_Result_s)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 274 [1/1] (0.69ns)   --->   "%p_Val2_6 = select i1 %p_Result_s, i32 %result_V_1, i32 %p_Val2_5" [r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30]   --->   Operation 274 'select' 'p_Val2_6' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_70 : Operation 275 [1/1] (0.00ns)   --->   "%x_new_addr_3 = getelementptr inbounds [16 x i32]* %x_new, i64 0, i64 %tmp_12" [Jacobi/main.c:30]   --->   Operation 275 'getelementptr' 'x_new_addr_3' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 276 [1/1] (2.32ns)   --->   "store i32 %p_Val2_6, i32* %x_new_addr_3, align 4" [Jacobi/main.c:30]   --->   Operation 276 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_70 : Operation 277 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str2, i32 %tmp_s) nounwind" [Jacobi/main.c:31]   --->   Operation 277 'specregionend' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 278 [1/1] (0.00ns)   --->   "br label %4" [Jacobi/main.c:19]   --->   Operation 278 'br' <Predicate = true> <Delay = 0.00>
+
+State 71 <SV = 3> <Delay = 8.62>
+ST_71 : Operation 279 [1/1] (0.00ns)   --->   "%sum = phi double [ %sum_1, %9 ], [ 0.000000e+00, %.preheader.preheader ]"   --->   Operation 279 'phi' 'sum' <Predicate = true> <Delay = 0.00>
+ST_71 : Operation 280 [1/1] (0.00ns)   --->   "%q = phi i5 [ %q_1, %9 ], [ 0, %.preheader.preheader ]"   --->   Operation 280 'phi' 'q' <Predicate = true> <Delay = 0.00>
+ST_71 : Operation 281 [1/1] (1.36ns)   --->   "%exitcond = icmp eq i5 %q, -16" [Jacobi/main.c:35]   --->   Operation 281 'icmp' 'exitcond' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 282 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16) nounwind"   --->   Operation 282 'speclooptripcount' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_71 : Operation 283 [1/1] (1.78ns)   --->   "%q_1 = add i5 %q, 1" [Jacobi/main.c:35]   --->   Operation 283 'add' 'q_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 284 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %10, label %9" [Jacobi/main.c:35]   --->   Operation 284 'br' <Predicate = true> <Delay = 0.00>
+ST_71 : Operation 285 [1/1] (0.00ns)   --->   "%tmp_2 = zext i5 %q to i64" [Jacobi/main.c:37]   --->   Operation 285 'zext' 'tmp_2' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_71 : Operation 286 [1/1] (0.00ns)   --->   "%x_new_addr_2 = getelementptr inbounds [16 x i32]* %x_new, i64 0, i64 %tmp_2" [Jacobi/main.c:37]   --->   Operation 286 'getelementptr' 'x_new_addr_2' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_71 : Operation 287 [2/2] (2.32ns)   --->   "%x_new_load_1 = load i32* %x_new_addr_2, align 4" [Jacobi/main.c:37]   --->   Operation 287 'load' 'x_new_load_1' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_71 : Operation 288 [1/1] (0.00ns)   --->   "%x_prev_addr_2 = getelementptr inbounds [16 x i32]* %x_prev, i64 0, i64 %tmp_2" [Jacobi/main.c:38]   --->   Operation 288 'getelementptr' 'x_prev_addr_2' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_71 : Operation 289 [2/2] (2.32ns)   --->   "%x_prev_load = load i32* %x_prev_addr_2, align 4" [Jacobi/main.c:38]   --->   Operation 289 'load' 'x_prev_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_71 : Operation 290 [31/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 290 'dsqrt' 'error' <Predicate = (exitcond)> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 72 <SV = 4> <Delay = 4.87>
+ST_72 : Operation 291 [1/2] (2.32ns)   --->   "%x_new_load_1 = load i32* %x_new_addr_2, align 4" [Jacobi/main.c:37]   --->   Operation 291 'load' 'x_new_load_1' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_72 : Operation 292 [1/1] (0.00ns)   --->   "%x_addr = getelementptr [16 x i32]* %x, i64 0, i64 %tmp_2" [Jacobi/main.c:37]   --->   Operation 292 'getelementptr' 'x_addr' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 293 [1/1] (2.32ns)   --->   "store i32 %x_new_load_1, i32* %x_addr, align 4" [Jacobi/main.c:37]   --->   Operation 293 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_72 : Operation 294 [1/2] (2.32ns)   --->   "%x_prev_load = load i32* %x_prev_addr_2, align 4" [Jacobi/main.c:38]   --->   Operation 294 'load' 'x_prev_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_72 : Operation 295 [1/1] (2.55ns)   --->   "%tmp_3 = sub nsw i32 %x_new_load_1, %x_prev_load" [Jacobi/main.c:38]   --->   Operation 295 'sub' 'tmp_3' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 5> <Delay = 8.51>
+ST_73 : Operation 296 [1/1] (8.51ns)   --->   "%tmp_4 = mul nsw i32 %tmp_3, %tmp_3" [Jacobi/main.c:38]   --->   Operation 296 'mul' 'tmp_4' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 74 <SV = 6> <Delay = 6.28>
+ST_74 : Operation 297 [6/6] (6.28ns)   --->   "%tmp_5 = sitofp i32 %tmp_4 to double" [Jacobi/main.c:38]   --->   Operation 297 'sitodp' 'tmp_5' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 75 <SV = 7> <Delay = 6.28>
+ST_75 : Operation 298 [5/6] (6.28ns)   --->   "%tmp_5 = sitofp i32 %tmp_4 to double" [Jacobi/main.c:38]   --->   Operation 298 'sitodp' 'tmp_5' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 76 <SV = 8> <Delay = 6.28>
+ST_76 : Operation 299 [4/6] (6.28ns)   --->   "%tmp_5 = sitofp i32 %tmp_4 to double" [Jacobi/main.c:38]   --->   Operation 299 'sitodp' 'tmp_5' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 77 <SV = 9> <Delay = 6.28>
+ST_77 : Operation 300 [3/6] (6.28ns)   --->   "%tmp_5 = sitofp i32 %tmp_4 to double" [Jacobi/main.c:38]   --->   Operation 300 'sitodp' 'tmp_5' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 78 <SV = 10> <Delay = 6.28>
+ST_78 : Operation 301 [2/6] (6.28ns)   --->   "%tmp_5 = sitofp i32 %tmp_4 to double" [Jacobi/main.c:38]   --->   Operation 301 'sitodp' 'tmp_5' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 79 <SV = 11> <Delay = 6.28>
+ST_79 : Operation 302 [1/6] (6.28ns)   --->   "%tmp_5 = sitofp i32 %tmp_4 to double" [Jacobi/main.c:38]   --->   Operation 302 'sitodp' 'tmp_5' <Predicate = true> <Delay = 6.28> <Core = "Int2Double">   --->   Core 121 'Int2Double' <Latency = 5> <II = 1> <Delay = 6.28> <FuncUnit> <Opcode : 'sitodp' 'uitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 80 <SV = 12> <Delay = 8.23>
+ST_80 : Operation 303 [5/5] (8.23ns)   --->   "%sum_1 = fadd double %sum, %tmp_5" [Jacobi/main.c:38]   --->   Operation 303 'dadd' 'sum_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 13> <Delay = 8.23>
+ST_81 : Operation 304 [4/5] (8.23ns)   --->   "%sum_1 = fadd double %sum, %tmp_5" [Jacobi/main.c:38]   --->   Operation 304 'dadd' 'sum_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 14> <Delay = 8.23>
+ST_82 : Operation 305 [3/5] (8.23ns)   --->   "%sum_1 = fadd double %sum, %tmp_5" [Jacobi/main.c:38]   --->   Operation 305 'dadd' 'sum_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 15> <Delay = 8.23>
+ST_83 : Operation 306 [2/5] (8.23ns)   --->   "%sum_1 = fadd double %sum, %tmp_5" [Jacobi/main.c:38]   --->   Operation 306 'dadd' 'sum_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 84 <SV = 16> <Delay = 8.23>
+ST_84 : Operation 307 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str4) nounwind" [Jacobi/main.c:36]   --->   Operation 307 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 308 [1/5] (8.23ns)   --->   "%sum_1 = fadd double %sum, %tmp_5" [Jacobi/main.c:38]   --->   Operation 308 'dadd' 'sum_1' <Predicate = true> <Delay = 8.23> <Core = "DAddSub">   --->   Core 114 'DAddSub' <Latency = 4> <II = 1> <Delay = 8.23> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_84 : Operation 309 [1/1] (0.00ns)   --->   "br label %.preheader" [Jacobi/main.c:35]   --->   Operation 309 'br' <Predicate = true> <Delay = 0.00>
+
+State 85 <SV = 4> <Delay = 8.62>
+ST_85 : Operation 310 [30/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 310 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 86 <SV = 5> <Delay = 8.62>
+ST_86 : Operation 311 [29/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 311 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 87 <SV = 6> <Delay = 8.62>
+ST_87 : Operation 312 [28/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 312 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 88 <SV = 7> <Delay = 8.62>
+ST_88 : Operation 313 [27/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 313 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 89 <SV = 8> <Delay = 8.62>
+ST_89 : Operation 314 [26/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 314 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 90 <SV = 9> <Delay = 8.62>
+ST_90 : Operation 315 [25/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 315 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 91 <SV = 10> <Delay = 8.62>
+ST_91 : Operation 316 [24/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 316 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 92 <SV = 11> <Delay = 8.62>
+ST_92 : Operation 317 [23/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 317 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 93 <SV = 12> <Delay = 8.62>
+ST_93 : Operation 318 [22/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 318 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 94 <SV = 13> <Delay = 8.62>
+ST_94 : Operation 319 [21/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 319 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 95 <SV = 14> <Delay = 8.62>
+ST_95 : Operation 320 [20/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 320 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 96 <SV = 15> <Delay = 8.62>
+ST_96 : Operation 321 [19/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 321 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 97 <SV = 16> <Delay = 8.62>
+ST_97 : Operation 322 [18/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 322 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 98 <SV = 17> <Delay = 8.62>
+ST_98 : Operation 323 [17/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 323 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 99 <SV = 18> <Delay = 8.62>
+ST_99 : Operation 324 [16/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 324 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 100 <SV = 19> <Delay = 8.62>
+ST_100 : Operation 325 [15/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 325 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 101 <SV = 20> <Delay = 8.62>
+ST_101 : Operation 326 [14/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 326 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 102 <SV = 21> <Delay = 8.62>
+ST_102 : Operation 327 [13/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 327 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 103 <SV = 22> <Delay = 8.62>
+ST_103 : Operation 328 [12/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 328 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 104 <SV = 23> <Delay = 8.62>
+ST_104 : Operation 329 [11/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 329 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 105 <SV = 24> <Delay = 8.62>
+ST_105 : Operation 330 [10/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 330 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 106 <SV = 25> <Delay = 8.62>
+ST_106 : Operation 331 [9/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 331 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 107 <SV = 26> <Delay = 8.62>
+ST_107 : Operation 332 [8/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 332 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 108 <SV = 27> <Delay = 8.62>
+ST_108 : Operation 333 [7/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 333 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 109 <SV = 28> <Delay = 8.62>
+ST_109 : Operation 334 [6/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 334 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 110 <SV = 29> <Delay = 8.62>
+ST_110 : Operation 335 [5/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 335 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 111 <SV = 30> <Delay = 8.62>
+ST_111 : Operation 336 [4/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 336 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 112 <SV = 31> <Delay = 8.62>
+ST_112 : Operation 337 [3/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 337 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 113 <SV = 32> <Delay = 8.62>
+ST_113 : Operation 338 [2/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 338 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 114 <SV = 33> <Delay = 8.62>
+ST_114 : Operation 339 [1/31] (8.62ns)   --->   "%error = call double @llvm.sqrt.f64(double %sum)" [Jacobi/main.c:40]   --->   Operation 339 'dsqrt' 'error' <Predicate = true> <Delay = 8.62> <Core = "DSqrt">   --->   Core 117 'DSqrt' <Latency = 30> <II = 1> <Delay = 8.62> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_114 : Operation 340 [1/1] (0.00ns)   --->   "ret double %error" [Jacobi/main.c:41]   --->   Operation 340 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', Jacobi/main.c:9) [13]  (1.77 ns)
+
+ <State 2>: 2.32ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', Jacobi/main.c:9) [13]  (0 ns)
+	'getelementptr' operation ('x_prev_addr_1', Jacobi/main.c:11) [21]  (0 ns)
+	'store' operation (Jacobi/main.c:11) of constant 0 on array 'x_prev', Jacobi/main.c:7 [22]  (2.32 ns)
+
+ <State 3>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('x_new_load', Jacobi/main.c:18) on array 'x_new', Jacobi/main.c:7 [39]  (2.32 ns)
+
+ <State 4>: 4.64ns
+The critical path consists of the following:
+	'load' operation ('x_new_load', Jacobi/main.c:18) on array 'x_new', Jacobi/main.c:7 [39]  (2.32 ns)
+	'store' operation (Jacobi/main.c:18) of variable 'x_new_load', Jacobi/main.c:18 on array 'x_prev', Jacobi/main.c:7 [40]  (2.32 ns)
+
+ <State 5>: 5.75ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', Jacobi/main.c:19) [43]  (0 ns)
+	'add' operation ('tmp_9', Jacobi/main.c:27) [51]  (1.65 ns)
+	'add' operation ('tmp_16', Jacobi/main.c:27) [56]  (1.78 ns)
+	'getelementptr' operation ('J_addr', Jacobi/main.c:27) [58]  (0 ns)
+	'load' operation ('J_load', Jacobi/main.c:27) on array 'J' [59]  (2.32 ns)
+
+ <State 6>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('J_load', Jacobi/main.c:27) on array 'J' [59]  (2.32 ns)
+
+ <State 7>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('tmp_14', Jacobi/main.c:27) [62]  (8.51 ns)
+
+ <State 8>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_15', Jacobi/main.c:27) [63]  (6.28 ns)
+
+ <State 9>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_15', Jacobi/main.c:27) [63]  (6.28 ns)
+
+ <State 10>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_15', Jacobi/main.c:27) [63]  (6.28 ns)
+
+ <State 11>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_15', Jacobi/main.c:27) [63]  (6.28 ns)
+
+ <State 12>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_15', Jacobi/main.c:27) [63]  (6.28 ns)
+
+ <State 13>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_15', Jacobi/main.c:27) [63]  (6.28 ns)
+
+ <State 14>: 2.32ns
+The critical path consists of the following:
+	'getelementptr' operation ('b_addr', Jacobi/main.c:30) [80]  (0 ns)
+	'load' operation ('b_load', Jacobi/main.c:30) on array 'b' [81]  (2.32 ns)
+
+ <State 15>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sigma', Jacobi/main.c:27) [75]  (8.23 ns)
+
+ <State 16>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sigma', Jacobi/main.c:27) [75]  (8.23 ns)
+
+ <State 17>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sigma', Jacobi/main.c:27) [75]  (8.23 ns)
+
+ <State 18>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sigma', Jacobi/main.c:27) [75]  (8.23 ns)
+
+ <State 19>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sigma', Jacobi/main.c:27) [75]  (8.23 ns)
+
+ <State 20>: 1.48ns
+The critical path consists of the following:
+	'select' operation ('sigma', Jacobi/main.c:25) [76]  (1.48 ns)
+
+ <State 21>: 8.6ns
+The critical path consists of the following:
+	'load' operation ('b_load', Jacobi/main.c:30) on array 'b' [81]  (2.32 ns)
+	'sitodp' operation ('tmp_7', Jacobi/main.c:30) [82]  (6.28 ns)
+
+ <State 22>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', Jacobi/main.c:30) [82]  (6.28 ns)
+
+ <State 23>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', Jacobi/main.c:30) [82]  (6.28 ns)
+
+ <State 24>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', Jacobi/main.c:30) [82]  (6.28 ns)
+
+ <State 25>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_7', Jacobi/main.c:30) [82]  (6.28 ns)
+
+ <State 26>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_6', Jacobi/main.c:30) [79]  (6.28 ns)
+
+ <State 27>: 8.23ns
+The critical path consists of the following:
+	'dsub' operation ('tmp_8', Jacobi/main.c:30) [83]  (8.23 ns)
+
+ <State 28>: 8.23ns
+The critical path consists of the following:
+	'dsub' operation ('tmp_8', Jacobi/main.c:30) [83]  (8.23 ns)
+
+ <State 29>: 8.23ns
+The critical path consists of the following:
+	'dsub' operation ('tmp_8', Jacobi/main.c:30) [83]  (8.23 ns)
+
+ <State 30>: 8.23ns
+The critical path consists of the following:
+	'dsub' operation ('tmp_8', Jacobi/main.c:30) [83]  (8.23 ns)
+
+ <State 31>: 8.23ns
+The critical path consists of the following:
+	'dsub' operation ('tmp_8', Jacobi/main.c:30) [83]  (8.23 ns)
+
+ <State 32>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_10', Jacobi/main.c:30) [84]  (7.79 ns)
+
+ <State 33>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_10', Jacobi/main.c:30) [84]  (7.79 ns)
+
+ <State 34>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_10', Jacobi/main.c:30) [84]  (7.79 ns)
+
+ <State 35>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_10', Jacobi/main.c:30) [84]  (7.79 ns)
+
+ <State 36>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_10', Jacobi/main.c:30) [84]  (7.79 ns)
+
+ <State 37>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_10', Jacobi/main.c:30) [84]  (7.79 ns)
+
+ <State 38>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 39>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 40>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 41>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 42>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 43>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 44>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 45>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 46>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 47>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 48>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 49>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 50>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 51>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 52>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 53>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 54>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 55>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 56>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 57>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 58>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 59>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 60>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 61>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 62>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 63>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 64>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 65>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 66>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 67>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 68>: 8.62ns
+The critical path consists of the following:
+	'ddiv' operation ('x', Jacobi/main.c:30) [85]  (8.62 ns)
+
+ <State 69>: 6.95ns
+The critical path consists of the following:
+	'add' operation ('sh', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:502->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [93]  (1.64 ns)
+	'select' operation ('sh', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [97]  (0.697 ns)
+	'lshr' operation ('r.V', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [101]  (0 ns)
+	'select' operation ('__Val2__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [106]  (4.61 ns)
+
+ <State 70>: 5.57ns
+The critical path consists of the following:
+	'sub' operation ('result.V', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [107]  (2.55 ns)
+	'select' operation ('__Val2__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30) [108]  (0.698 ns)
+	'store' operation (Jacobi/main.c:30) of variable '__Val2__', r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116->r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54->Jacobi/main.c:30 on array 'x_new', Jacobi/main.c:7 [110]  (2.32 ns)
+
+ <State 71>: 8.62ns
+The critical path consists of the following:
+	'phi' operation ('sum') with incoming values : ('sum', Jacobi/main.c:38) [119]  (0 ns)
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 72>: 4.87ns
+The critical path consists of the following:
+	'load' operation ('x_new_load_1', Jacobi/main.c:37) on array 'x_new', Jacobi/main.c:7 [129]  (2.32 ns)
+	'sub' operation ('tmp_3', Jacobi/main.c:38) [134]  (2.55 ns)
+
+ <State 73>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('tmp_4', Jacobi/main.c:38) [135]  (8.51 ns)
+
+ <State 74>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_5', Jacobi/main.c:38) [136]  (6.28 ns)
+
+ <State 75>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_5', Jacobi/main.c:38) [136]  (6.28 ns)
+
+ <State 76>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_5', Jacobi/main.c:38) [136]  (6.28 ns)
+
+ <State 77>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_5', Jacobi/main.c:38) [136]  (6.28 ns)
+
+ <State 78>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_5', Jacobi/main.c:38) [136]  (6.28 ns)
+
+ <State 79>: 6.28ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_5', Jacobi/main.c:38) [136]  (6.28 ns)
+
+ <State 80>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sum', Jacobi/main.c:38) [137]  (8.23 ns)
+
+ <State 81>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sum', Jacobi/main.c:38) [137]  (8.23 ns)
+
+ <State 82>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sum', Jacobi/main.c:38) [137]  (8.23 ns)
+
+ <State 83>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sum', Jacobi/main.c:38) [137]  (8.23 ns)
+
+ <State 84>: 8.23ns
+The critical path consists of the following:
+	'dadd' operation ('sum', Jacobi/main.c:38) [137]  (8.23 ns)
+
+ <State 85>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 86>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 87>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 88>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 89>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 90>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 91>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 92>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 93>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 94>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 95>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 96>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 97>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 98>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 99>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 100>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 101>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 102>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 103>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 104>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 105>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 106>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 107>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 108>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 109>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 110>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 111>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 112>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 113>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+ <State 114>: 8.62ns
+The critical path consists of the following:
+	'dsqrt' operation ('error', Jacobi/main.c:40) [140]  (8.62 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+	State 104
+	State 105
+	State 106
+	State 107
+	State 108
+	State 109
+	State 110
+	State 111
+	State 112
+	State 113
+	State 114
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

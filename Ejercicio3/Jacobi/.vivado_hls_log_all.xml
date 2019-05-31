@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYNCHK 200-62] Jacobi/main.c:18: warning: out of bound array access on variable 'x_new'." projectName="Jacobi" solutionName="solution1" date="2019-05-31T12:09:14.170+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from Jacobi/main.c:1:&#xD;&#xA;Jacobi/main.c:18:3: warning: array index 16 is past the end of the array (which contains 16 elements) [-Warray-bounds]&#xD;&#xA;  x_prev[16]=x_new[16];&#xD;&#xA;  ^      ~~&#xD;&#xA;Jacobi/main.c:7:2: note: array 'x_prev' declared here&#xD;&#xA; int x_prev[16], x_new[16];&#xD;&#xA; ^&#xD;&#xA;Jacobi/main.c:18:14: warning: array index 16 is past the end of the array (which contains 16 elements) [-Warray-bounds]&#xD;&#xA;  x_prev[16]=x_new[16];&#xD;&#xA;             ^     ~~&#xD;&#xA;Jacobi/main.c:7:2: note: array 'x_new' declared here&#xD;&#xA; int x_prev[16], x_new[16];&#xD;&#xA; ^&#xD;&#xA;2 warnings generated." projectName="Jacobi" solutionName="solution1" date="2019-05-31T12:09:11.873+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
