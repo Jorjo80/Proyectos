@@ -1,0 +1,30 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri May 31 13:22:03 +0200 2019
+INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3'
+INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi'.
+INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../testbench.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri May 31 13:22:06 +0200 2019
+INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi/solution1/csim/build'
+../../../testbench.c:11:2: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+        printf("error = %f\n",error);
+        ^
+../../../testbench.c:11:2: note: please include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+../../../testbench.c:11:2: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+        printf("error = %f\n",error);
+        ^
+../../../testbench.c:11:2: note: please include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+error = 3.605551
+x[]=  { 1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1 }
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

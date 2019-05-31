@@ -138,11 +138,11 @@ double jacobi_HLS(signed int (*)[4], signed int *, signed int *);
 
 
 /* Global Variable Definitions and Initialization */
-static  char aesl_internal__OC_str1[9] = "x[]=  { ";
-static signed int aesl_internal_main_OC_A[4][4] = { { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u }, { 1u, 2u, 3u, 4u } };
+static signed int aesl_internal_main_OC_A[4][4] = { { 1u, 2u, 3u, 4u }, { 5u, 2u, 45u, 6u }, { 1u, 55u, 11u, 22u }, { 1u, 13u, 12u, 4u } };
+static signed int aesl_internal_main_OC_b[4] = { 1u, 4u, 6u, 8u };
 static  char aesl_internal__OC_str[12] = "error = %f\n";
+static  char aesl_internal__OC_str1[9] = "x[]=  { ";
 static  char aesl_internal__OC_str2[4] = "%d,";
-static signed int aesl_internal_main_OC_b[4] = { 1u, 2u, 3u, 4u };
 static  char aesl_internal__OC_str3[6] = "%d }\n";
 
 
