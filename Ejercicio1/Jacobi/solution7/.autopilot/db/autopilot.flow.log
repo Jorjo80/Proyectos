@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7 opened at Tue May 28 12:57:52 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7 opened at Fri May 31 12:02:15 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -46,11 +46,10 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.102 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.143 sec.
+Command         ap_source done; 0.142 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.145 sec.
+Command       ap_source done; 0.146 sec.
 Command     ap_source done; 0.146 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
@@ -81,7 +80,7 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.259 sec.
+Command   open_solution done; 0.326 sec.
 Execute   set_part xc7z020clg400-1 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute       get_default_platform 
@@ -148,7 +147,7 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Jacobi/main.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c" 
 INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Jacobi/main.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c
-Command       clang done; 1.001 sec.
+Command       clang done; 0.983 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c std=gnu89 
 INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
@@ -168,8 +167,8 @@ Jacobi/main.c:7:2: note: array 'x_new' declared here
  int x_prev[16], x_new[16];
  ^
 2 warnings generated.
-Command       clang done; 0.979 sec.
-INFO-FLOW: Done: GCC PP time: 2.1 seconds per iteration
+Command       clang done; 0.946 sec.
+INFO-FLOW: Done: GCC PP time: 2 seconds per iteration
 INFO-FLOW: Setting directive 'PIPELINE' 
 INFO-FLOW: Setting directive 'UNROLL' 
 INFO-FLOW: Setting directive 'UNROLL' 
@@ -188,14 +187,14 @@ INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c std=gnu89 -directive=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/all.directive.json -quiet -fix-errors H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.107 sec.
+Command       tidy_31 done; 0.121 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.c.diag.yml H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.c.out.log 2> H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/xilinx-dataflow-lawyer.main.pp.0.c.err.log 
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c std=gnu89 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/tidy-3.1.main.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/tidy-3.1.main.pp.0.c.out.log 2> H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/tidy-3.1.main.pp.0.c.err.log 
-Command         ap_eval done; 0.104 sec.
+Command         ap_eval done; 0.117 sec.
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/xilinx-legacy-rewriter.main.pp.0.c.out.log 2> H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/xilinx-legacy-rewriter.main.pp.0.c.err.log 
-Command       tidy_31 done; 0.195 sec.
+Command       tidy_31 done; 0.208 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.4 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pragma.1.c std=gnu89 
@@ -204,23 +203,23 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pragma.2.c  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.bc" 
 INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.bc
-Command       clang done; 0.991 sec.
+Command       clang done; 0.956 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/main.g.bc -hls-opt -except-internalize jacobi_HLS -LC:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g 
-Command       llvm-ld done; 0.948 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 103.008 ; gain = 18.016
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 103.008 ; gain = 18.016
+Command       llvm-ld done; 0.922 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 102.984 ; gain = 18.469
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 102.984 ; gain = 18.469
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.pp.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.pp.0.bc -f 
 Execute         llvm-ld H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.0 
-Command         llvm-ld done; 1.172 sec.
+Command         llvm-ld done; 1.143 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top jacobi_HLS -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.0.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.724 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 152.348 ; gain = 67.355
+Command         transform done; 0.745 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 153.098 ; gain = 68.582
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.1.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.2.prechk.bc -f 
@@ -230,13 +229,13 @@ INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'gen
 INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
 INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'jacobi_HLS' (Jacobi/main.c:30) automatically.
-Command         transform done; 0.278 sec.
+Command         transform done; 0.269 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.2.prechk.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.2.bc -f -phase syn-check 
 WARNING: [SYNCHK 200-62] Jacobi/main.c:18: warning: out of bound array access on variable 'x_new'.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-Command         transform done; 0.205 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 181.352 ; gain = 96.359
+Command         transform done; 0.214 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 180.281 ; gain = 95.766
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.g.1.bc to H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -253,18 +252,18 @@ INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'gen
 INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
 INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'jacobi_HLS' (Jacobi/main.c:30) automatically.
-Command         transform done; 0.784 sec.
+Command         transform done; 0.756 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.o.1.tmp.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.o.2.bc -f -phase presyn 
-Command         transform done; 0.288 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 240.258 ; gain = 155.266
+Command         transform done; 0.294 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 238.574 ; gain = 154.059
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.o.2.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.329 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 254.781 ; gain = 169.789
+Command         transform done; 0.323 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 254.145 ; gain = 169.629
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 3.807 sec.
-Command     elaborate done; 8.433 sec.
+Command       opt_and_import_c done; 3.772 sec.
+Command     elaborate done; 8.247 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -290,10 +289,10 @@ Execute       set_default_model jacobi_HLS
 Execute       schedule -model jacobi_HLS 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.226 sec.
-INFO: [HLS 200-111]  Elapsed time: 9.7 seconds; current allocated memory: 193.749 MB.
+Command       schedule done; 0.229 sec.
+INFO: [HLS 200-111]  Elapsed time: 9.605 seconds; current allocated memory: 193.741 MB.
 Execute       report -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.verbose.sched.rpt -verbose -f 
-Command       report done; 0.313 sec.
+Command       report done; 0.327 sec.
 Execute       db_write -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.sched.adb -f 
 INFO-FLOW: Finish scheduling jacobi_HLS.
 Execute       set_default_model jacobi_HLS 
@@ -306,9 +305,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.445 seconds; current allocated memory: 194.980 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.497 seconds; current allocated memory: 194.972 MB.
 Execute       report -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.verbose.bind.rpt -verbose -f 
-Command       report done; 0.423 sec.
+Command       report done; 0.504 sec.
 Execute       db_write -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.bind.adb -f 
 INFO-FLOW: Finish binding jacobi_HLS.
 Execute       get_model_list jacobi_HLS -filter all-wo-channel 
@@ -336,21 +335,22 @@ INFO: [RTGEN 206-100] Generating core module 'jacobi_HLS_dmul_6cud': 2 instance(
 INFO: [RTGEN 206-100] Generating core module 'jacobi_HLS_dsqrt_fYi': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'jacobi_HLS_sitodpeOg': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'jacobi_HLS'.
-Command       create_rtl_model done; 0.103 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.647 seconds; current allocated memory: 197.143 MB.
+Command       create_rtl_model done; 0.102 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.704 seconds; current allocated memory: 197.136 MB.
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.rtl_wrap.cfg.tcl 
 Execute       gen_rtl jacobi_HLS -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/syn/systemc/jacobi_HLS -synmodules jacobi_HLS 
 Execute       gen_rtl jacobi_HLS -istop -style xilinx -f -lang vhdl -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/syn/vhdl/jacobi_HLS 
+Command       gen_rtl done; 0.103 sec.
 Execute       gen_rtl jacobi_HLS -istop -style xilinx -f -lang vlog -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/syn/verilog/jacobi_HLS 
 Execute       export_constraint_db -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.constraint.tcl -f -tool general 
 Execute       report -model jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.design.xml -verbose -f -dv 
 Execute       report -model jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.sdaccel.xml -verbose -f -sdaccel 
-Command       report done; 0.108 sec.
+Command       report done; 0.112 sec.
 Execute       gen_tb_info jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS -p H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db 
 Execute       report -model jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/syn/report/jacobi_HLS_csynth.rpt -f 
 Execute       report -model jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/syn/report/jacobi_HLS_csynth.xml -f -x 
 Execute       report -model jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.verbose.rpt -verbose -f 
-Command       report done; 0.408 sec.
+Command       report done; 0.421 sec.
 Execute       db_write -model jacobi_HLS -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.adb -f 
 Command       db_write done; 0.117 sec.
 Execute       sc_get_clocks jacobi_HLS 
@@ -408,11 +408,12 @@ Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/inte
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.102 sec.
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source done; 0.134 sec.
+Command           ap_source done; 0.142 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.137 sec.
-Command       ap_source done; 0.137 sec.
+Command         ap_source done; 0.145 sec.
+Command       ap_source done; 0.145 sec.
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
@@ -421,7 +422,7 @@ Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejerci
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/global.setting.tcl 
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/global.setting.tcl 
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.compgen.tcl 
-Command       ap_source done; 0.178 sec.
+Command       ap_source done; 0.188 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/global.setting.tcl
@@ -446,10 +447,10 @@ Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/d
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source done; 0.149 sec.
+Command           ap_source done; 0.145 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.154 sec.
-Command       ap_source done; 0.154 sec.
+Command         ap_source done; 0.149 sec.
+Command       ap_source done; 0.149 sec.
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=jacobi_HLS xml_exists=0
@@ -462,7 +463,6 @@ INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/global.setting.tcl 
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.compgen.tcl 
-Command       ap_source done; 0.116 sec.
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/global.setting.tcl 
 Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/jacobi_HLS.compgen.tcl 
@@ -500,13 +500,13 @@ Execute       get_config_sdx -profile
 Execute       ::config_rtl 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio1/Jacobi/solution7/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 256.887 ; gain = 171.895
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 256.094 ; gain = 171.578
 INFO: [SYSC 207-301] Generating SystemC RTL for jacobi_HLS.
 INFO: [VHDL 208-304] Generating VHDL RTL for jacobi_HLS.
 INFO: [VLOG 209-307] Generating Verilog RTL for jacobi_HLS.
-Command     autosyn done; 3.811 sec.
+Command     autosyn done; 4.165 sec.
 Execute     get_part 
 Execute     get_config_export -sdx_tcl 
-Command   csynth_design done; 12.26 sec.
-Command ap_source done; 12.602 sec.
+Command   csynth_design done; 12.427 sec.
+Command ap_source done; 12.829 sec.
 Execute cleanup_all 
