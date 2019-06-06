@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="consumer.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\consumer.h"/>
+    <originFiles name="fifo_tb.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\fifo_tb.cpp"/>
+    <originFiles name="producer.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\producer.h"/>
+    <originFiles name="stack.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\stack.h"/>
+    <originFiles name="stack_tb.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\stack_tb.cpp"/>
+    <originFiles name="top.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\top.h"/>
+    <originFiles name="consumer.c" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\consumer.c"/>
+    <originFiles name="producer.c" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\producer.c"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>
