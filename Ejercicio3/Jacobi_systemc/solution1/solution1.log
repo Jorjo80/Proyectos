@@ -1,0 +1,1136 @@
+==============================================================
+File generated on Thu Jun 06 12:11:34 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 102.066 ; gain = 17.305
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 102.066 ; gain = 17.305
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 102.801 ; gain = 18.039
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-79] Cannot find the top function '' in the design. Possible causes are: (1) the top function name is misspelled; (2) the top function is nonexistent or declared as static.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+File generated on Thu Jun 06 12:13:59 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.316 ; gain = 17.586
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.316 ; gain = 17.586
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.844 ; gain = 18.113
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-79] Cannot find the top function '' in the design. Possible causes are: (1) the top function name is misspelled; (2) the top function is nonexistent or declared as static.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+File generated on Thu Jun 06 12:15:49 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.488 ; gain = 17.594
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.586 ; gain = 17.691
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 103.094 ; gain = 18.199
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-79] Cannot find the top function '' in the design. Possible causes are: (1) the top function name is misspelled; (2) the top function is nonexistent or declared as static.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+File generated on Thu Jun 06 12:16:33 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.527 ; gain = 17.465
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.527 ; gain = 17.465
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.773 ; gain = 17.711
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-79] Cannot find the top function '' in the design. Possible causes are: (1) the top function name is misspelled; (2) the top function is nonexistent or declared as static.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+File generated on Thu Jun 06 12:25:30 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+File generated on Thu Jun 06 12:25:48 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+File generated on Thu Jun 06 12:26:30 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+File generated on Thu Jun 06 12:28:32 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.c:1:
+In file included from Jacobi_systemc/producer.h:5:
+In file included from C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc\systemc.h:1:
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_systemc.h:6:2: error: C++ is required to include this header file
+#error C++ is required to include this header file
+ ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_systemc.h:14:10: fatal error: 'iostream' file not found
+#include <iostream>
+         ^
+2 errors generated.
+==============================================================
+File generated on Thu Jun 06 12:29:27 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Thu Jun 06 12:30:18 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:30:48 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:31:05 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:31:20 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:32:18 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:22:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:33:21 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:37:04 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:20: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi);
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:38:05 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:33: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(A,b,x,error));
+                                              ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:38:53 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:33: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(A,b,x,error));
+                                              ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:40:36 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:33: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(A,b,x,error));
+                                              ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:41:42 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:25:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_METHOD(jacobi(A,b,x,error));
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:779:34: note: expanded from macro 'SC_METHOD'
+    declare_method_process( func ## _handle,                                  \
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:42:22 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_METHOD(jacobi(A,b,x,error));
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:779:34: note: expanded from macro 'SC_METHOD'
+    declare_method_process( func ## _handle,                                  \
+                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:43:13 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:33: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(A,b,x,error));
+                                              ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:43:37 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:68: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(int A[4][4], int b[4], int x[16], double error));
+                                                                                 ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:45:00 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Thu Jun 06 12:45:23 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Thu Jun 06 12:49:28 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(int A[4][4], int b[4], int x[16], double error),clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:50:07 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: unterminated function-like macro invocation
+                SC_CTHREAD(jacobi(int A[4][4], int b[4], int x[16], double error,clock);
+                ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:50:56 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(int A[4][4], int b[4], int x[16], double error),clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:52:11 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(A, b, x,error), clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 12:55:31 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+File generated on Thu Jun 06 12:56:37 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.c:1:
+Jacobi_systemc/producer.c:4:32: error: use of undeclared identifier 'producer'
+ inicializacion:for(int i= 0;i<producer::iter;i++)
+                               ^
+Jacobi_systemc/producer.c:10:30: error: use of undeclared identifier 'producer'
+ Iteracciones:for(int t=0; t<producer::iter;t++)
+                             ^
+Jacobi_systemc/producer.c:13:10: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ^
+Jacobi_systemc/producer.c:13:18: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                 ^
+Jacobi_systemc/producer.c:13:9: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+        ^
+Jacobi_systemc/producer.c:13:32: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ^
+Jacobi_systemc/producer.c:13:40: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                                       ^
+Jacobi_systemc/producer.c:13:31: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+                              ^
+Jacobi_systemc/producer.c:14:27: error: use of undeclared identifier 'producer'
+  Columnas:for(int i=0; i<producer::n; i++)
+                          ^
+Jacobi_systemc/producer.c:17:25: error: use of undeclared identifier 'producer'
+   filas:for(int j=0; j<producer::n;j++)
+                        ^
+Jacobi_systemc/producer.c:30:30: error: use of undeclared identifier 'producer'
+ calculo_error:for(int q=0;q<producer::iter;q++)
+                             ^
+Jacobi_systemc/producer.c:35:8: warning: implicitly declaring library function 'sqrt' with type 'double (double)'
+ error=sqrt(sum);
+       ^
+Jacobi_systemc/producer.c:35:8: note: please include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 warning and 9 errors generated.
+==============================================================
+File generated on Thu Jun 06 12:57:14 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.c:1:
+Jacobi_systemc/producer.c:4:32: error: use of undeclared identifier 'producer'
+ inicializacion:for(int i= 0;i<producer::iter;i++)
+                               ^
+Jacobi_systemc/producer.c:10:30: error: use of undeclared identifier 'producer'
+ Iteracciones:for(int t=0; t<producer::iter;t++)
+                             ^
+Jacobi_systemc/producer.c:13:10: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ^
+Jacobi_systemc/producer.c:13:18: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                 ^
+Jacobi_systemc/producer.c:13:9: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+        ^
+Jacobi_systemc/producer.c:13:32: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ^
+Jacobi_systemc/producer.c:13:40: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                                       ^
+Jacobi_systemc/producer.c:13:31: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+                              ^
+Jacobi_systemc/producer.c:14:27: error: use of undeclared identifier 'producer'
+  Columnas:for(int i=0; i<producer::n; i++)
+                          ^
+Jacobi_systemc/producer.c:17:25: error: use of undeclared identifier 'producer'
+   filas:for(int j=0; j<producer::n;j++)
+                        ^
+Jacobi_systemc/producer.c:30:30: error: use of undeclared identifier 'producer'
+ calculo_error:for(int q=0;q<producer::iter;q++)
+                             ^
+Jacobi_systemc/producer.c:35:8: warning: implicitly declaring library function 'sqrt' with type 'double (double)'
+ error=sqrt(sum);
+       ^
+Jacobi_systemc/producer.c:35:8: note: please include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 warning and 9 errors generated.
+==============================================================
+File generated on Thu Jun 06 12:57:59 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.c:1:
+Jacobi_systemc/producer.c:4:32: error: use of undeclared identifier 'producer'
+ inicializacion:for(int i= 0;i<producer::iter;i++)
+                               ^
+Jacobi_systemc/producer.c:10:30: error: use of undeclared identifier 'producer'
+ Iteracciones:for(int t=0; t<producer::iter;t++)
+                             ^
+Jacobi_systemc/producer.c:13:10: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ^
+Jacobi_systemc/producer.c:13:18: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                 ^
+Jacobi_systemc/producer.c:13:9: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+        ^
+Jacobi_systemc/producer.c:13:32: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ^
+Jacobi_systemc/producer.c:13:40: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                                       ^
+Jacobi_systemc/producer.c:13:31: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+                              ^
+Jacobi_systemc/producer.c:14:27: error: use of undeclared identifier 'producer'
+  Columnas:for(int i=0; i<producer::n; i++)
+                          ^
+Jacobi_systemc/producer.c:17:25: error: use of undeclared identifier 'producer'
+   filas:for(int j=0; j<producer::n;j++)
+                        ^
+Jacobi_systemc/producer.c:30:30: error: use of undeclared identifier 'producer'
+ calculo_error:for(int q=0;q<producer::iter;q++)
+                             ^
+Jacobi_systemc/producer.c:35:8: warning: implicitly declaring library function 'sqrt' with type 'double (double)'
+ error=sqrt(sum);
+       ^
+Jacobi_systemc/producer.c:35:8: note: please include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 warning and 9 errors generated.
+==============================================================
+File generated on Thu Jun 06 12:59:19 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.c:1:
+Jacobi_systemc/producer.c:4:32: error: use of undeclared identifier 'producer'
+ inicializacion:for(int i= 0;i<producer::iter;i++)
+                               ^
+Jacobi_systemc/producer.c:10:30: error: use of undeclared identifier 'producer'
+ Iteracciones:for(int t=0; t<producer::iter;t++)
+                             ^
+Jacobi_systemc/producer.c:13:10: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ^
+Jacobi_systemc/producer.c:13:18: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                 ^
+Jacobi_systemc/producer.c:13:9: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+        ^
+Jacobi_systemc/producer.c:13:32: error: use of undeclared identifier 'producer'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ^
+Jacobi_systemc/producer.c:13:40: error: expected ']'
+  x_prev[producer::iter]=x_new[producer::iter];
+                                       ^
+Jacobi_systemc/producer.c:13:31: note: to match this '['
+  x_prev[producer::iter]=x_new[producer::iter];
+                              ^
+Jacobi_systemc/producer.c:14:27: error: use of undeclared identifier 'producer'
+  Columnas:for(int i=0; i<producer::n; i++)
+                          ^
+Jacobi_systemc/producer.c:17:25: error: use of undeclared identifier 'producer'
+   filas:for(int j=0; j<producer::n;j++)
+                        ^
+Jacobi_systemc/producer.c:30:30: error: use of undeclared identifier 'producer'
+ calculo_error:for(int q=0;q<producer::iter;q++)
+                             ^
+Jacobi_systemc/producer.c:35:8: warning: implicitly declaring library function 'sqrt' with type 'double (double)'
+ error=sqrt(sum);
+       ^
+Jacobi_systemc/producer.c:35:8: note: please include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 warning and 9 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:00:11 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.c:1:
+In file included from Jacobi_systemc/producer.h:5:
+In file included from C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc\systemc.h:1:
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_systemc.h:6:2: error: C++ is required to include this header file
+#error C++ is required to include this header file
+ ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_systemc.h:14:10: fatal error: 'iostream' file not found
+#include <iostream>
+         ^
+2 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:15:00 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.c' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.c:1:
+In file included from Jacobi_systemc/producer.h:5:
+In file included from C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc\systemc.h:1:
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_systemc.h:6:2: error: C++ is required to include this header file
+#error C++ is required to include this header file
+ ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_systemc.h:14:10: fatal error: 'iostream' file not found
+#include <iostream>
+         ^
+2 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:16:20 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(A, b, x,error), clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:16:54 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:35: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(A, b, x,error));
+                                                ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:17:21 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:35: error: too few arguments provided to function-like macro invocation
+                SC_CTHREAD(jacobi(A, b, x,error));
+                                                ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:18:03 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(A, b, x,error), clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:34:30 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(A, b, x,error), clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:35:07 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:26:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_CTHREAD(jacobi(A, b, x,error), clock);
+                ^
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:767:35: note: expanded from macro 'SC_CTHREAD'
+    declare_cthread_process( func ## _handle,                                 \
+                                  ^
+1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:35:49 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.h:6:
+Jacobi_systemc/stack.h:56:31: error: no member named 'name' in '_ap_sc_::sc_core::sc_port_base'
+   cout<< "binding " << port_.name() << " to interface: " << if_typename_ << endl;
+                        ~~~~~ ^
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int iter= 16;
+         ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:6:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:12:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:20: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:42: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:16:28: error: invalid use of non-static data member 'n'
+  for(int i=0; i<producer::n; i++)
+                 ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:19:35: error: invalid use of non-static data member 'n'
+   filas:for(int j=0; j<producer::n;j++)
+                        ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:32:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+2 warnings and 8 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:37:12 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.h:6:
+Jacobi_systemc/stack.h:56:31: error: no member named 'name' in '_ap_sc_::sc_core::sc_port_base'
+   cout<< "binding " << port_.name() << " to interface: " << if_typename_ << endl;
+                        ~~~~~ ^
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int iter= 16;
+         ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:6:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:12:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:20: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:42: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:16:28: error: invalid use of non-static data member 'n'
+  for(int i=0; i<producer::n; i++)
+                 ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:19:35: error: invalid use of non-static data member 'n'
+   filas:for(int j=0; j<producer::n;j++)
+                        ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:32:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+2 warnings and 8 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:37:36 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.h:6:
+Jacobi_systemc/stack.h:56:31: error: no member named 'name' in '_ap_sc_::sc_core::sc_port_base'
+   cout<< "binding " << port_.name() << " to interface: " << if_typename_ << endl;
+                        ~~~~~ ^
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int iter= 16;
+         ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:6:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:12:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:20: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:42: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:16:28: error: invalid use of non-static data member 'n'
+  for(int i=0; i<producer::n; i++)
+                 ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:19:35: error: invalid use of non-static data member 'n'
+   filas:for(int j=0; j<producer::n;j++)
+                        ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:32:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+2 warnings and 8 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:38:30 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.h:6:
+Jacobi_systemc/stack.h:56:31: error: no member named 'name' in '_ap_sc_::sc_core::sc_port_base'
+   cout<< "binding " << port_.name() << " to interface: " << if_typename_ << endl;
+                        ~~~~~ ^
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int iter= 16;
+         ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:6:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:12:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:20: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+         ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:15:42: error: invalid use of non-static data member 'iter'
+  x_prev[producer::iter]=x_new[producer::iter];
+                               ~~~~~~~~~~^~~~
+Jacobi_systemc/producer.cpp:16:28: error: invalid use of non-static data member 'n'
+  for(int i=0; i<producer::n; i++)
+                 ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:19:35: error: invalid use of non-static data member 'n'
+   filas:for(int j=0; j<producer::n;j++)
+                        ~~~~~~~~~~^
+Jacobi_systemc/producer.cpp:32:29: error: invalid use of non-static data member 'iter'
+ for(int i=0; i < producer::iter; i++)
+                  ~~~~~~~~~~^~~~
+2 warnings and 8 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:39:48 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.h:6:
+Jacobi_systemc/stack.h:56:31: error: no member named 'name' in '_ap_sc_::sc_core::sc_port_base'
+   cout<< "binding " << port_.name() << " to interface: " << if_typename_ << endl;
+                        ~~~~~ ^
+In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int iter= 16;
+         ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Thu Jun 06 13:40:46 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:10: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int iter= 16;
+         ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 102.543 ; gain = 17.121
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 102.543 ; gain = 17.121
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 155.445 ; gain = 70.023
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 165.633 ; gain = 80.211
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 200.078 ; gain = 114.656
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 201.125 ; gain = 115.703
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.
+==============================================================
+File generated on Thu Jun 06 13:43:10 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:13: error: non-const static data member must be initialized out of line
+ static int n=4;
+            ^ ~
+Jacobi_systemc/producer.h:19:16: error: non-const static data member must be initialized out of line
+    static int iter= 16;
+               ^     ~~
+2 errors generated.
+==============================================================
+File generated on Thu Jun 06 13:43:39 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 102.516 ; gain = 17.457
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 102.516 ; gain = 17.457
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 154.383 ; gain = 69.324
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 164.734 ; gain = 79.676
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 199.344 ; gain = 114.285
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 200.652 ; gain = 115.594
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.

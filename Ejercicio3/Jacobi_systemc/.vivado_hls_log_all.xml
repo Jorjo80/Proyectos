@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.&#xD;&#xA;command 'sc_get_modules' returned error code&#xD;&#xA;SystemC analyzing failed&#xD;&#xA;    while executing&#xD;&#xA;&quot;source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-06T13:44:08.218+0200"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA; int n=4;&#xD;&#xA;      ^&#xD;&#xA;Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA;    int iter= 16;&#xD;&#xA;            ^&#xD;&#xA;2 warnings generated." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-06T13:44:05.437+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -2,34 +2,27 @@
 #ifndef PRODUCER_H
 #define PRODUCER_H
 
-#include "systemc.h"
-#include "stack.h"
-
-
+#include <systemc.h>
+#include "math.h"
+#include "stdlib.h"
 
 SC_MODULE(producer){
 public:
 
-	sc_port<sc_fifo_out_if<char> > out;
-	sc_in<bool> clock;
+	sc_port<sc_fifo_out_if<double> > error;
+	sc_port<sc_fifo_out_if< int > > x[16];
+	sc_port<sc_fifo_in_if< int > > A[4][4];
+	sc_port<sc_fifo_in_if< int > > b[4];
+	sc_in< bool > clock;
 
-	void produce_data(){
-		int i = 0;
-		char String2send[500] ="This is a course of HLS-TLM";
-		while(true){
-			wait();
-			if(out->nb_write(String2send[i])){
-				cout << "W " << String2send[i] << " at " << sc_time_stamp() << endl;
-//				i=(i+1)% 32;
-				i=(i+1);
-			}
-		}
+	int n=4;
+    int iter= 16;
 
-	}
+	void jacobi(int A[4][4], int b[4], int x[16], double error);
 
-	SC_CTOR(producer){
-		SC_THREAD(produce_data);
-		sensitive << clock.pos();
+	SC_CTOR(producer)
+	{
+
 	}
 
 };

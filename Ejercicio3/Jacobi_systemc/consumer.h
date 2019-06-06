@@ -4,20 +4,21 @@
 
 
 #include "systemc.h"
-#include "consumer.h"
-#include "stack.h"
+#include "fifo.h"
+//#include "stack.h"
 
 
 SC_MODULE(consumer){
 public:
 
-	sc_port<sc_fifo_in_if<char> > in;
+	sc_port<sc_fifo_in_if<double> > error;
+	sc_port<sc_fifo_in_if<int*> > x;
 	sc_in<bool> clock;
-	char ReadCharFromStack;
+	double ReadCharFromStack;
 	void consume_data(){
 		while(true){
 			wait();
-			if(in->nb_read(ReadCharFromStack)){
+			if(error->nb_read(ReadCharFromStack)){
 				cout << "R " << ReadCharFromStack << " at " << sc_time_stamp() << endl;
 			}
 		}

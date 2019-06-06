@@ -9,8 +9,8 @@
 
 class top: public sc_module{
 public:
-	sc_in<bool> clk_prod;
-	sc_in<bool> clk_cons;
+	sc_in< bool > clk_prod;
+	sc_in< bool > clk_cons;
 
 	//channel to be used
 
