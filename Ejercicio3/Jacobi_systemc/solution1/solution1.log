@@ -1134,3 +1134,509 @@ INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 
 INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 200.652 ; gain = 115.594
 INFO: [HLS 200-10] Starting hardware synthesis ...
 ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.
+==============================================================
+File generated on Mon Jun 17 17:19:34 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 17:20:14 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 17:21:04 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 17:21:34 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:12:31: error: a space is required between consecutive right angle brackets (use '> >')
+ sc_port<sc_fifo_out_if<double>> error;
+...
+==============================================================
+File generated on Mon Jun 17 17:22:43 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:12:31: error: a space is required between consecutive right angle brackets (use '> >')
+ sc_port<sc_fifo_out_if<double>> error;
+...
+==============================================================
+File generated on Mon Jun 17 17:24:31 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 102.398 ; gain = 17.805
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 102.398 ; gain = 17.805
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:32 . Memory (MB): peak = 153.387 ; gain = 68.793
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 165.055 ; gain = 80.461
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 199.141 ; gain = 114.547
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 200.449 ; gain = 115.855
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.
+==============================================================
+File generated on Mon Jun 17 17:25:50 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 102.324 ; gain = 17.156
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 102.324 ; gain = 17.156
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 153.816 ; gain = 68.648
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 165.793 ; gain = 80.625
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 200.375 ; gain = 115.207
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 201.949 ; gain = 116.781
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.
+==============================================================
+File generated on Mon Jun 17 17:27:04 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 102.594 ; gain = 17.473
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 102.594 ; gain = 17.473
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 154.199 ; gain = 69.078
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 166.230 ; gain = 81.109
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 199.789 ; gain = 114.668
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 201.098 ; gain = 115.977
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'jacobi', please check the specified module name.
+==============================================================
+File generated on Mon Jun 17 17:28:43 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 102.727 ; gain = 17.840
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 102.727 ; gain = 17.840
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 154.828 ; gain = 69.941
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+ERROR: [SYNCHK 200-61] Jacobi_systemc/producer.cpp:24: unsupported memory access on variable 'A' which is (or contains) an array with unknown size at compile time.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+File generated on Mon Jun 17 17:30:54 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:18:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:19:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 102.586 ; gain = 17.094
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 102.586 ; gain = 17.094
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 154.680 ; gain = 69.188
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 166.715 ; gain = 81.223
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 200.117 ; gain = 114.625
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 201.426 ; gain = 115.934
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'top.h', please check the specified module name.
+==============================================================
+File generated on Mon Jun 17 17:53:03 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 18:07:59 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 18:09:14 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 18:09:32 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 18:13:15 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:5: error: no viable overloaded '='
+ sum=sumatorio;
+ ~~~^~~~~~~~~~
+C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc/ap_sc_core.h:297:11: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'double' to 'const _ap_sc_::sc_core::sc_port<_ap_sc_::sc_core::sc_fifo_out_if<double>, 1>' for 1st argument; 
+    class sc_port : public sc_port_b<IF>
+          ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Mon Jun 17 18:14:46 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: no member named 'write' in '_ap_sc_::sc_core::sc_port<_ap_sc_::sc_core::sc_fifo_out_if<double>, 1>'
+ sum.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Mon Jun 17 18:15:33 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: no member named 'write' in '_ap_sc_::sc_core::sc_port<_ap_sc_::sc_core::sc_fifo_out_if<double>, 1>'
+ sum.write()=sumatorio;
+ ~~~ ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Mon Jun 17 18:16:52 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: no member named 'write' in '_ap_sc_::sc_core::sc_port<_ap_sc_::sc_core::sc_fifo_out_if<double>, 1>'
+ sum.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Mon Jun 17 18:21:02 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 18:21:57 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double' is not a structure or union
+ sum.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Mon Jun 17 18:22:50 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double *' is not a structure or union
+ sum.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Mon Jun 17 18:24:39 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Mon Jun 17 18:25:25 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double *' is not a structure or union
+ sum.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.

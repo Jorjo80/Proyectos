@@ -24967,26 +24967,26 @@ void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
 struct producer : ::sc_core::sc_module{
 public:
 
- sc_port<sc_fifo_out_if<double> > error;
+ sc_port<sc_fifo_out_if< double > > sum;
  sc_port<sc_fifo_out_if< int > > x[16];
  sc_port<sc_fifo_in_if< int > > A[4][4];
  sc_port<sc_fifo_in_if< int > > b[4];
+
  sc_in< bool > clock;
 
  int n=4;
     int iter= 16;
 
- void jacobi(int A[4][4], int b[4], int x[16], double error);
+ void jacobi(int A[4][4], int b[4], int x[16], double *sum);
 
- typedef producer SC_CURRENT_USER_MODULE; producer( ::sc_core::sc_module_name )
- {
+ producer(sc_module_name nm):sc_module(nm){
 
  }
 
 };
 # 2 "Jacobi_systemc/producer.cpp" 2
 
-void producer::jacobi(int A[4][4], int b[4], int x[16], double error)
+void producer::jacobi(int A[4][4], int b[4], int x[16], double *sum)
 {
  int x_prev[16], x_new[16];
  for(int i=0; i < iter; i++)
@@ -24998,7 +24998,7 @@ void producer::jacobi(int A[4][4], int b[4], int x[16], double error)
  for(int i=0; i < iter; i++)
  {
 
-  x_prev[iter]=x_new[iter];
+  x_prev[i]=x_new[i];
   for(int i=0; i<producer::n; i++)
   {
    double sigma=0.0;
@@ -25014,11 +25014,12 @@ void producer::jacobi(int A[4][4], int b[4], int x[16], double error)
   }
  }
 
- double sum=0.0;
+ double sumatorio=0.0;
+
  for(int i=0; i <iter; i++)
  {
   x[i]=x_new[i];
-  sum+=(x_new[i]-x_prev[i])*(x_new[i]-x_prev[i]);
+  sumatorio+=(x_new[i]-x_prev[i])*(x_new[i]-x_prev[i]);
  }
- error=sqrt(sum);
+ sum.write(sumatorio);
 }

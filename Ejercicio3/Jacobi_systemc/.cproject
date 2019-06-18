@@ -57,8 +57,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
@@ -93,8 +91,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
@@ -123,7 +119,11 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.c.link.option.libs.1284931547" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+                                <option id="gnu.c.link.option.libs.1284931547" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="systemc_debug"/>
+                                    								
+                                </option>
                                 								
                                 <option id="gnu.c.link.option.ldflags.1660652432" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
                                 							
@@ -137,7 +137,11 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.link.option.libs.1113123261" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+                                <option id="gnu.cpp.link.option.libs.1113123261" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="systemc_debug"/>
+                                    								
+                                </option>
                                 								
                                 <option id="gnu.cpp.link.option.flags.1948670095" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
                                 								
@@ -229,8 +233,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
@@ -255,8 +257,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include/etc"/>
@@ -275,7 +275,11 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.c.link.option.libs.1403056411" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+                                <option id="gnu.c.link.option.libs.1403056411" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="systemc_debug"/>
+                                    								
+                                </option>
                                 								
                                 <option id="gnu.c.link.option.ldflags.1074174716" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
                                 							
@@ -289,7 +293,11 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.cpp.link.option.libs.1671079994" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+                                <option id="gnu.cpp.link.option.libs.1671079994" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="systemc_debug"/>
+                                    								
+                                </option>
                                 								
                                 <option id="gnu.cpp.link.option.flags.1893948589" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
                                 								

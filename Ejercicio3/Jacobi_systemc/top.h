@@ -9,21 +9,22 @@
 
 class top: public sc_module{
 public:
-	sc_in< bool > clk_prod;
-	sc_in< bool > clk_cons;
+
 
 	//channel to be used
 
-	sc_fifo<char>fifo_inst;
+	sc_fifo< int* >fifo_A;
+	sc_fifo< int* >fifo_b;
+	sc_fifo< int* >fifo_x;
+	sc_fifo< double >fifo_sum;
 	producer prod_inst;
 	consumer cons_inst;
 
-	top(sc_module_name nm, int size):sc_module(nm), fifo_inst("fifo_inst",size), prod_inst("producer_inst"), cons_inst("consumer_inst"){
-		prod_inst.out(fifo_inst);
-		prod_inst.clock(clk_prod);
-
-		cons_inst.in(fifo_inst);
-		cons_inst.clock(clk_cons);
+	top(sc_module_name nm, int sizeA,int sizeb,int sizex, double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), prod_inst("producer_inst"){
+		cons_inst.A(fifo_A);
+		prod_inst.A(fifo_A);
+		cons_inst.b(fifo_b);
+		prod_inst.b(fifo_b);
 	}
 
 };

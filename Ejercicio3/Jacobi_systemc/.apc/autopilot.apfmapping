@@ -3,6 +3,9 @@
   <source>
     <originFiles name="producer.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\producer.h"/>
     <originFiles name="producer.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\producer.cpp"/>
+    <originFiles name="top.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\top.h"/>
+    <originFiles name="consumer.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\consumer.h"/>
+    <originFiles name="consumer.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\Ejercicio3\Jacobi_systemc\consumer.cpp"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

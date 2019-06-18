@@ -5,29 +5,24 @@
 
 #include "systemc.h"
 #include "fifo.h"
-//#include "stack.h"
+#include "math.h"
 
 
 SC_MODULE(consumer){
 public:
 
-	sc_port<sc_fifo_in_if<double> > error;
-	sc_port<sc_fifo_in_if<int*> > x;
-	sc_in<bool> clock;
-	double ReadCharFromStack;
-	void consume_data(){
-		while(true){
-			wait();
-			if(error->nb_read(ReadCharFromStack)){
-				cout << "R " << ReadCharFromStack << " at " << sc_time_stamp() << endl;
-			}
-		}
+	sc_port<sc_fifo_in_if< double > > sum;
+	sc_port<sc_fifo_in_if< int > > x[16];
+	sc_port<sc_fifo_out_if< int > > A[4][4];
+	sc_port<sc_fifo_out_if< int > > b[4];
 
-	}
+	double error;
 
-	SC_CTOR(consumer){
-		SC_THREAD(consume_data);
-		sensitive << clock.pos();
+	void calculo_error();
+	void setmatrices();
+
+	consumer(sc_module_name nm):sc_module(nm){
+		SC_THREAD(setmatrices());
 	}
 };
 
