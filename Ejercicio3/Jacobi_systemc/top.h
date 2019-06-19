@@ -22,6 +22,10 @@ public:
 
 	void jacobitop(){
 		hardware.jacobi(hardware.A, hardware.b, hardware.x, hardware.sum);
+		hardware.x(fifo_x);
+		software.x(fifo_x);
+		hardware.sum(fifo_sum);
+		software.sum(fifo_sum);
 	}
 
 	top(sc_module_name nm, int sizeA,int sizeb,int sizex, double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
@@ -29,7 +33,7 @@ public:
 		hardware.A(fifo_A);
 		software.b(fifo_b);
 		hardware.b(fifo_b);
-		SC_THREAD(jacobitop);
+		SC_THREAD(jacobitop());
 
 	}
 

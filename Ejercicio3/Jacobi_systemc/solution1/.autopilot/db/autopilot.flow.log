@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Wed Jun 19 12:20:23 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Wed Jun 19 13:20:35 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -46,12 +46,11 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.105 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.146 sec.
+Command         ap_source done; 0.141 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.149 sec.
-Command     ap_source done; 0.149 sec.
+Command       ap_source done; 0.143 sec.
+Command     ap_source done; 0.144 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -81,7 +80,7 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.264 sec.
+Command   open_solution done; 0.255 sec.
 Execute   set_part xc7z020clg400-1 -tool vivado 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute       get_default_platform 
@@ -110,27 +109,39 @@ Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip
 Execute       get_config_schedule -relax_ii_for_timing 
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 Execute       get_config_schedule -suppress_dependence_error_break 
-INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
-INFO-FLOW: Handling Jacobi_systemc/consumer.cpp as C++
+INFO-FLOW: Handling Jacobi_systemc/producer.cpp as C++
 Execute       get_default_platform 
-Execute       is_encrypted Jacobi_systemc/consumer.cpp 
+Execute       is_encrypted Jacobi_systemc/producer.cpp 
 Execute       get_default_platform 
 INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Jacobi_systemc/consumer.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp" 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Jacobi_systemc/consumer.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp
-Command       clang done; 1.076 sec.
-Execute       tidy_31 xilinx-xfmat-array-geometry H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.589 sec.
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Jacobi_systemc/producer.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Jacobi_systemc/producer.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp
+Command       clang done; 1.033 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.555 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang -syntaxcheck -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp"  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/useless.bc
-ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
-Command       clang done; error code: 2; 1.457 sec.
-Command     elaborate done; error code: 2; 3.133 sec.
-Command   csynth_design done; error code: 2; 3.146 sec.
-Command ap_source done; error code: 1; 3.478 sec.
+Execute       clang -syntaxcheck -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp"  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/useless.bc
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double' is not a structure or union
+ tot.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
+Command       clang done; error code: 2; 1.391 sec.
+Command     elaborate done; error code: 2; 2.989 sec.
+Command   csynth_design done; error code: 2; 3 sec.
+Command ap_source done; error code: 1; 3.321 sec.
 Execute cleanup_all 

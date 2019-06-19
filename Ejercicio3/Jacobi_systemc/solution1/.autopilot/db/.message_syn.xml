@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Jacobi_systemc/consumer.cpp&apos; ..."/>
-	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1452" tag="" content="SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Jacobi_systemc/producer.cpp&apos; ..."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1454" tag="" content="Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type &apos;double&apos; is not a structure or union
+ tot.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated."/>
 </Messages>

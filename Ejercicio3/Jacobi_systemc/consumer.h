@@ -15,7 +15,7 @@ public:
 	sc_port<sc_fifo_out_if< int > > A[4][4];
 	sc_port<sc_fifo_out_if< int > > b[4];
 
-	double error;
+//	double error;
 
 	void calculo_error();
 	void setmatrices();

@@ -1,18 +1,30 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Wed Jun 19 12:20:23 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Wed Jun 19 13:20:35 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc'.
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/top.h' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/producer.h' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/producer.cpp' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/consumer.h' to the project
 INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/consumer.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/consumer.h' to the project
+INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/producer.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/producer.h' to the project
+INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/top.h' to the project
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
-ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double' is not a structure or union
+ tot.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
 Failed during preprocessing.
     while executing
 "source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl"
