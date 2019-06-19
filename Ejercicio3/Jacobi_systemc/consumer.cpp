@@ -1,4 +1,5 @@
 #include "consumer.h"
+#include "math.h"
 
 void consumer::setmatrices(){
 
@@ -6,7 +7,7 @@ void consumer::setmatrices(){
 	b={3,4,5,1};
 }
 
-void consumer::calculo_error
+void consumer::calculo_error()
 {
 	error=sqrt(sum);
 }

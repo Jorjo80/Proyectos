@@ -4,7 +4,6 @@
 
 
 #include "systemc.h"
-#include "fifo.h"
 #include "math.h"
 
 
@@ -21,8 +20,8 @@ public:
 	void calculo_error();
 	void setmatrices();
 
-	consumer(sc_module_name nm):sc_module(nm){
-		SC_THREAD(setmatrices());
+	SC_CTOR(consumer){
+		SC_THREAD(setmatrices);
 	}
 };
 

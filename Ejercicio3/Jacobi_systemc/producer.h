@@ -19,7 +19,7 @@ public:
 	int n=4;
     int iter= 16;
 
-	void jacobi(int A[4][4], int b[4], int x[16], double sum);
+	void jacobi(int Q[4][4], int w[4], int e[16], double tot);
 
 	producer(sc_module_name nm):sc_module(nm){
 
