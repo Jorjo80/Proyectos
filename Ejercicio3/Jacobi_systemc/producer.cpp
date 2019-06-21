@@ -1,6 +1,6 @@
 #include "producer.h"
 
-void producer::jacobi(int Q[4][4], int w[4], int e[16], double tot)
+void producer::jacobi()
 {
 	int x_prev[16], x_new[16];
 	for(int i=0; i < iter; i++)
@@ -21,10 +21,10 @@ void producer::jacobi(int Q[4][4], int w[4], int e[16], double tot)
 
 				if(j==i)
 				{
-					sigma=sigma+(Q[i-1][j]*x_prev[j]);
+					sigma=sigma+((A[i-1][j]->read())*x_prev[j]);
 				}
 			}
-			x_new[i]=(1/((Q[i-1][i])*(w[i]-sigma)));
+			x_new[i]=(1/((A[i-1][i]->read())*((b[i]->read())-sigma)));
 		}
 	}
 
@@ -32,8 +32,8 @@ void producer::jacobi(int Q[4][4], int w[4], int e[16], double tot)
 
 	for(int i=0; i <iter; i++)
 	{
-		e[i]=x_new[i];
+		x[i]->write(x_new[i]);
 		sumatorio+=(x_new[i]-x_prev[i])*(x_new[i]-x_prev[i]);
 	}
-	tot.write(sumatorio);
+	sum->write(sumatorio);
 }

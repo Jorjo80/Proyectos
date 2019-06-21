@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 11:39:58 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 12:25:02 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc'.
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1'.
@@ -9,465 +9,91 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../main.cpp in debug mode
 csim.mk:78: recipe for target 'obj/main.o' failed
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: error: pasting ")" and "_handle" does not give a valid preprocessing token
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: in definition of macro 'SC_THREAD'
-     declare_thread_process( func ## _handle,                                  \
-                             ^~~~
-../../../top.h:36:23: error: pasting ")" and "_handle" does not give a valid preprocessing token
-   SC_THREAD(jacobitop());
-                       ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: in definition of macro 'SC_THREAD'
-     declare_thread_process( func ## _handle,                                  \
-                             ^~~~
-In file included from ../../../main.cpp:2:0:
-../../../consumer.h:26:1: error: expected ';' after class definition
- }
- ^
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
                  from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
                  from ../../../main.cpp:1:
 ../../../consumer.h: In constructor 'consumer::consumer(sc_core::sc_module_name)':
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: error: expected initializer before '_handle'
-     declare_thread_process( func ## _handle,                                  \
-                                     ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: in definition of macro 'declare_thread_process'
-         ::sc_core::sc_process_handle handle =                      \
-                                      ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:25: error: no match for 'operator<<' (operand types are 'sc_core::sc_sensitive' and 'void')
-         this->sensitive << handle;                                        \
-                          
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
+                             SC_CURRENT_USER_MODULE,                           \
+                             ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
+         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
+                                              ^~~~~~~~~~~~
 C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
      declare_thread_process( func ## _handle,                                  \
      ^~~~~~~~~~~~~~~~~~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
+../../../consumer.h:23:3: note: in expansion of macro 'SC_THREAD'
+   SC_THREAD(setmatrices);
    ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:37:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:86:19: note: candidate: sc_core::sc_sensitive& sc_core::sc_sensitive::operator<<(sc_core::sc_process_handle)
-     sc_sensitive& operator << ( sc_process_handle );
-                   ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:86:19: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_process_handle'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:97:19: note: candidate: sc_core::sc_sensitive& sc_core::sc_sensitive::operator<<(const sc_core::sc_event&)
-     sc_sensitive& operator << ( const sc_event& );
-                   ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:97:19: note:   no known conversion for argument 1 from 'void' to 'const sc_core::sc_event&'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:98:19: note: candidate: sc_core::sc_sensitive& sc_core::sc_sensitive::operator<<(const sc_core::sc_interface&)
-     sc_sensitive& operator << ( const sc_interface& );
-                   ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:98:19: note:   no known conversion for argument 1 from 'void' to 'const sc_core::sc_interface&'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:99:19: note: candidate: sc_core::sc_sensitive& sc_core::sc_sensitive::operator<<(const sc_core::sc_port_base&)
-     sc_sensitive& operator << ( const sc_port_base& );
-                   ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:99:19: note:   no known conversion for argument 1 from 'void' to 'const sc_core::sc_port_base&'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:100:19: note: candidate: sc_core::sc_sensitive& sc_core::sc_sensitive::operator<<(sc_core::sc_event_finder&)
-     sc_sensitive& operator << ( sc_event_finder& );
-                   ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:100:19: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_event_finder&'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:38:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_time.h:346:1: note: candidate: std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_time&)
- operator << ( ::std::ostream& os, const sc_time& t )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_time.h:346:1: note:   no known conversion for argument 1 from 'sc_core::sc_sensitive' to 'std::ostream& {aka std::basic_ostream<char>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_simcontext.h:35:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_wait.h:34,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:39,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_status.h:67:15: note: candidate: std::ostream& sc_core::operator<<(std::ostream&, sc_core::sc_status)
- std::ostream& operator << ( std::ostream&, sc_status );
-               ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_status.h:67:15: note:   no known conversion for argument 1 from 'sc_core::sc_sensitive' to 'std::ostream& {aka std::basic_ostream<char>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_buffer.h:34:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:79,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:605:1: note: candidate: template<class T, sc_core::sc_writer_policy POL> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_signal<T, POL>&)
- operator << ( ::std::ostream& os, const sc_signal<T,POL>& a )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:605:1: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_signal<T, POL>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: in definition of macro 'declare_thread_process'
-         this->sensitive << handle;                                        \
-                            ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_clock_ports.h:33:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:81,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:287:17: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_in<T>&)
- ::std::ostream& operator << ( ::std::ostream& os, const sc_in<T>& a )
-                 ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:287:17: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_in<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: in definition of macro 'declare_thread_process'
-         this->sensitive << handle;                                        \
-                            ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_clock_ports.h:33:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:81,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:1112:17: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_inout<T>&)
- ::std::ostream& operator << ( ::std::ostream& os, const sc_inout<T>& a )
-                 ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:1112:17: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_inout<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: in definition of macro 'declare_thread_process'
-         this->sensitive << handle;                                        \
-                            ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
+In file included from ../../../main.cpp:4:0:
+../../../top.h: In member function 'void top::jacobitop()':
+../../../top.h:25:20: error: expression cannot be used as a function
+   hardware.x(fifo_x);
+                    ^
+../../../top.h:26:20: error: expression cannot be used as a function
+   software.x(fifo_x);
+                    ^
+In file included from ../../../main.cpp:4:0:
+../../../top.h: In constructor 'top::top(sc_core::sc_module_name, int (*)[4], int*, int*, double)':
+../../../top.h:31:234: error: invalid conversion from 'int (*)[4]' to 'int' [-fpermissive]
+  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
+                                                                                                                                                                                                                                          ^
 In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
                  from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
                  from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:426:1: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_fifo<T>&)
- operator << ( ::std::ostream& os, const sc_fifo<T>& a )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:426:1: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:67:14: note:   initializing argument 2 of 'sc_core::sc_fifo<T>::sc_fifo(const char*, int) [with T = int*]'
+     explicit sc_fifo( const char* name_, int size_ = 16 )
+              ^~~~~~~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:31:234: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
+                                                                                                                                                                                                                                          ^
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
                  from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
                  from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_fifo<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: in definition of macro 'declare_thread_process'
-         this->sensitive << handle;                                        \
-                            ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:29: error: no match for 'operator<<' (operand types are 'sc_core::sc_sensitive_pos' and 'void')
-         this->sensitive_pos << handle;                                    \
-                              
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:67:14: note:   initializing argument 2 of 'sc_core::sc_fifo<T>::sc_fifo(const char*, int) [with T = int*]'
+     explicit sc_fifo( const char* name_, int size_ = 16 )
+              ^~~~~~~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:31:234: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
+                                                                                                                                                                                                                                          ^
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
+                 from ../../../main.cpp:1:
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:67:14: note:   initializing argument 2 of 'sc_core::sc_fifo<T>::sc_fifo(const char*, int) [with T = int*]'
+     explicit sc_fifo( const char* name_, int size_ = 16 )
+              ^~~~~~~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:32:20: error: expression cannot be used as a function
+   software.A(fifo_A);
+                    ^
+../../../top.h:33:20: error: expression cannot be used as a function
+   hardware.A(fifo_A);
+                    ^
+../../../top.h:34:20: error: expression cannot be used as a function
+   software.b(fifo_b);
+                    ^
+../../../top.h:35:20: error: expression cannot be used as a function
+   hardware.b(fifo_b);
+                    ^
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
+                 from ../../../main.cpp:1:
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
+                             SC_CURRENT_USER_MODULE,                           \
+                             ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
+         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
+                                              ^~~~~~~~~~~~
 C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
      declare_thread_process( func ## _handle,                                  \
      ^~~~~~~~~~~~~~~~~~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
+../../../top.h:36:3: note: in expansion of macro 'SC_THREAD'
+   SC_THREAD(jacobitop);
    ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:37:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:164:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(sc_core::sc_process_handle)
-     sc_sensitive_pos& operator << ( sc_process_handle );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:164:23: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_process_handle'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:165:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(sc_core::sc_method_handle)
-     sc_sensitive_pos& operator << ( sc_method_handle );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:165:23: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_method_handle {aka sc_core::sc_method_process*}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:166:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(sc_core::sc_thread_handle)
-     sc_sensitive_pos& operator << ( sc_thread_handle );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:166:23: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_thread_handle {aka sc_core::sc_thread_process*}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:175:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(const in_if_b_type&)
-     sc_sensitive_pos& operator << ( const in_if_b_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:175:23: note:   no known conversion for argument 1 from 'void' to 'const in_if_b_type& {aka const sc_core::sc_signal_in_if<bool>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:176:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(const in_if_l_type&)
-     sc_sensitive_pos& operator << ( const in_if_l_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:176:23: note:   no known conversion for argument 1 from 'void' to 'const in_if_l_type& {aka const sc_core::sc_signal_in_if<sc_dt::sc_logic>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:177:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(const in_port_b_type&)
-     sc_sensitive_pos& operator << ( const in_port_b_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:177:23: note:   no known conversion for argument 1 from 'void' to 'const in_port_b_type& {aka const sc_core::sc_in<bool>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:178:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(const in_port_l_type&)
-     sc_sensitive_pos& operator << ( const in_port_l_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:178:23: note:   no known conversion for argument 1 from 'void' to 'const in_port_l_type& {aka const sc_core::sc_in<sc_dt::sc_logic>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:179:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(const inout_port_b_type&)
-     sc_sensitive_pos& operator << ( const inout_port_b_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:179:23: note:   no known conversion for argument 1 from 'void' to 'const inout_port_b_type& {aka const sc_core::sc_inout<bool>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:180:23: note: candidate: sc_core::sc_sensitive_pos& sc_core::sc_sensitive_pos::operator<<(const inout_port_l_type&)
-     sc_sensitive_pos& operator << ( const inout_port_l_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:180:23: note:   no known conversion for argument 1 from 'void' to 'const inout_port_l_type& {aka const sc_core::sc_inout<sc_dt::sc_logic>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:38:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_time.h:346:1: note: candidate: std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_time&)
- operator << ( ::std::ostream& os, const sc_time& t )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_time.h:346:1: note:   no known conversion for argument 1 from 'sc_core::sc_sensitive_pos' to 'std::ostream& {aka std::basic_ostream<char>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_simcontext.h:35:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_wait.h:34,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:39,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_status.h:67:15: note: candidate: std::ostream& sc_core::operator<<(std::ostream&, sc_core::sc_status)
- std::ostream& operator << ( std::ostream&, sc_status );
-               ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_status.h:67:15: note:   no known conversion for argument 1 from 'sc_core::sc_sensitive_pos' to 'std::ostream& {aka std::basic_ostream<char>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_buffer.h:34:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:79,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:605:1: note: candidate: template<class T, sc_core::sc_writer_policy POL> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_signal<T, POL>&)
- operator << ( ::std::ostream& os, const sc_signal<T,POL>& a )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:605:1: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_signal<T, POL>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_pos << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_clock_ports.h:33:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:81,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:287:17: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_in<T>&)
- ::std::ostream& operator << ( ::std::ostream& os, const sc_in<T>& a )
-                 ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:287:17: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_in<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_pos << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_clock_ports.h:33:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:81,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:1112:17: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_inout<T>&)
- ::std::ostream& operator << ( ::std::ostream& os, const sc_inout<T>& a )
-                 ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:1112:17: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_inout<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_pos << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:426:1: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_fifo<T>&)
- operator << ( ::std::ostream& os, const sc_fifo<T>& a )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:426:1: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_fifo<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_pos << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:29: error: no match for 'operator<<' (operand types are 'sc_core::sc_sensitive_neg' and 'void')
-         this->sensitive_neg << handle;                                    \
-                              
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
-     declare_thread_process( func ## _handle,                                  \
-     ^~~~~~~~~~~~~~~~~~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:37:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:230:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(sc_core::sc_process_handle)
-     sc_sensitive_neg& operator << ( sc_process_handle );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:230:23: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_process_handle'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:231:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(sc_core::sc_method_handle)
-     sc_sensitive_neg& operator << ( sc_method_handle );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:231:23: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_method_handle {aka sc_core::sc_method_process*}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:232:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(sc_core::sc_thread_handle)
-     sc_sensitive_neg& operator << ( sc_thread_handle );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:232:23: note:   no known conversion for argument 1 from 'void' to 'sc_core::sc_thread_handle {aka sc_core::sc_thread_process*}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:241:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(const in_if_b_type&)
-     sc_sensitive_neg& operator << ( const in_if_b_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:241:23: note:   no known conversion for argument 1 from 'void' to 'const in_if_b_type& {aka const sc_core::sc_signal_in_if<bool>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:242:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(const in_if_l_type&)
-     sc_sensitive_neg& operator << ( const in_if_l_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:242:23: note:   no known conversion for argument 1 from 'void' to 'const in_if_l_type& {aka const sc_core::sc_signal_in_if<sc_dt::sc_logic>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:243:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(const in_port_b_type&)
-     sc_sensitive_neg& operator << ( const in_port_b_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:243:23: note:   no known conversion for argument 1 from 'void' to 'const in_port_b_type& {aka const sc_core::sc_in<bool>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:244:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(const in_port_l_type&)
-     sc_sensitive_neg& operator << ( const in_port_l_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:244:23: note:   no known conversion for argument 1 from 'void' to 'const in_port_l_type& {aka const sc_core::sc_in<sc_dt::sc_logic>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:245:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(const inout_port_b_type&)
-     sc_sensitive_neg& operator << ( const inout_port_b_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:245:23: note:   no known conversion for argument 1 from 'void' to 'const inout_port_b_type& {aka const sc_core::sc_inout<bool>&}'
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:246:23: note: candidate: sc_core::sc_sensitive_neg& sc_core::sc_sensitive_neg::operator<<(const inout_port_l_type&)
-     sc_sensitive_neg& operator << ( const inout_port_l_type& );
-                       ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_sensitive.h:246:23: note:   no known conversion for argument 1 from 'void' to 'const inout_port_l_type& {aka const sc_core::sc_inout<sc_dt::sc_logic>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:38:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_time.h:346:1: note: candidate: std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_time&)
- operator << ( ::std::ostream& os, const sc_time& t )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_time.h:346:1: note:   no known conversion for argument 1 from 'sc_core::sc_sensitive_neg' to 'std::ostream& {aka std::basic_ostream<char>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_simcontext.h:35:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_wait.h:34,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:39,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_status.h:67:15: note: candidate: std::ostream& sc_core::operator<<(std::ostream&, sc_core::sc_status)
- std::ostream& operator << ( std::ostream&, sc_status );
-               ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_status.h:67:15: note:   no known conversion for argument 1 from 'sc_core::sc_sensitive_neg' to 'std::ostream& {aka std::basic_ostream<char>&}'
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_buffer.h:34:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:79,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:605:1: note: candidate: template<class T, sc_core::sc_writer_policy POL> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_signal<T, POL>&)
- operator << ( ::std::ostream& os, const sc_signal<T,POL>& a )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:605:1: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_signal<T, POL>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_neg << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_clock_ports.h:33:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:81,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:287:17: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_in<T>&)
- ::std::ostream& operator << ( ::std::ostream& os, const sc_in<T>& a )
-                 ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:287:17: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_in<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_neg << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_clock_ports.h:33:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:81,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:1112:17: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_inout<T>&)
- ::std::ostream& operator << ( ::std::ostream& os, const sc_inout<T>& a )
-                 ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal_ports.h:1112:17: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_inout<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_neg << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:426:1: note: candidate: template<class T> std::ostream& sc_core::operator<<(std::ostream&, const sc_core::sc_fifo<T>&)
- operator << ( ::std::ostream& os, const sc_fifo<T>& a )
- ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:426:1: note:   template argument deduction/substitution failed:
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h:24:25: note:   mismatched types 'const sc_core::sc_fifo<T>' and 'void'
-   SC_THREAD(setmatrices());
-                         ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: in definition of macro 'declare_thread_process'
-         this->sensitive_neg << handle;                                    \
-                                ^~~~~~
-../../../consumer.h:24:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices());
-   ^~~~~~~~~
-In file included from ../../../main.cpp:2:0:
-../../../consumer.h: At global scope:
-../../../consumer.h:27:1: error: expected declaration before '}' token
- };
- ^
 make: *** [obj/main.o] Error 1
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************

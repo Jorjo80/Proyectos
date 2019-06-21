@@ -7,12 +7,11 @@
 
 int sc_main(int argc, char* argv[]){
 
-	top todo;
 	int a[4][4];
 	int b[4];
 	int x[16];
 	double sum;
-	todo("top", a, b, x, sum);
+	top todo("top", a, b, x, sum);
 	todo.jacobitop();
 	printf("solution \n x= ");
 	for(int i = 0; i<16;i++)
@@ -21,5 +20,5 @@ int sc_main(int argc, char* argv[]){
 	}
 	printf("error = %f ", todo.software.error);
 	sc_start(1000, SC_NS);
-
+	return 0;
 }

@@ -9,7 +9,6 @@
 
 class consumer:public sc_module{
 public:
-
 	sc_port<sc_fifo_in_if< double > > sum;
 	sc_port<sc_fifo_in_if< int > > x[16];
 	sc_port<sc_fifo_out_if< int > > A[4][4];
@@ -21,9 +20,8 @@ public:
 	void setmatrices();
 
 	consumer(sc_module_name nm):sc_module(nm){
-		SC_THREAD(setmatrices());
+		SC_THREAD(setmatrices);
 	}
-}
 };
 
 #endif

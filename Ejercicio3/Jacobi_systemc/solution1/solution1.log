@@ -2038,3 +2038,747 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 11:47:17 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 11:48:08 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 11:49:05 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double' is not a structure or union
+ tot.write(sumatorio);
+ ~~~ ^
+2 warnings and 1 error generated.
+==============================================================
+File generated on Fri Jun 21 11:51:20 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 11:57:04 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 11:57:56 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 12:00:22 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.cpp:24:19: error: use of undeclared identifier 'Q'
+     sigma=sigma+(Q[i-1][j]*x_prev[j]);
+                  ^
+Jacobi_systemc/producer.cpp:27:18: error: use of undeclared identifier 'Q'
+   x_new[i]=(1/((Q[i-1][i])*(w[i]-sigma)));
+                 ^
+Jacobi_systemc/producer.cpp:27:30: error: use of undeclared identifier 'w'
+   x_new[i]=(1/((Q[i-1][i])*(w[i]-sigma)));
+                             ^
+Jacobi_systemc/producer.cpp:35:3: error: use of undeclared identifier 'e'
+  e[i]=x_new[i];
+  ^
+2 warnings and 4 errors generated.
+==============================================================
+File generated on Fri Jun 21 12:01:07 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Fri Jun 21 12:01:45 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 12:02:01 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+...
+==============================================================
+File generated on Fri Jun 21 12:04:07 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+ERROR: [HLS 200-70] In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:34: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                 ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:24: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                SC_THREAD(setmatrices());
+                ~~~~~~~~~~~~~~~~~~~~~^~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^~~~~~
+Jacobi_systemc/consumer.h:23:24: note: remove parentheses to declare a variable
+                SC_THREAD(setmatrices());
+                                     ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' at end of declaration
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+Jacobi_systemc/consumer.cpp:6:4: error: expected expression
+        A={{1,2,3,4}, {2,1,5,2}, {32,12,3,4}, {1,0,5,3}};
+          ^
+Jacobi_systemc/consumer.cpp:7:4: error: expected expression
+        b={3,4,5,1};
+          ^
+1 warning and 10 errors generated.
+==============================================================
+File generated on Fri Jun 21 12:11:02 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+ERROR: [HLS 200-70] In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:34: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                 ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:24: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                SC_THREAD(setmatrices());
+                ~~~~~~~~~~~~~~~~~~~~~^~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^~~~~~
+Jacobi_systemc/consumer.h:23:24: note: remove parentheses to declare a variable
+                SC_THREAD(setmatrices());
+                                     ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' at end of declaration
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+Jacobi_systemc/consumer.cpp:7:4: error: expected expression
+        W={{1,2,3,4}, {2,1,5,2}, {32,12,3,4}, {1,0,5,3}};
+          ^
+Jacobi_systemc/consumer.cpp:8:4: error: expected expression
+        T={3,4,5,1};
+          ^
+1 warning and 10 errors generated.
+==============================================================
+File generated on Fri Jun 21 12:14:28 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+ERROR: [HLS 200-70] In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:34: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                 ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:24: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                SC_THREAD(setmatrices());
+                ~~~~~~~~~~~~~~~~~~~~~^~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^~~~~~
+Jacobi_systemc/consumer.h:23:24: note: remove parentheses to declare a variable
+                SC_THREAD(setmatrices());
+                                     ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' at end of declaration
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+Jacobi_systemc/consumer.cpp:7:4: error: expected expression
+        W={ { 1, 2, 3, 4}, { 2, 1, 5, 2}, { 32, 12, 3, 4}, { 1, 0, 5, 3} };
+          ^
+Jacobi_systemc/consumer.cpp:8:4: error: expected expression
+        T={ 3, 4, 5, 1 };
+          ^
+1 warning and 10 errors generated.
+==============================================================
+File generated on Fri Jun 21 12:18:18 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+ERROR: [HLS 200-70] In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: pasting formed ')_handle', an invalid preprocessing token
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:34: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                 ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:24: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                SC_THREAD(setmatrices());
+                ~~~~~~~~~~~~~~~~~~~~~^~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^~~~~~
+Jacobi_systemc/consumer.h:23:24: note: remove parentheses to declare a variable
+                SC_THREAD(setmatrices());
+                                     ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:29: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' at end of declaration
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:429:38: note: expanded from macro 'declare_thread_process'
+        ::sc_core::sc_process_handle handle =                      \
+                                     ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:433:28: note: expanded from macro 'declare_thread_process'
+        this->sensitive << handle;                                        \
+                           ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:434:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_pos << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: expected ';' after expression
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier '_handle'
+                SC_THREAD(setmatrices());
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:37: note: expanded from macro 'SC_THREAD'
+    declare_thread_process( func ## _handle,                                  \
+                                    ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:435:32: note: expanded from macro 'declare_thread_process'
+        this->sensitive_neg << handle;                                    \
+                               ^
+1 warning and 8 errors generated.
+==============================================================
+File generated on Fri Jun 21 12:20:23 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:
+In file included from Jacobi_systemc/producer.cpp:1:
+Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+ int n=4;
+      ^
+Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    int iter= 16;
+            ^
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+ERROR: [HLS 200-70] In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier 'SC_CURRENT_USER_MODULE'
+                SC_THREAD(setmatrices);
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: note: expanded from macro 'SC_THREAD'
+                            SC_CURRENT_USER_MODULE,                           \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:432:36: note: expanded from macro 'declare_thread_process'
+                 SC_MAKE_FUNC_PTR( host_tag, func ), this, 0 ); \
+                                   ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include\sysc/kernel/sc_process.h:147:46: note: expanded from macro 'SC_MAKE_FUNC_PTR'
+        static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
+                                             ^
+1 error generated.
+==============================================================
+File generated on Fri Jun 21 12:21:21 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 12:22:39 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 12:23:34 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri Jun 21 12:25:02 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************

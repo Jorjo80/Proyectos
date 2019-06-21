@@ -3,21 +3,24 @@
   <errorLogs>
     <logs>
       <synLog>
-        <logs message="ERROR: [HLS 200-70] Compilation errors found: In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA; int n=4;&#xD;&#xA;      ^&#xD;&#xA;Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA;    int iter= 16;&#xD;&#xA;            ^&#xD;&#xA;In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;Jacobi_systemc/producer.cpp:38:6: error: member reference base type 'double' is not a structure or union&#xD;&#xA; tot.write(sumatorio);&#xD;&#xA; ~~~ ^&#xD;&#xA;2 warnings and 1 error generated.&#xD;&#xA;Failed during preprocessing.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T11:31:21.582+0200"/>
+        <logs message="ERROR: [HLS 200-70] In file included from Jacobi_systemc/consumer.cpp:1:&#xD;&#xA;Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier 'SC_CURRENT_USER_MODULE'&#xD;&#xA;                SC_THREAD(setmatrices);&#xD;&#xA;                ^&#xD;&#xA;C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: note: expanded from macro 'SC_THREAD'&#xD;&#xA;                            SC_CURRENT_USER_MODULE,                           \&#xD;&#xA;                            ^&#xD;&#xA;C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:432:36: note: expanded from macro 'declare_thread_process'&#xD;&#xA;                 SC_MAKE_FUNC_PTR( host_tag, func ), this, 0 ); \&#xD;&#xA;                                   ^&#xD;&#xA;C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include\sysc/kernel/sc_process.h:147:46: note: expanded from macro 'SC_MAKE_FUNC_PTR'&#xD;&#xA;        static_cast&lt;sc_core::SC_ENTRY_FUNC>(&amp;callback_tag::func)&#xD;&#xA;                                             ^&#xD;&#xA;1 error generated.&#xD;&#xA;SystemC pre-synthesis checking failed&#xD;&#xA;    while executing&#xD;&#xA;&quot;source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T12:21:00.801+0200"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>
       <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T11:40:01.243+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T11:33:52.769+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T11:33:18.330+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T12:25:05.047+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T12:23:36.821+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T12:22:41.626+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T12:21:23.541+0200"/>
       </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;In file included from Jacobi_systemc/producer.cpp:1:&#xD;&#xA;Jacobi_systemc/producer.h:19:7: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA; int n=4;&#xD;&#xA;      ^&#xD;&#xA;Jacobi_systemc/producer.h:20:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA;    int iter= 16;&#xD;&#xA;            ^&#xD;&#xA;2 warnings generated." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-21T12:20:49.145+0200" type="Warning"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>
