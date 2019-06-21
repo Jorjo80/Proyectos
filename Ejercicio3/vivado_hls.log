@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 12:52:52 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 13:09:07 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc'.
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1'.
@@ -27,23 +27,6 @@ C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:
    SC_THREAD(setmatrices);
    ^~~~~~~~~
 In file included from ../../../main.cpp:4:0:
-../../../top.h: At global scope:
-../../../top.h:16:24: error: expected identifier before numeric constant
-  sc_fifo< int > fifo_A(16);
-                        ^~
-../../../top.h:16:24: error: expected ',' or '...' before numeric constant
-../../../top.h:17:24: error: expected identifier before numeric constant
-  sc_fifo< int > fifo_b(4);
-                        ^
-../../../top.h:17:24: error: expected ',' or '...' before numeric constant
-../../../top.h:18:24: error: expected identifier before numeric constant
-  sc_fifo< int > fifo_x(16);
-                        ^~
-../../../top.h:18:24: error: expected ',' or '...' before numeric constant
-../../../top.h:19:29: error: expected identifier before numeric constant
-  sc_fifo< double > fifo_sum(1);
-                             ^
-../../../top.h:19:29: error: expected ',' or '...' before numeric constant
 ../../../top.h: In member function 'void top::jacobitop()':
 ../../../top.h:25:20: error: expression cannot be used as a function
    hardware.x(fifo_x);
@@ -51,7 +34,7 @@ In file included from ../../../main.cpp:4:0:
 ../../../top.h:26:20: error: expression cannot be used as a function
    software.x(fifo_x);
                     ^
-../../../top.h:27:24: error: no match for call to '(sc_core::sc_port<sc_core::sc_fifo_out_if<double> >) (<unresolved overloaded function type>)'
+../../../top.h:27:24: error: no match for call to '(sc_core::sc_port<sc_core::sc_fifo_out_if<double> >) (sc_core::sc_fifo<double*>&)'
    hardware.sum(fifo_sum);
                         ^
 In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:32:0,
@@ -62,13 +45,13 @@ In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/c
 C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(IF&) [with IF = sc_core::sc_fifo_out_if<double>]
      void operator () ( IF& interface_ )
           ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_fifo_out_if<double>&'
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note:   no known conversion for argument 1 from 'sc_core::sc_fifo<double*>' to 'sc_core::sc_fifo_out_if<double>&'
 C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(sc_core::sc_port_b<IF>::port_type&) [with IF = sc_core::sc_fifo_out_if<double>; sc_core::sc_port_b<IF>::port_type = sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >]
      void operator () ( port_type& parent_ )
           ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >::port_type& {aka sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >&}'
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note:   no known conversion for argument 1 from 'sc_core::sc_fifo<double*>' to 'sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >::port_type& {aka sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >&}'
 In file included from ../../../main.cpp:4:0:
-../../../top.h:28:24: error: no match for call to '(sc_core::sc_port<sc_core::sc_fifo_in_if<double> >) (<unresolved overloaded function type>)'
+../../../top.h:28:24: error: no match for call to '(sc_core::sc_port<sc_core::sc_fifo_in_if<double> >) (sc_core::sc_fifo<double*>&)'
    software.sum(fifo_sum);
                         ^
 In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:32:0,
@@ -79,26 +62,13 @@ In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/c
 C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(IF&) [with IF = sc_core::sc_fifo_in_if<double>]
      void operator () ( IF& interface_ )
           ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_fifo_in_if<double>&'
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note:   no known conversion for argument 1 from 'sc_core::sc_fifo<double*>' to 'sc_core::sc_fifo_in_if<double>&'
 C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(sc_core::sc_port_b<IF>::port_type&) [with IF = sc_core::sc_fifo_in_if<double>; sc_core::sc_port_b<IF>::port_type = sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >]
      void operator () ( port_type& parent_ )
           ^~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >::port_type& {aka sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >&}'
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note:   no known conversion for argument 1 from 'sc_core::sc_fifo<double*>' to 'sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >::port_type& {aka sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >&}'
 In file included from ../../../main.cpp:4:0:
-../../../top.h: In constructor 'top::top(sc_core::sc_module_name)':
-../../../top.h:31:40: error: class 'top' does not have any field named 'fifo_A'
-  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
-                                        ^~~~~~
-../../../top.h:31:57: error: class 'top' does not have any field named 'fifo_b'
-  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
-                                                         ^~~~~~
-../../../top.h:31:74: error: class 'top' does not have any field named 'fifo_x'
-  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
-                                                                          ^~~~~~
-../../../top.h:31:92: error: class 'top' does not have any field named 'fifo_sum'
-  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
-                                                                                            ^~~~~~~~
-In file included from ../../../main.cpp:4:0:
+../../../top.h: In constructor 'top::top(sc_core::sc_module_name, int, int, int, double)':
 ../../../top.h:32:20: error: expression cannot be used as a function
    software.A(fifo_A);
                     ^
@@ -127,6 +97,28 @@ C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:
 ../../../top.h:36:3: note: in expansion of macro 'SC_THREAD'
    SC_THREAD(jacobitop);
    ^~~~~~~~~
+../../../main.cpp: In function 'int sc_main(int, char**)':
+../../../main.cpp:14:18: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top todo("top", &a, &b, &x, sum);
+                  ^~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:31:2: note:   initializing argument 2 of 'top::top(sc_core::sc_module_name, int, int, int, double)'
+  top(sc_module_name nm, int sizeA,int sizeb,int sizex, double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("software"){
+  ^~~
+../../../main.cpp:14:22: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top todo("top", &a, &b, &x, sum);
+                      ^~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:31:2: note:   initializing argument 3 of 'top::top(sc_core::sc_module_name, int, int, int, double)'
+  top(sc_module_name nm, int sizeA,int sizeb,int sizex, double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("software"){
+  ^~~
+../../../main.cpp:14:26: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top todo("top", &a, &b, &x, sum);
+                          ^~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:31:2: note:   initializing argument 4 of 'top::top(sc_core::sc_module_name, int, int, int, double)'
+  top(sc_module_name nm, int sizeA,int sizeb,int sizex, double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("software"){
+  ^~~
 make: *** [obj/main.o] Error 1
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
