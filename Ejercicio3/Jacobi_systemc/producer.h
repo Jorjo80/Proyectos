@@ -5,6 +5,7 @@
 #include <systemc.h>
 #include "math.h"
 #include "stdlib.h"
+#define ITER 16
 
 class producer:public sc_module{
 public:
@@ -17,7 +18,6 @@ public:
 	sc_in< bool > clock;
 
 	int n=4;
-    int iter= 16;
 
 	void jacobi();
 

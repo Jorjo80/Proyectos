@@ -3,13 +3,13 @@
 void producer::jacobi()
 {
 	int x_prev[16], x_new[16];
-	for(int i=0; i < iter; i++)
+	for(int i=0; i < ITER; i++)
 	{
 		x_prev[i]=0;
 		x_new[i]=1;
 	}
 
-	for(int i=0; i < iter; i++)
+	for(int i=0; i < ITER; i++)
 	{
 
 		x_prev[i]=x_new[i];
@@ -30,7 +30,7 @@ void producer::jacobi()
 
 	double sumatorio=0.0;
 
-	for(int i=0; i <iter; i++)
+	for(int i=0; i <ITER; i++)
 	{
 		x[i]->write(x_new[i]);
 		sumatorio+=(x_new[i]-x_prev[i])*(x_new[i]-x_prev[i]);
