@@ -7,7 +7,8 @@
 #include "stdlib.h"
 #define ITER 16
 #define N 4
-class producer:public sc_module{
+//class producer:public sc_module
+SC_MODULE(producer){
 public:
 
 	sc_port<sc_fifo_out_if< double > > sum;
@@ -19,10 +20,14 @@ public:
 
 	void jacobi();
 
-	producer(sc_module_name nm):sc_module(nm){
+	SC_CTOR(producer){
+
 
 	}
+/*	producer(sc_module_name nm):sc_module(nm){
 
+	}
+*/
 };
 
 #endif

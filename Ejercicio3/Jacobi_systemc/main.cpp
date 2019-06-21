@@ -16,7 +16,7 @@ int sc_main(int argc, char* argv[]){
 	printf("solution \n x= ");
 	for(int i = 0; i<16;i++)
 	{
-		printf("%d\t",todo.software.x[i]);
+		printf("%d\t",todo.software.x[i]->read());
 	}
 	printf("error = %f ", todo.software.error);
 	sc_start(1000, SC_NS);
