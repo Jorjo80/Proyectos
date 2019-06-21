@@ -13,10 +13,10 @@ void producer::jacobi()
 	{
 
 		x_prev[i]=x_new[i];
-		for(int i=0; i<producer::n; i++)
+		for(int i=0; i<N; i++)
 		{
 			double sigma=0.0;
-			filas:for(int j=0; j<n;j++)
+			filas:for(int j=0; j<N;j++)
 			{
 
 				if(j==i)
