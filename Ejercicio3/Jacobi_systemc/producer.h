@@ -6,7 +6,7 @@
 #include "math.h"
 #include "stdlib.h"
 #define ITER 16
-#define N 4
+#define n 4
 
 class producer:public sc_module{
 public:

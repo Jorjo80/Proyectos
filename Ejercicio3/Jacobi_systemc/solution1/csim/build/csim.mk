@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Fri Jun 21 12:25:03 +0200 2019
+# File generated on Fri Jun 21 12:52:52 +0200 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -59,7 +59,7 @@ IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
 LFLAG += -L$(AUTOPILOT_TOOL)/systemc/lib -lsystemc
-IFLAG += -g
+AP_ENABLE_OPTIMIZED := 1
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
@@ -76,18 +76,18 @@ all: $(TARGET)
 
 $(ObjDir)/main.o: ../../../main.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../main.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/main.d
 
 $(ObjDir)/consumer.o: ../../../consumer.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../consumer.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/consumer.d
 
 $(ObjDir)/producer.o: ../../../producer.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../producer.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/producer.d

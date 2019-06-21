@@ -1,15 +1,143 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 12:34:11 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 12:52:52 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc'.
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/consumer.cpp' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/consumer.h' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/producer.cpp' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/producer.h' to the project
-INFO: [HLS 200-10] Adding design file 'Jacobi_systemc/top.h' to the project
-INFO: [HLS 200-10] Adding test bench file 'Jacobi_systemc/main.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../main.cpp in release mode
+csim.mk:78: recipe for target 'obj/main.o' failed
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
+                 from ../../../main.cpp:1:
+../../../consumer.h: In constructor 'consumer::consumer(sc_core::sc_module_name)':
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
+                             SC_CURRENT_USER_MODULE,                           \
+                             ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
+         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
+                                              ^~~~~~~~~~~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
+     declare_thread_process( func ## _handle,                                  \
+     ^~~~~~~~~~~~~~~~~~~~~~
+../../../consumer.h:23:3: note: in expansion of macro 'SC_THREAD'
+   SC_THREAD(setmatrices);
+   ^~~~~~~~~
+In file included from ../../../main.cpp:4:0:
+../../../top.h: At global scope:
+../../../top.h:16:24: error: expected identifier before numeric constant
+  sc_fifo< int > fifo_A(16);
+                        ^~
+../../../top.h:16:24: error: expected ',' or '...' before numeric constant
+../../../top.h:17:24: error: expected identifier before numeric constant
+  sc_fifo< int > fifo_b(4);
+                        ^
+../../../top.h:17:24: error: expected ',' or '...' before numeric constant
+../../../top.h:18:24: error: expected identifier before numeric constant
+  sc_fifo< int > fifo_x(16);
+                        ^~
+../../../top.h:18:24: error: expected ',' or '...' before numeric constant
+../../../top.h:19:29: error: expected identifier before numeric constant
+  sc_fifo< double > fifo_sum(1);
+                             ^
+../../../top.h:19:29: error: expected ',' or '...' before numeric constant
+../../../top.h: In member function 'void top::jacobitop()':
+../../../top.h:25:20: error: expression cannot be used as a function
+   hardware.x(fifo_x);
+                    ^
+../../../top.h:26:20: error: expression cannot be used as a function
+   software.x(fifo_x);
+                    ^
+../../../top.h:27:24: error: no match for call to '(sc_core::sc_port<sc_core::sc_fifo_out_if<double> >) (<unresolved overloaded function type>)'
+   hardware.sum(fifo_sum);
+                        ^
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:32:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_buffer.h:34,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:79,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
+                 from ../../../main.cpp:1:
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(IF&) [with IF = sc_core::sc_fifo_out_if<double>]
+     void operator () ( IF& interface_ )
+          ^~~~~~~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_fifo_out_if<double>&'
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(sc_core::sc_port_b<IF>::port_type&) [with IF = sc_core::sc_fifo_out_if<double>; sc_core::sc_port_b<IF>::port_type = sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >]
+     void operator () ( port_type& parent_ )
+          ^~~~~~~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >::port_type& {aka sc_core::sc_port_b<sc_core::sc_fifo_out_if<double> >&}'
+In file included from ../../../main.cpp:4:0:
+../../../top.h:28:24: error: no match for call to '(sc_core::sc_port<sc_core::sc_fifo_in_if<double> >) (<unresolved overloaded function type>)'
+   software.sum(fifo_sum);
+                        ^
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_signal.h:32:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_buffer.h:34,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:79,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
+                 from ../../../main.cpp:1:
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(IF&) [with IF = sc_core::sc_fifo_in_if<double>]
+     void operator () ( IF& interface_ )
+          ^~~~~~~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:272:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_fifo_in_if<double>&'
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note: candidate: void sc_core::sc_port_b<IF>::operator()(sc_core::sc_port_b<IF>::port_type&) [with IF = sc_core::sc_fifo_in_if<double>; sc_core::sc_port_b<IF>::port_type = sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >]
+     void operator () ( port_type& parent_ )
+          ^~~~~~~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_port.h:281:10: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >::port_type& {aka sc_core::sc_port_b<sc_core::sc_fifo_in_if<double> >&}'
+In file included from ../../../main.cpp:4:0:
+../../../top.h: In constructor 'top::top(sc_core::sc_module_name)':
+../../../top.h:31:40: error: class 'top' does not have any field named 'fifo_A'
+  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
+                                        ^~~~~~
+../../../top.h:31:57: error: class 'top' does not have any field named 'fifo_b'
+  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
+                                                         ^~~~~~
+../../../top.h:31:74: error: class 'top' does not have any field named 'fifo_x'
+  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
+                                                                          ^~~~~~
+../../../top.h:31:92: error: class 'top' does not have any field named 'fifo_sum'
+  top(sc_module_name nm):sc_module(nm), fifo_A("fifo_A"),fifo_b("fifo_b"),fifo_x("fifo_x"), fifo_sum("fifo_sum"), hardware("hardware"), software("sofware"){
+                                                                                            ^~~~~~~~
+In file included from ../../../main.cpp:4:0:
+../../../top.h:32:20: error: expression cannot be used as a function
+   software.A(fifo_A);
+                    ^
+../../../top.h:33:20: error: expression cannot be used as a function
+   hardware.A(fifo_A);
+                    ^
+../../../top.h:34:20: error: expression cannot be used as a function
+   software.b(fifo_b);
+                    ^
+../../../top.h:35:20: error: expression cannot be used as a function
+   hardware.b(fifo_b);
+                    ^
+In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
+                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
+                 from ../../../main.cpp:1:
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
+                             SC_CURRENT_USER_MODULE,                           \
+                             ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
+         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
+                                              ^~~~~~~~~~~~
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
+     declare_thread_process( func ## _handle,                                  \
+     ^~~~~~~~~~~~~~~~~~~~~~
+../../../top.h:36:3: note: in expansion of macro 'SC_THREAD'
+   SC_THREAD(jacobitop);
+   ^~~~~~~~~
+make: *** [obj/main.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csim.tcl"
+    invoked from within
+"hls::main H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

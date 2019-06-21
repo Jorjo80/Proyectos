@@ -2,4 +2,19 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Jacobi_systemc/producer.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Jacobi_systemc/consumer.cpp&apos; ..."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1488" tag="" content="In file included from Jacobi_systemc/consumer.cpp:1:
+Jacobi_systemc/consumer.h:23:3: error: use of undeclared identifier &apos;SC_CURRENT_USER_MODULE&apos;
+                SC_THREAD(setmatrices);
+                ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: note: expanded from macro &apos;SC_THREAD&apos;
+                            SC_CURRENT_USER_MODULE,                           \
+                            ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:432:36: note: expanded from macro &apos;declare_thread_process&apos;
+                 SC_MAKE_FUNC_PTR( host_tag, func ), this, 0 ); \
+                                   ^
+C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include\sysc/kernel/sc_process.h:147:46: note: expanded from macro &apos;SC_MAKE_FUNC_PTR&apos;
+        static_cast&lt;sc_core::SC_ENTRY_FUNC&gt;(&amp;callback_tag::func)
+                                             ^
+1 error generated."/>
 </Messages>
