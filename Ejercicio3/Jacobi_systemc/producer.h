@@ -6,7 +6,7 @@
 #include "math.h"
 #include "stdlib.h"
 
-SC_MODULE(producer){
+class producer:public sc_module{
 public:
 
 	sc_port<sc_fifo_out_if< double > > sum;

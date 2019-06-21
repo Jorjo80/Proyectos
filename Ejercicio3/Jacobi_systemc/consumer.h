@@ -7,7 +7,7 @@
 #include "math.h"
 
 
-SC_MODULE(consumer){
+class consumer:public sc_module{
 public:
 
 	sc_port<sc_fifo_in_if< double > > sum;
@@ -15,14 +15,15 @@ public:
 	sc_port<sc_fifo_out_if< int > > A[4][4];
 	sc_port<sc_fifo_out_if< int > > b[4];
 
-//	double error;
+	double error;
 
 	void calculo_error();
 	void setmatrices();
 
-	SC_CTOR(consumer){
-		SC_THREAD(setmatrices);
+	consumer(sc_module_name nm):sc_module(nm){
+		SC_THREAD(setmatrices());
 	}
+}
 };
 
 #endif

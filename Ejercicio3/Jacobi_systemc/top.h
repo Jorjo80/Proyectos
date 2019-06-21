@@ -28,7 +28,7 @@ public:
 		software.sum(fifo_sum);
 	}
 
-	top(sc_module_name nm, int sizeA,int sizeb,int sizex, double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
+	top(sc_module_name nm, int *sizeA,int *sizeb,int *sizex, double *size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
 		software.A(fifo_A);
 		hardware.A(fifo_A);
 		software.b(fifo_b);
