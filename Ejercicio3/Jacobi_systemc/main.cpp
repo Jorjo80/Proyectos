@@ -20,5 +20,5 @@ int sc_main(int argc, char* argv[]){
 	}
 	printf("error = %f ", todo.software.error);
 	sc_start(10000, SC_NS);
-	return 1;
+return 0;
 }
