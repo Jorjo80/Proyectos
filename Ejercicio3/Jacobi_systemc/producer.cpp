@@ -21,10 +21,10 @@ void producer::jacobi()
 
 				if(j==i)
 				{
-					sigma=sigma+((A[i-1][j]->read())*x_prev[j]);
+					sigma=sigma+((A[i-1][j])*x_prev[j]);
 				}
 			}
-			x_new[i]=(1/((A[i-1][i]->read())*((b[i]->read())-sigma)));
+			x_new[i]=(1/((A[i-1][i])*((b[i])-sigma)));
 		}
 	}
 
@@ -36,4 +36,15 @@ void producer::jacobi()
 		sumatorio+=(x_new[i]-x_prev[i])*(x_new[i]-x_prev[i]);
 	}
 	sum->write(sumatorio);
+}
+
+void producer::reading(int A[4][4], int b[4]){
+	for (int j=0;j<4;j++){
+		b[j]=q->read();
+		for (int k=0;k<4;k++)
+			A[j][k]=W->read();
+	}
+
+
+
 }

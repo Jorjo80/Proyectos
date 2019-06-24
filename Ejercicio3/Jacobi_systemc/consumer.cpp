@@ -14,10 +14,10 @@ void consumer::setmatrices(){
 
 	for (int i = 0; i<4;i++)
 	{
-		b[i]->write(T[i]);
+		b->write(T[i]);
 		for(int j=0; j<4;j++)
 		{
-			A[i][j]->write(W[i][j]);
+			A->write(W[i][j]);
 		}
 	}
 }
@@ -27,4 +27,9 @@ void consumer::calculo_error()
 	double sumable;
 	sumable=sum->read();
 	error=sqrt(sumable);
+}
+void consumer::reading(int resultado[16]){
+	for(int j=0;j<16;j++)
+		resultado[j]=x->read();
+
 }

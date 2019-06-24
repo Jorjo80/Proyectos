@@ -12,19 +12,20 @@ SC_MODULE(consumer){
 public:
 
 	sc_port<sc_fifo_in_if< double > > sum;
-	sc_port<sc_fifo_in_if< int > > x[16];
-	sc_port<sc_fifo_out_if< int > > A[4][4];
-	sc_port<sc_fifo_out_if< int > > b[4];
+	sc_port<sc_fifo_in_if< int > > x;
+	sc_port<sc_fifo_out_if< int > > A;
+	sc_port<sc_fifo_out_if< int > > b;
 
 	double error;
-
+	int resultado[16];
 	void calculo_error();
 	void setmatrices();
+	void reading(int resultado[16]);
 
 	SC_CTOR(consumer){
 		error=0;
 		setmatrices();
-
+		reading(resultado);
 	}
 };
 

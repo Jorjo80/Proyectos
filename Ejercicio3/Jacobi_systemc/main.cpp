@@ -7,18 +7,18 @@
 
 int sc_main(int argc, char* argv[]){
 
-	int a[4][4];
-	int b[4];
-	int x[16];
-	double sum;
+	int a=32;
+	int b=32;
+	int x=32;
+	int sum=64;
 	top todo("top", a, b, x, sum);
 	todo.jacobitop();
 	printf("solution \n x= ");
 	for(int i = 0; i<16;i++)
 	{
-		printf("%d\t",todo.software.x[i]->read());
+		printf("%d\t",todo.software.resultado[i]);
 	}
 	printf("error = %f ", todo.software.error);
-	sc_start(1000, SC_NS);
-	return 0;
+	sc_start(10000, SC_NS);
+	return 1;
 }
