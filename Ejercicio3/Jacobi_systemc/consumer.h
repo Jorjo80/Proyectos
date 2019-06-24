@@ -10,7 +10,7 @@
 //class consumer:public sc_module
 SC_MODULE(consumer){
 public:
-	sc_in<bool >clk;
+
 	sc_port<sc_fifo_in_if< double > > sum;
 	sc_port<sc_fifo_in_if< int > > x[16];
 	sc_port<sc_fifo_out_if< int > > A[4][4];
@@ -21,11 +21,10 @@ public:
 	void calculo_error();
 	void setmatrices();
 
-	//consumer(sc_module_name nm):sc_module(nm)
 	SC_CTOR(consumer){
 		error=0;
 		SC_THREAD(setmatrices);
-		//sensitive<<clk.pos();
+
 	}
 };
 

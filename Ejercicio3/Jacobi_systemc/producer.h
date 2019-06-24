@@ -7,7 +7,7 @@
 #include "stdlib.h"
 #define ITER 16
 #define N 4
-//class producer:public sc_module
+
 SC_MODULE(producer){
 public:
 
@@ -16,17 +16,13 @@ public:
 	sc_port<sc_fifo_in_if< int > > A[4][4];
 	sc_port<sc_fifo_in_if< int > > b[4];
 
-	sc_in< bool > clock;
 
 	void jacobi();
 
 	SC_CTOR(producer){
 
 	}
-/*	producer(sc_module_name nm):sc_module(nm){
 
-	}
-*/
 };
 
 #endif
