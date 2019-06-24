@@ -17,5 +17,5 @@ create_clock -period 10 -name default
 #source "./Jacobi_systemc/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -tool modelsim
 export_design -format ip_catalog

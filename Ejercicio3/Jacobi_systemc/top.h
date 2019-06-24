@@ -12,17 +12,17 @@ public:
 
 
 	//channel to be used
-	sc_fifo<int*>fifo_A;
-	sc_fifo<int*>fifo_b;
-	sc_fifo<int*>fifo_x;
+	sc_fifo< int* >fifo_A;
+	sc_fifo< int* >fifo_b;
+	sc_fifo< int* >fifo_x;
 	sc_fifo<double>fifo_sum;
 	producer hardware;
 	consumer software;
 
 	void jacobitop(){
 		hardware.jacobi();
-		hardware.x(fifo_x);
-		software.x(fifo_x);
+		fifo_x=hardware.x;
+		software.x=fifo_x;
 		hardware.sum(fifo_sum);
 		software.sum(fifo_sum);
 	}

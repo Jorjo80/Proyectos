@@ -12,11 +12,11 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTMG 210-274] Memory 'producer_jacobi_pdEe' is read-only, switch it to a ROM." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T15:34:23.665+0200" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'producer_jacobi_pcud' is read-only, switch it to a ROM." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T15:34:23.634+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name and is changed to 'producer_jacobi'; this may result in automatic C/RTL co-simulation failure." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T15:34:21.775+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T15:34:21.768+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T15:34:21.763+0200" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'producer_jacobi_pdEe' is read-only, switch it to a ROM." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:46.672+0200" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'producer_jacobi_pcud' is read-only, switch it to a ROM." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:46.641+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name and is changed to 'producer_jacobi'; this may result in automatic C/RTL co-simulation failure." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:44.875+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:44.875+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:44.875+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
