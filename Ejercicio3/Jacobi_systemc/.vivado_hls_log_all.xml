@@ -2,7 +2,9 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.&#xD;&#xA;Failed during preprocessing.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:41:51.069+0200"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>
@@ -11,13 +13,7 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [RTMG 210-274] Memory 'producer_jacobi_pdEe' is read-only, switch it to a ROM." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:46.672+0200" type="Warning"/>
-        <logs message="WARNING: [RTMG 210-274] Memory 'producer_jacobi_pcud' is read-only, switch it to a ROM." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:46.641+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name and is changed to 'producer_jacobi'; this may result in automatic C/RTL co-simulation failure." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:44.875+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:44.875+0200" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name." projectName="Jacobi_systemc" solutionName="solution1" date="2019-06-24T16:24:44.875+0200" type="Warning"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>

@@ -24474,8 +24474,9 @@ typedef void****** __ap_sc_end__;
 
 
 struct consumer : ::sc_core::sc_module{
+
 public:
- sc_in<bool >clk;
+
  sc_port<sc_fifo_in_if< double > > sum;
  sc_port<sc_fifo_in_if< int > > x[16];
  sc_port<sc_fifo_out_if< int > > A[4][4];
@@ -24486,10 +24487,9 @@ public:
  void calculo_error();
  void setmatrices();
 
-
  typedef consumer SC_CURRENT_USER_MODULE; consumer( ::sc_core::sc_module_name ){
   error=0;
-  SC_THREAD(setmatrices());
+  SC_THREAD(setmatrices);
 
  }
 };

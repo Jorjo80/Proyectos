@@ -21,9 +21,9 @@ public:
 
 	void jacobitop(){
 		hardware.jacobi();
-		fifo_x=hardware.x;
-		software.x=fifo_x;
+		hardware.x(fifo_x);
 		hardware.sum(fifo_sum);
+		software.x(fifo_x);
 		software.sum(fifo_sum);
 	}
 
