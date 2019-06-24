@@ -12,11 +12,10 @@ public:
 
 
 	//channel to be used
-	sc_in<bool >clk;
-	sc_fifo< int* >fifo_A;
-	sc_fifo< int* >fifo_b;
-	sc_fifo< int* >fifo_x;
-	sc_fifo< double >fifo_sum;
+	sc_fifo<int*>fifo_A;
+	sc_fifo<int*>fifo_b;
+	sc_fifo<int*>fifo_x;
+	sc_fifo<double>fifo_sum;
 	producer hardware;
 	consumer software;
 
@@ -33,11 +32,8 @@ public:
 		hardware.A(fifo_A);
 		software.b(fifo_b);
 		hardware.b(fifo_b);
-		SC_THREAD(jacobitop);
-		sensitive<<clk.pos();
-
+		jacobitop();
 	}
-
 };
 
 

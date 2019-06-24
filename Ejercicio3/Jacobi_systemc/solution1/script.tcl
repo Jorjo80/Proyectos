@@ -4,7 +4,7 @@
 ## Copyright (C) 1986-2018 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project Jacobi_systemc
-set_top main
+set_top producer::jacobi
 add_files Jacobi_systemc/consumer.cpp
 add_files Jacobi_systemc/consumer.h
 add_files Jacobi_systemc/producer.cpp

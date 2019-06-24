@@ -2782,3 +2782,244 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Mon Jun 24 15:24:33 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Mon Jun 24 15:25:40 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Mon Jun 24 15:28:17 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Mon Jun 24 15:29:42 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:55 . Memory (MB): peak = 102.871 ; gain = 18.227
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:55 . Memory (MB): peak = 102.871 ; gain = 18.227
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:57 . Memory (MB): peak = 155.637 ; gain = 70.992
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:57 . Memory (MB): peak = 169.898 ; gain = 85.254
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:57 . Memory (MB): peak = 208.426 ; gain = 123.781
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:57 . Memory (MB): peak = 210.766 ; gain = 126.121
+INFO: [HLS 200-10] Starting hardware synthesis ...
+ERROR: [SCA 200-203] Cannot find top module 'main', please check the specified module name.
+==============================================================
+File generated on Mon Jun 24 15:31:59 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:54 . Memory (MB): peak = 102.926 ; gain = 18.223
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:54 . Memory (MB): peak = 102.926 ; gain = 18.223
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:56 . Memory (MB): peak = 158.023 ; gain = 73.320
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:56 . Memory (MB): peak = 182.664 ; gain = 97.961
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:57 . Memory (MB): peak = 239.484 ; gain = 154.781
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:57 . Memory (MB): peak = 261.547 ; gain = 176.844
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [SCA 200-201] Elaborating SystemC module 'producer::jacobi'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Module 'producer::jacobi' has no clock port, it is a combinational module.
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name.
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name.
+INFO: [HLS 200-10] Synthesizing SystemC module 'producer::jacobi'
+INFO: [HLS 200-10] Synthesizing 'producer::jacobi' ...
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name and is changed to 'producer_jacobi'; this may result in automatic C/RTL co-simulation failure.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'producer_jacobi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 57.577 seconds; current allocated memory: 209.304 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.251 seconds; current allocated memory: 210.046 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'producer_jacobi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_x_m_if_Val' to 'producer_jacobi_pbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_A_m_if_Val' to 'producer_jacobi_pcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_b_m_if_Val' to 'producer_jacobi_pdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_x_prev' to 'producer_jacobi_xeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_x_new' to 'producer_jacobi_xfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'producer_jacobi_dg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_dmul_64ns_64ns_64_6_max_dsp_1' to 'producer_jacobi_dhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_ddiv_64ns_64ns_64_31_1' to 'producer_jacobi_dibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_sitodp_32ns_64_6_1' to 'producer_jacobi_sjbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_sjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'producer_jacobi'.
+INFO: [HLS 200-111]  Elapsed time: 0.342 seconds; current allocated memory: 210.694 MB.
+INFO: [RTMG 210-278] Implementing memory 'producer_jacobi_pbkb_ram (RAM)' using distributed RAMs.
+WARNING: [RTMG 210-274] Memory 'producer_jacobi_pcud' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'producer_jacobi_pcud_rom' using distributed ROMs.
+WARNING: [RTMG 210-274] Memory 'producer_jacobi_pdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'producer_jacobi_pdEe_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'producer_jacobi_xeOg_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:01:00 . Memory (MB): peak = 267.418 ; gain = 182.715
+INFO: [SYSC 207-301] Generating SystemC RTL for producer_jacobi.
+INFO: [VHDL 208-304] Generating VHDL RTL for producer_jacobi.
+INFO: [VLOG 209-307] Generating Verilog RTL for producer_jacobi.
+INFO: [HLS 200-112] Total elapsed time: 60.13 seconds; peak allocated memory: 210.694 MB.
+==============================================================
+File generated on Mon Jun 24 15:33:26 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/producer.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:53 . Memory (MB): peak = 102.832 ; gain = 18.016
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:53 . Memory (MB): peak = 102.832 ; gain = 18.016
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 157.754 ; gain = 72.938
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 182.352 ; gain = 97.535
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:56 . Memory (MB): peak = 239.406 ; gain = 154.590
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:56 . Memory (MB): peak = 261.129 ; gain = 176.313
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [SCA 200-201] Elaborating SystemC module 'producer::jacobi'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Module 'producer::jacobi' has no clock port, it is a combinational module.
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name.
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name.
+INFO: [HLS 200-10] Synthesizing SystemC module 'producer::jacobi'
+INFO: [HLS 200-10] Synthesizing 'producer::jacobi' ...
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name and is changed to 'producer_jacobi'; this may result in automatic C/RTL co-simulation failure.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'producer_jacobi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 56.517 seconds; current allocated memory: 209.242 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 209.999 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'producer_jacobi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_x_m_if_Val' to 'producer_jacobi_pbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_A_m_if_Val' to 'producer_jacobi_pcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_b_m_if_Val' to 'producer_jacobi_pdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_x_prev' to 'producer_jacobi_xeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_x_new' to 'producer_jacobi_xfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'producer_jacobi_dg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_dmul_64ns_64ns_64_6_max_dsp_1' to 'producer_jacobi_dhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_ddiv_64ns_64ns_64_31_1' to 'producer_jacobi_dibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_sitodp_32ns_64_6_1' to 'producer_jacobi_sjbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_sjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'producer_jacobi'.
+INFO: [HLS 200-111]  Elapsed time: 0.321 seconds; current allocated memory: 210.679 MB.
+INFO: [RTMG 210-278] Implementing memory 'producer_jacobi_pbkb_ram (RAM)' using distributed RAMs.
+WARNING: [RTMG 210-274] Memory 'producer_jacobi_pcud' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'producer_jacobi_pcud_rom' using distributed ROMs.
+WARNING: [RTMG 210-274] Memory 'producer_jacobi_pdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'producer_jacobi_pdEe_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'producer_jacobi_xeOg_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:59 . Memory (MB): peak = 267.637 ; gain = 182.820
+INFO: [SYSC 207-301] Generating SystemC RTL for producer_jacobi.
+INFO: [VHDL 208-304] Generating VHDL RTL for producer_jacobi.
+INFO: [VLOG 209-307] Generating Verilog RTL for producer_jacobi.
+INFO: [HLS 200-112] Total elapsed time: 59.118 seconds; peak allocated memory: 210.679 MB.
+==============================================================
+File generated on Mon Jun 24 15:35:08 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'

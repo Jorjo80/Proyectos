@@ -25036,7 +25036,9 @@ void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
 #630 "C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdlib.h" 2 3
 #8 "Jacobi_systemc/producer.h" 2
 
-class producer:public sc_module{
+
+
+struct producer : ::sc_core::sc_module{
 public:
 
  sc_port<sc_fifo_out_if< double > > sum;
@@ -25046,14 +25048,14 @@ public:
 
  sc_in< bool > clock;
 
- int n=4;
-    int iter= 16;
-
  void jacobi();
 
- producer(sc_module_name nm):sc_module(nm){
+ typedef producer SC_CURRENT_USER_MODULE; producer( ::sc_core::sc_module_name ){
 
  }
+
+
+
 
 };
 #2 "Jacobi_systemc/producer.cpp" 2
@@ -25061,20 +25063,20 @@ public:
 void producer::jacobi()
 {
  int x_prev[16], x_new[16];
- for(int i=0; i < iter; i++)
+ for(int i=0; i < 16; i++)
  {
   x_prev[i]=0;
   x_new[i]=1;
  }
 
- for(int i=0; i < iter; i++)
+ for(int i=0; i < 16; i++)
  {
 
   x_prev[i]=x_new[i];
-  for(int i=0; i<producer::n; i++)
+  for(int i=0; i<4; i++)
   {
    double sigma=0.0;
-   filas:for(int j=0; j<n;j++)
+   filas:for(int j=0; j<4;j++)
    {
 
     if(j==i)
@@ -25088,7 +25090,7 @@ void producer::jacobi()
 
  double sumatorio=0.0;
 
- for(int i=0; i <iter; i++)
+ for(int i=0; i <16; i++)
  {
   x[i]->write(x_new[i]);
   sumatorio+=(x_new[i]-x_prev[i])*(x_new[i]-x_prev[i]);

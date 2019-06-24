@@ -22,7 +22,6 @@ public:
 
 	SC_CTOR(producer){
 
-
 	}
 /*	producer(sc_module_name nm):sc_module(nm){
 

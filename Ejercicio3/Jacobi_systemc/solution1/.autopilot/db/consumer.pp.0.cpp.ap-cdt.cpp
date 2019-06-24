@@ -24544,8 +24544,10 @@ typedef void****** __ap_sc_end__;
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-class consumer:public sc_module{
+#pragma empty_line
+struct consumer : ::sc_core::sc_module{
 public:
+ sc_in<bool >clk;
  sc_port<sc_fifo_in_if< double > > sum;
  sc_port<sc_fifo_in_if< int > > x[16];
  sc_port<sc_fifo_out_if< int > > A[4][4];
@@ -24556,8 +24558,11 @@ public:
  void calculo_error();
  void setmatrices();
 #pragma empty_line
- consumer(sc_module_name nm):sc_module(nm){
+#pragma empty_line
+ typedef consumer SC_CURRENT_USER_MODULE; consumer( ::sc_core::sc_module_name ){
+  error=0;
   SC_THREAD(setmatrices());
+#pragma empty_line
  }
 };
 #pragma line 2 "Jacobi_systemc/consumer.cpp" 2

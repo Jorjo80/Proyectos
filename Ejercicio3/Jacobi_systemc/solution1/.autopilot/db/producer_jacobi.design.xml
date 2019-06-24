@@ -1,0 +1,113 @@
+<profile>
+
+<RTLDesignHierarchy>
+<TopModule>
+<ModuleName>producer_jacobi</ModuleName>
+</TopModule>
+</RTLDesignHierarchy>
+
+<ModuleInformation>
+<Module>
+<Name>producer_jacobi</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>8.621</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>4195</Best-caseLatency>
+<Average-caseLatency>5987</Average-caseLatency>
+<Worst-caseLatency>7779</Worst-caseLatency>
+<PipelineInitiationInterval>4196 ~ 7780</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>16</TripCount>
+<Latency>16</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop1>
+<Loop2>
+<Name>Loop 2</Name>
+<TripCount>16</TripCount>
+<Latency>3952 ~ 7536</Latency>
+<IterationLatency>
+<range>
+<min>247</min>
+<max>471</max>
+</range>
+</IterationLatency>
+<PipelineDepth>247 ~ 471</PipelineDepth>
+<Loop2.1>
+<Name>Loop 2.1</Name>
+<TripCount>4</TripCount>
+<Latency>244 ~ 468</Latency>
+<IterationLatency>
+<range>
+<min>61</min>
+<max>117</max>
+</range>
+</IterationLatency>
+<PipelineDepth>61 ~ 117</PipelineDepth>
+<filas>
+<Name>filas</Name>
+<TripCount>4</TripCount>
+<Latency>8 ~ 64</Latency>
+<IterationLatency>
+<range>
+<min>2</min>
+<max>16</max>
+</range>
+</IterationLatency>
+<PipelineDepth>2 ~ 16</PipelineDepth>
+</filas>
+</Loop2.1>
+</Loop2>
+<Loop3>
+<Name>Loop 3</Name>
+<TripCount>16</TripCount>
+<Latency>224</Latency>
+<IterationLatency>14</IterationLatency>
+<PipelineDepth>14</PipelineDepth>
+</Loop3>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<BRAM_18K>0</BRAM_18K>
+<DSP48E>20</DSP48E>
+<FF>5090</FF>
+<LUT>7114</LUT>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>producer::jacobi</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>producer::jacobi</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+</ModuleInformation>
+
+</profile>

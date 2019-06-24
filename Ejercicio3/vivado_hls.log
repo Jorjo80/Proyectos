@@ -1,103 +1,11 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Fri Jun 21 12:25:02 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Mon Jun 24 15:35:08 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc'.
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../main.cpp in debug mode
-csim.mk:78: recipe for target 'obj/main.o' failed
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h: In constructor 'consumer::consumer(sc_core::sc_module_name)':
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
-                             SC_CURRENT_USER_MODULE,                           \
-                             ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
-         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
-                                              ^~~~~~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
-     declare_thread_process( func ## _handle,                                  \
-     ^~~~~~~~~~~~~~~~~~~~~~
-../../../consumer.h:23:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices);
-   ^~~~~~~~~
-In file included from ../../../main.cpp:4:0:
-../../../top.h: In member function 'void top::jacobitop()':
-../../../top.h:25:20: error: expression cannot be used as a function
-   hardware.x(fifo_x);
-                    ^
-../../../top.h:26:20: error: expression cannot be used as a function
-   software.x(fifo_x);
-                    ^
-In file included from ../../../main.cpp:4:0:
-../../../top.h: In constructor 'top::top(sc_core::sc_module_name, int (*)[4], int*, int*, double)':
-../../../top.h:31:234: error: invalid conversion from 'int (*)[4]' to 'int' [-fpermissive]
-  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
-                                                                                                                                                                                                                                          ^
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:67:14: note:   initializing argument 2 of 'sc_core::sc_fifo<T>::sc_fifo(const char*, int) [with T = int*]'
-     explicit sc_fifo( const char* name_, int size_ = 16 )
-              ^~~~~~~
-In file included from ../../../main.cpp:4:0:
-../../../top.h:31:234: error: invalid conversion from 'int*' to 'int' [-fpermissive]
-  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
-                                                                                                                                                                                                                                          ^
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:67:14: note:   initializing argument 2 of 'sc_core::sc_fifo<T>::sc_fifo(const char*, int) [with T = int*]'
-     explicit sc_fifo( const char* name_, int size_ = 16 )
-              ^~~~~~~
-In file included from ../../../main.cpp:4:0:
-../../../top.h:31:234: error: invalid conversion from 'int*' to 'int' [-fpermissive]
-  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
-                                                                                                                                                                                                                                          ^
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h:67:14: note:   initializing argument 2 of 'sc_core::sc_fifo<T>::sc_fifo(const char*, int) [with T = int*]'
-     explicit sc_fifo( const char* name_, int size_ = 16 )
-              ^~~~~~~
-In file included from ../../../main.cpp:4:0:
-../../../top.h:32:20: error: expression cannot be used as a function
-   software.A(fifo_A);
-                    ^
-../../../top.h:33:20: error: expression cannot be used as a function
-   hardware.A(fifo_A);
-                    ^
-../../../top.h:34:20: error: expression cannot be used as a function
-   software.b(fifo_b);
-                    ^
-../../../top.h:35:20: error: expression cannot be used as a function
-   hardware.b(fifo_b);
-                    ^
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
-                             SC_CURRENT_USER_MODULE,                           \
-                             ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
-         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
-                                              ^~~~~~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
-     declare_thread_process( func ## _handle,                                  \
-     ^~~~~~~~~~~~~~~~~~~~~~
-../../../top.h:36:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(jacobitop);
-   ^~~~~~~~~
-make: *** [obj/main.o] Error 1
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-4
+can't read "::AESL_CSIM::gLogfl": no such variable
     while executing
 "source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/csim.tcl"
     invoked from within

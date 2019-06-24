@@ -2,23 +2,6 @@ INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../main.cpp in debug mode
 csim.mk:78: recipe for target 'obj/main.o' failed
-In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:35:0,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:74,
-                 from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
-                 from ../../../main.cpp:1:
-../../../consumer.h: In constructor 'consumer::consumer(sc_core::sc_module_name)':
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:463:29: error: 'SC_CURRENT_USER_MODULE' has not been declared
-                             SC_CURRENT_USER_MODULE,                           \
-                             ^
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_process.h:147:46: note: in definition of macro 'SC_MAKE_FUNC_PTR'
-         static_cast<sc_core::SC_ENTRY_FUNC>(&callback_tag::func)
-                                              ^~~~~~~~~~~~
-C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/kernel/sc_module.h:461:5: note: in expansion of macro 'declare_thread_process'
-     declare_thread_process( func ## _handle,                                  \
-     ^~~~~~~~~~~~~~~~~~~~~~
-../../../consumer.h:23:3: note: in expansion of macro 'SC_THREAD'
-   SC_THREAD(setmatrices);
-   ^~~~~~~~~
 In file included from ../../../main.cpp:4:0:
 ../../../top.h: In member function 'void top::jacobitop()':
 ../../../top.h:25:20: error: expression cannot be used as a function
@@ -29,9 +12,9 @@ In file included from ../../../main.cpp:4:0:
                     ^
 In file included from ../../../main.cpp:4:0:
 ../../../top.h: In constructor 'top::top(sc_core::sc_module_name, int (*)[4], int*, int*, double)':
-../../../top.h:31:234: error: invalid conversion from 'int (*)[4]' to 'int' [-fpermissive]
-  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
-                                                                                                                                                                                                                                          ^
+../../../top.h:31:235: error: invalid conversion from 'int (*)[4]' to 'int' [-fpermissive]
+  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("software"){
+                                                                                                                                                                                                                                           ^
 In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
                  from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
                  from ../../../main.cpp:1:
@@ -39,9 +22,9 @@ C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h
      explicit sc_fifo( const char* name_, int size_ = 16 )
               ^~~~~~~
 In file included from ../../../main.cpp:4:0:
-../../../top.h:31:234: error: invalid conversion from 'int*' to 'int' [-fpermissive]
-  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
-                                                                                                                                                                                                                                          ^
+../../../top.h:31:235: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("software"){
+                                                                                                                                                                                                                                           ^
 In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
                  from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
                  from ../../../main.cpp:1:
@@ -49,9 +32,9 @@ C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/sysc/communication/sc_fifo.h
      explicit sc_fifo( const char* name_, int size_ = 16 )
               ^~~~~~~
 In file included from ../../../main.cpp:4:0:
-../../../top.h:31:234: error: invalid conversion from 'int*' to 'int' [-fpermissive]
-  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("sofware"){
-                                                                                                                                                                                                                                          ^
+../../../top.h:31:235: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+  top(sc_module_name nm, int sizeA[4][4],int sizeb[4],int sizex[16], double size):sc_module(nm), fifo_A("fifo_A",sizeA),fifo_b("fifo_b",sizeb),fifo_x("fifo_x",sizex), fifo_sum("fifo_sum",size), hardware("hardware"), software("software"){
+                                                                                                                                                                                                                                           ^
 In file included from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc:84:0,
                  from C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include/systemc.h:212,
                  from ../../../main.cpp:1:
