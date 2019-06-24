@@ -23,7 +23,7 @@ public:
 
 	SC_CTOR(consumer){
 		error=0;
-		SC_THREAD(setmatrices);
+		setmatrices();
 
 	}
 };
