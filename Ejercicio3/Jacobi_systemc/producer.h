@@ -6,22 +6,27 @@
 #include "math.h"
 #include "stdlib.h"
 #define ITER 16
-#define n 4
-
-class producer:public sc_module{
+#define N 4
+//class producer:public sc_module
+SC_MODULE(producer){
 public:
 
-	sc_port<sc_fifo_out_if<double>> sum;
-	sc_port<sc_fifo_out_if<int>> x[16];
-	sc_port<sc_fifo_in_if<int>> A[4][4];
-	sc_port<sc_fifo_in_if<int>> b[4];
+	sc_port<sc_fifo_out_if< double > > sum;
+	sc_port<sc_fifo_out_if< int > > x[16];
+	sc_port<sc_fifo_in_if< int > > A[4][4];
+	sc_port<sc_fifo_in_if< int > > b[4];
+
+	sc_in< bool > clock;
 
 	void jacobi();
 
-	producer(sc_module_name nm):sc_module(nm){
+	SC_CTOR(producer){
 
 	}
+/*	producer(sc_module_name nm):sc_module(nm){
 
+	}
+*/
 };
 
 #endif

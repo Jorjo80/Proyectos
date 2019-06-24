@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:00:00 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Mon Jun 24 16:23:51 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -46,12 +46,11 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.106 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.151 sec.
+Command         ap_source done; 0.139 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.154 sec.
-Command     ap_source done; 0.154 sec.
+Command       ap_source done; 0.142 sec.
+Command     ap_source done; 0.142 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -81,7 +80,7 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.269 sec.
+Command   open_solution done; 0.252 sec.
 Execute   set_part xc7z020clg400-1 -tool vivado 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute       get_default_platform 
@@ -121,639 +120,401 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Jacobi_systemc/producer.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp" 
 INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Jacobi_systemc/producer.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:00:30 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command       clang done; 1.034 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.564 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp"  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.438 sec.
+INFO-FLOW: Done: GCC PP time: 3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp std=gnu++98 -directive=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.553 sec.
+INFO-FLOW: CDT Preprocessing without tidy-3.1...
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp.ap-line.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp.ap-line.cpp.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+Execute       cdt  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp.ap-line.cpp"  -m "producer::jacobi" -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp.ap-cdt.cpp" --pp --directive H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/solution1.directive --source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp --error H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db --ca --es --gf --pd --p2d H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db --sd --scff H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/.systemc_flag --ad 
+INFO-FLOW: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.emf.ecore.xmi.impl.XMLHandler (file:/C:/Xilinx/Vivado/2018.3/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.emf.ecore.xmi.impl.XMLHandler
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Command       cdt done; 7.145 sec.
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.0.cpp.ap-cdt.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pragma.0.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pragma.0.cpp.ap-line.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/pragma.status.tcl 
+INFO-FLOW: Pragma Handling...
+INFO-FLOW: SystemC Checker
+Execute       ap_eval exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang++ -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -DAP_PRE  -I "C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include" -I "C:/Xilinx/Vivado/2018.3/include" -I "C:/Xilinx/Vivado/2018.3/include/ap_sysc" -S "Jacobi_systemc/producer.cpp" -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pp.00.o 
+Command       ap_eval done; 1.395 sec.
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pragma.1.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.scpp.0.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.scpp.0.cpp.line_pre.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: SystemC preprocessor
+Execute       ap_eval exec C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java -Xmx512m -classpath "C:/Xilinx/Vivado/2018.3/lib/classes/org.eclipse.cdt.core_5.0.0.200806171202.jar;C:/Xilinx/Vivado/2018.3/lib/classes/jargs.jar;C:/Xilinx/Vivado/2018.3/lib/classes/org.eclipse.core.runtime_3.4.0.v20080512.jar;C:/Xilinx/Vivado/2018.3/lib/classes/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;C:/Xilinx/Vivado/2018.3/lib/classes/autopilot.scelaborator.jar"  autopilot.scelaborator.ScParser  -S "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" --force-inline  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/" "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.scpp.0.cpp" --mi-suffix=0 -d -t 
+Command       ap_eval done; error code: 1; 9.829 sec.
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.scpp.0.cpp.ssdm.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.scpp.1.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.scpp.1.cpp.line_post.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
 Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.109 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.152 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.155 sec.
-Command     ap_source done; 0.155 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO-FLOW: Processing labels
+Execute       clang -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.bc
+Command       clang done; 1.455 sec.
+INFO: [HLS 200-10] Analyzing design file 'Jacobi_systemc/consumer.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling Jacobi_systemc/consumer.cpp as C++
 Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.271 sec.
-Execute   csim_design -O -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.791 sec.
-Command ap_source done; error code: 1; 2.069 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:05:14 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       is_encrypted Jacobi_systemc/consumer.cpp 
 Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.107 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.152 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.155 sec.
-Command     ap_source done; 0.155 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Jacobi_systemc/consumer.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Jacobi_systemc/consumer.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp
+Command       clang done; 1.056 sec.
+INFO-FLOW: Done: GCC PP time: 1.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp std=gnu++98 -directive=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.062 sec.
+INFO-FLOW: CDT Preprocessing without tidy-3.1...
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp.ap-line.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp.ap-line.cpp.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+Execute       cdt  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp.ap-line.cpp"  -m "producer::jacobi" -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp.ap-cdt.cpp" --pp --directive H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/solution1.directive --source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp --error H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db --ca --es --gf --pd --p2d H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db --sd --scff H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/.systemc_flag --ad 
+INFO-FLOW: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.emf.ecore.xmi.impl.XMLHandler (file:/C:/Xilinx/Vivado/2018.3/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+WARNING: Please consider reporting this to the maintainers of org.eclipse.emf.ecore.xmi.impl.XMLHandler
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Command       cdt done; 7.033 sec.
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.0.cpp.ap-cdt.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pragma.0.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pragma.0.cpp.ap-line.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/pragma.status.tcl 
+INFO-FLOW: Pragma Handling...
+INFO-FLOW: SystemC Checker
+Execute       ap_eval exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang++ -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -DAP_PRE  -I "C:/Xilinx/Vivado/2018.3/win64/tools/systemc/include" -I "C:/Xilinx/Vivado/2018.3/include" -I "C:/Xilinx/Vivado/2018.3/include/ap_sysc" -S "Jacobi_systemc/consumer.cpp" -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pp.00.o 
+Command       ap_eval done; 1.389 sec.
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pragma.1.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.scpp.0.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.scpp.0.cpp.line_pre.CXX 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: SystemC preprocessor
+Execute       ap_eval exec C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java -Xmx512m -classpath "C:/Xilinx/Vivado/2018.3/lib/classes/org.eclipse.cdt.core_5.0.0.200806171202.jar;C:/Xilinx/Vivado/2018.3/lib/classes/jargs.jar;C:/Xilinx/Vivado/2018.3/lib/classes/org.eclipse.core.runtime_3.4.0.v20080512.jar;C:/Xilinx/Vivado/2018.3/lib/classes/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;C:/Xilinx/Vivado/2018.3/lib/classes/autopilot.scelaborator.jar"  autopilot.scelaborator.ScParser  -S "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" --force-inline  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/" "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.scpp.0.cpp" --mi-suffix=1 -d -t 
+Command       ap_eval done; error code: 1; 9.538 sec.
+INFO-FLOW: Marker-Pragma convertor: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.scpp.0.cpp.ssdm.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.scpp.1.cpp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.scpp.1.cpp.line_post.CXX 0
+INFO-FLOW: Converting Pragmas to Markers...
 Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.273 sec.
-Execute   csim_design -O -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.873 sec.
-Command ap_source done; error code: 1; 2.153 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:06:33 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.106 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.152 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.154 sec.
-Command     ap_source done; 0.155 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.269 sec.
-Execute   csim_design -O -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.717 sec.
-Command ap_source done; error code: 1; 1.994 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:07:33 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.111 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.156 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.159 sec.
-Command     ap_source done; 0.16 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.275 sec.
-Execute   csim_design -O -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.794 sec.
-Command ap_source done; error code: 1; 2.076 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:08:38 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.108 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.154 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.157 sec.
-Command     ap_source done; 0.157 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.279 sec.
-Execute   csim_design -O -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.791 sec.
-Command ap_source done; error code: 1; 2.077 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1 opened at Fri Jun 21 13:09:08 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.109 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.154 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.156 sec.
-Command     ap_source done; 0.157 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg400-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.275 sec.
-Execute   csim_design -O -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/main.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/consumer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.cpp 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/producer.h 
-Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.813 sec.
-Command ap_source done; error code: 1; 2.095 sec.
+INFO-FLOW: Processing labels
+Execute       clang -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.bc
+Command       clang done; 1.433 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer.g.bc H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/consumer.g.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.03 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:50 . Memory (MB): peak = 102.863 ; gain = 17.715
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/ve_warning.tcl 
+INFO: [HLS 200-10] Validating synthesis directives ...
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/pragma.status.tcl 
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:50 . Memory (MB): peak = 102.863 ; gain = 17.715
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.pp.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.27 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top producer::jacobi -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.0.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.793 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:53 . Memory (MB): peak = 158.387 ; gain = 73.238
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.1.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+Command         transform done; 0.294 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.2.prechk.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.142 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:53 . Memory (MB): peak = 183.656 ; gain = 98.508
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.g.1.bc to H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.1.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'producer::jacobi' (Jacobi_systemc/producer.cpp:27) automatically.
+Command         transform done; 0.447 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.1.tmp.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.245 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:54 . Memory (MB): peak = 239.891 ; gain = 154.742
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.2.bc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 0.308 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:54 . Memory (MB): peak = 261.371 ; gain = 176.223
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 3.551 sec.
+Command     elaborate done; 52.975 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing SystemC design ...
+Execute       sc_get_modules -debug producer::jacobi 
+INFO: [SCA 200-201] Elaborating SystemC module 'producer::jacobi'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Module 'producer::jacobi' has no clock port, it is a combinational module.
+Execute       export_ssdm H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/a.o.sce.ll 
+INFO-FLOW: SystemC Modules: { producer::jacobi }
+Execute       ap_set_top_model producer::jacobi 
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name.
+Execute       cdfg_preprocess -model producer::jacobi 
+Execute       ap_set_top_model producer::jacobi 
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name.
+Execute       sc_get_processes producer::jacobi 
+INFO: [HLS 200-10] Synthesizing SystemC module 'producer::jacobi'
+INFO-FLOW: SystemC module [producer::jacobi] has process(es): {  }
+INFO-FLOW: SystemC module [producer::jacobi] is top-level?: true 
+INFO: [HLS 200-10] Synthesizing 'producer::jacobi' ...
+Execute       preproc_iomode -model producer::jacobi 
+INFO-FLOW: Model list for configure: producer::jacobi
+INFO-FLOW: Configuring Module : producer::jacobi ...
+Execute       set_default_model producer::jacobi 
+Execute       apply_spec_resource_limit producer::jacobi 
+INFO-FLOW: Model list for preprocess: producer::jacobi
+INFO-FLOW: Preprocessing Module: producer::jacobi ...
+Execute       set_default_model producer::jacobi 
+Execute       cdfg_preprocess -model producer::jacobi 
+Execute       rtl_gen_preprocess producer::jacobi 
+WARNING: [SYN 201-103] Top function name 'producer::jacobi' is not a legal RTL name and is changed to 'producer_jacobi'; this may result in automatic C/RTL co-simulation failure.
+INFO-FLOW: Model list for synthesis: producer::jacobi
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'producer_jacobi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model producer::jacobi 
+Execute       schedule -model producer::jacobi 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.108 sec.
+INFO: [HLS 200-111]  Elapsed time: 54.209 seconds; current allocated memory: 209.257 MB.
+Execute       report -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+Command       report done; 0.117 sec.
+Execute       db_write -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.sched.adb -f 
+INFO-FLOW: Finish scheduling producer::jacobi.
+Execute       set_default_model producer::jacobi 
+Execute       bind -model producer::jacobi 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=producer::jacobi
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.237 seconds; current allocated memory: 210.015 MB.
+Execute       report -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.verbose.bind.rpt -verbose -f 
+Command       report done; 0.206 sec.
+Execute       db_write -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.bind.adb -f 
+INFO-FLOW: Finish binding producer::jacobi.
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess producer::jacobi 
+INFO-FLOW: Model list for RTL generation: producer::jacobi
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'producer_jacobi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model producer::jacobi -vendor xilinx -mg_file H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_x_m_if_Val' to 'producer_jacobi_pbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_A_m_if_Val' to 'producer_jacobi_pcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_producer_b_m_if_Val' to 'producer_jacobi_pdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_x_prev' to 'producer_jacobi_xeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_x_new' to 'producer_jacobi_xfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'producer_jacobi_dg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_dmul_64ns_64ns_64_6_max_dsp_1' to 'producer_jacobi_dhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_ddiv_64ns_64ns_64_31_1' to 'producer_jacobi_dibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'producer_jacobi_sitodp_32ns_64_6_1' to 'producer_jacobi_sjbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_dibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'producer_jacobi_sjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'producer_jacobi'.
+INFO: [HLS 200-111]  Elapsed time: 0.352 seconds; current allocated memory: 210.679 MB.
+Execute       gen_rtl producer::jacobi -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/syn/systemc/producer_jacobi -synmodules producer::jacobi 
+Execute       gen_rtl producer::jacobi -istop -style xilinx -f -lang vhdl -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/syn/vhdl/producer_jacobi 
+Execute       gen_rtl producer::jacobi -istop -style xilinx -f -lang vlog -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/syn/verilog/producer_jacobi 
+Execute       export_constraint_db -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.constraint.tcl -f -tool general 
+Execute       report -model producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.design.xml -verbose -f -dv 
+Execute       report -model producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi -p H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db 
+Execute       report -model producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/syn/report/producer_jacobi_csynth.rpt -f 
+Execute       report -model producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/syn/report/producer_jacobi_csynth.xml -f -x 
+Execute       report -model producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.verbose.rpt -verbose -f 
+Command       report done; 0.223 sec.
+Execute       db_write -model producer::jacobi -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.adb -f 
+Execute       sc_get_clocks producer::jacobi 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain producer::jacobi 
+INFO-FLOW: Model list for RTL component generation: producer::jacobi
+INFO-FLOW: Handling components in module [producer_jacobi] ... 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.compgen.tcl 
+INFO-FLOW: Found component producer_jacobi_dg8j.
+INFO-FLOW: Append model producer_jacobi_dg8j
+INFO-FLOW: Found component producer_jacobi_dhbi.
+INFO-FLOW: Append model producer_jacobi_dhbi
+INFO-FLOW: Found component producer_jacobi_dibs.
+INFO-FLOW: Append model producer_jacobi_dibs
+INFO-FLOW: Found component producer_jacobi_sjbC.
+INFO-FLOW: Append model producer_jacobi_sjbC
+INFO-FLOW: Found component producer_jacobi_pbkb.
+INFO-FLOW: Append model producer_jacobi_pbkb
+INFO-FLOW: Found component producer_jacobi_pcud.
+INFO-FLOW: Append model producer_jacobi_pcud
+INFO-FLOW: Found component producer_jacobi_pdEe.
+INFO-FLOW: Append model producer_jacobi_pdEe
+INFO-FLOW: Found component producer_jacobi_xeOg.
+INFO-FLOW: Append model producer_jacobi_xeOg
+INFO-FLOW: Append model producer_jacobi
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: producer_jacobi_dg8j producer_jacobi_dhbi producer_jacobi_dibs producer_jacobi_sjbC producer_jacobi_pbkb producer_jacobi_pcud producer_jacobi_pdEe producer_jacobi_xeOg producer_jacobi
+INFO-FLOW: To file: write model producer_jacobi_dg8j
+INFO-FLOW: To file: write model producer_jacobi_dhbi
+INFO-FLOW: To file: write model producer_jacobi_dibs
+INFO-FLOW: To file: write model producer_jacobi_sjbC
+INFO-FLOW: To file: write model producer_jacobi_pbkb
+INFO-FLOW: To file: write model producer_jacobi_pcud
+INFO-FLOW: To file: write model producer_jacobi_pdEe
+INFO-FLOW: To file: write model producer_jacobi_xeOg
+INFO-FLOW: To file: write model producer_jacobi
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.132 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.134 sec.
+Command       ap_source done; 0.135 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'producer_jacobi_pbkb_ram (RAM)' using distributed RAMs.
+WARNING: [RTMG 210-274] Memory 'producer_jacobi_pcud' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'producer_jacobi_pcud_rom' using distributed ROMs.
+WARNING: [RTMG 210-274] Memory 'producer_jacobi_pdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'producer_jacobi_pdEe_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'producer_jacobi_xeOg_ram (RAM)' using distributed RAMs.
+Command       ap_source done; 0.237 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.139 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.142 sec.
+Command       ap_source done; 0.142 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=producer_jacobi xml_exists=0
+INFO-FLOW: DBG:CMD:         dump_ctype_info_xml failed
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.compgen.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.constraint.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=producer_jacobi
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=9 #gSsdmPorts=0
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/producer_jacobi.constraint.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/impl/misc/producer_jacobi_ap_dadddsub_3_full_dsp_64_ip.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/impl/misc/producer_jacobi_ap_ddiv_29_no_dsp_64_ip.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/impl/misc/producer_jacobi_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute       source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/impl/misc/producer_jacobi_ap_sitodp_4_no_dsp_32_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/Ejercicio3/Jacobi_systemc/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:57 . Memory (MB): peak = 267.684 ; gain = 182.535
+INFO: [SYSC 207-301] Generating SystemC RTL for producer_jacobi.
+INFO: [VHDL 208-304] Generating VHDL RTL for producer_jacobi.
+INFO: [VLOG 209-307] Generating Verilog RTL for producer_jacobi.
+Command     autosyn done; 2.65 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 55.641 sec.
+Command ap_source done; 55.961 sec.
 Execute cleanup_all 

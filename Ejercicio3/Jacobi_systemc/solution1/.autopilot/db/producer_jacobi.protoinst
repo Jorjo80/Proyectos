@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"producer::jacobi": {
+			"proto_instances": {
+			}
+		}
+	}
+}
