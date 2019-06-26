@@ -42,6 +42,11 @@
 			<location>C:/Users/USER1/Documents/GitHub/Proyectos/SystemC/SystemC/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/finitestatemachine.h</name>
+			<type>1</type>
+			<location>C:/Users/USER1/Documents/SystemC_Enrique/Producer_test/finitestatemachine.h</location>
+		</link>
+		<link>
 			<name>source/hardware.cpp</name>
 			<type>1</type>
 			<location>C:/Users/USER1/Documents/GitHub/Proyectos/SystemC/hardware.cpp</location>

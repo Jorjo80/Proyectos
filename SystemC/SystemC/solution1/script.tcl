@@ -5,6 +5,7 @@
 ############################################################
 open_project SystemC
 set_top top
+add_files ../../../SystemC_Enrique/Producer_test/finitestatemachine.h
 add_files hardware.cpp
 add_files hardware.h
 add_files software.cpp

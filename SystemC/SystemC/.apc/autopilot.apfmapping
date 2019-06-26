@@ -7,6 +7,7 @@
     <originFiles name="software.h" path="C:\Users\USER1\Documents\GitHub\Proyectos\SystemC\software.h"/>
     <originFiles name="stack.h" path="C:\Users\USER1\Documents\GitHub\Proyectos\SystemC\stack.h"/>
     <originFiles name="top.h" path="C:\Users\USER1\Documents\GitHub\Proyectos\SystemC\top.h"/>
+    <originFiles name="finitestatemachine.h" path="C:\Users\USER1\Documents\SystemC_Enrique\Producer_test\finitestatemachine.h"/>
   </source>
   <testbench>
     <originFiles name="main.cpp" path="C:\Users\USER1\Documents\GitHub\Proyectos\SystemC\main.cpp"/>
