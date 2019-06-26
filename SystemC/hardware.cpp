@@ -10,14 +10,14 @@ void hardware::do_reset(){
 	ReadBFromStack=0;
 }
 void hardware::ReceiveMatA(){
-	while(true)
+	while(RecM_A->read()==true)
 	{
 		for(int j= 0;j<16;j++)
 		{
 			wait();
 			if(MatA->nb_read(ReadAFromStack))
 			{
-				cout << "R MatA" << ReadAFromStack << " at " << sc_time_stamp() << endl;
+				//cout << "R MatA" << ReadAFromStack << " at " << sc_time_stamp() << endl;
 				matrixA[j]=ReadAFromStack;
 			}
 		}
@@ -27,18 +27,19 @@ void hardware::ReceiveMatA(){
 			printf("%f ", matrixA[j]);
 		}
 		printf("\n ");
+		finishRecM_A->write(true);
 	}
 
 }
 void hardware::ReceiveMatB(){
-	while(true)
+	while(RecM_B->read()==true)
 	{
 		for(int j= 0;j<4;j++)
 		{
 			wait();
 			if(MatB->nb_read(ReadBFromStack))
 			{
-				cout << "R MatB" << ReadBFromStack << " at " << sc_time_stamp() << endl;
+				//cout << "R MatB" << ReadBFromStack << " at " << sc_time_stamp() << endl;
 				matrixB[j]=ReadBFromStack;
 			}
 		}
@@ -48,6 +49,7 @@ void hardware::ReceiveMatB(){
 			printf("%f ", matrixB[j]);
 		}
 		printf("\n ");
+		finishRecM_B->write(true);
 	}
 
 }
@@ -59,27 +61,30 @@ void hardware::SendMatX(){
 		{
 			matrixX[j]=(double)(j*(j+1.0));
 		}
-		while(true)
+		while(SendM_X->read())
 		{
 			for(int j=0;j<16;j++)
 			{
 				wait();
 				if(MatX->nb_write(matrixX[j])){
-					cout << "W MatX" << (matrixX[j]) << " at " << sc_time_stamp() << endl;
+					//cout << "W MatX" << (matrixX[j]) << " at " << sc_time_stamp() << endl;
 				}
 
 			}
-			//finishM_X->write(true);
+			finishSendM_X->write(true);
 		}
 }
 void hardware::SendSum(){
 	double sum;
 	sum=matrixX[3]+matrixX[5];
-	while(true)
+	while(SumSend->read())
 	{
 		wait();
 		if(SumPort->nb_write(sum))
-			cout<<"W Sum"<<sum<<" at "<<sc_time_stamp()<<endl;
+		{
+			//cout<<"W Sum"<<sum<<" at "<<sc_time_stamp()<<endl;
+		}
+		finishSendSum->write(true);
 	}
 
 }

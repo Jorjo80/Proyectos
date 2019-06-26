@@ -784,3 +784,699 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 19:28:27 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 19:29:16 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 19:32:32 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 19:35:58 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 19:39:51 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 19:52:06 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 19:57:20 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 20:15:52 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 20:18:25 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:19:05 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:19:40 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:19:59 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:21:37 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:26:35 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:28:48 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:31:24 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:36:00 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:37:58 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:44:40 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:47:11 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 20:49:02 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:49:55 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:50:21 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:53:13 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:56:47 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:57:52 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 20:58:28 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:00:35 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:02:08 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:02:58 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+==============================================================
+File generated on Wed Jun 26 21:07:48 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:09:49 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:13:06 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:14:24 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:15:07 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:17:00 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:19:37 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:21:28 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Wed Jun 26 21:24:26 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************

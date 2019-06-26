@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="hardware.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\hardware.h"/>
-    <originFiles name="software.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\software.h"/>
-    <originFiles name="stack.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\stack.h"/>
-    <originFiles name="top.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\top.h"/>
-    <originFiles name="fsm.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\fsm.h"/>
-    <originFiles name="software.cpp" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\software.cpp"/>
-    <originFiles name="hardware.cpp" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\hardware.cpp"/>
+    <originFiles name="top.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\top.h"/>
+    <originFiles name="stack.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\stack.h"/>
+    <originFiles name="software.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\software.h"/>
+    <originFiles name="software.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\software.cpp"/>
+    <originFiles name="hardware.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\hardware.h"/>
+    <originFiles name="hardware.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\hardware.cpp"/>
+    <originFiles name="fsm.h" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\fsm.h"/>
+    <originFiles name="fsm.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\fsm.cpp"/>
   </source>
   <testbench>
-    <originFiles name="main.cpp" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\main.cpp"/>
+    <originFiles name="main.cpp" path="H:\Jorge\UPM\master\2oCuatri\HLS\Proyectos\Proyectos\SystemC\main.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

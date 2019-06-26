@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 15:59:30 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:02:58 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -46,138 +46,7 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.101 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.14 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.143 sec.
-Command     ap_source done; 0.144 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.264 sec.
-Execute   set_part xc7z020clg484-1 -tool vivado 
-Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute       get_default_platform 
-Execute       license_isbetapart xc7z020 
-Command       license_isbetapart done; error code: 1; 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed slow 
-Execute     add_library xilinx/zynq/zynq_fpv6 
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute   create_clock -period 10 -name default 
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute   config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Execute   csynth_design 
-Execute     get_config_compile -effort 
-Execute     get_config_compile -enable_clang39 
-Execute     get_config_compile -g 
-Execute     get_config_compile -lm 
-Execute     get_config_compile -ng 
-Execute     get_config_compile -opt_fp 
-Execute     get_config_compile -skip_cdt 
-Execute     get_config_compile -skip_syncheck 
-Execute     get_config_compile -skip_transform 
-Execute     config_compile -blackbox  
-Execute     get_config_compile -keep_printf 
-Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-Execute       get_config_schedule -relax_ii_for_timing 
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-Execute       get_config_schedule -suppress_dependence_error_break 
-INFO-FLOW: Linking Debug ...
-ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
-Command     elaborate done; error code: 2; 
-Command   csynth_design done; error code: 2; 
-Command ap_source done; error code: 1; 0.368 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:00:28 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.103 sec.
+Command           ap_source done; 0.104 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
 Command         ap_source done; 0.145 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
@@ -218,30 +87,187 @@ Execute     config_compile -unsafe_math_optimizations=0
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.271 sec.
+Command   open_solution done; 0.263 sec.
+Execute   set_part xc7z020clg484-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'SystemC/software.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling SystemC/software.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted SystemC/software.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "SystemC/software.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E SystemC/software.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp
+Command       clang done; 1.089 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.579 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp"  -o "H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/software.pp.0.cpp -o H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/.autopilot/db/useless.bc
+ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.
+Command       clang done; error code: 2; 1.425 sec.
+Command     elaborate done; error code: 2; 3.108 sec.
+Command   csynth_design done; error code: 2; 3.118 sec.
+Command ap_source done; error code: 1; 3.465 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:07:48 +0200 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.126 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.186 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.192 sec.
+Command     ap_source done; 0.192 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Command   open_solution done; 0.366 sec.
 Execute   csim_design -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.374 sec.
-ERROR: [SIM 211-100] CSim failed with errors.
+Command     ap_source done; error code: 1; 0.395 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 3.559 sec.
-Command ap_source done; error code: 1; 3.846 sec.
+Command   csim_design done; error code: 2; 8.57 sec.
+Command ap_source done; error code: 1; 8.955 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:00:58 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:09:49 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -289,12 +315,12 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.102 sec.
+Command           ap_source done; 0.104 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.148 sec.
+Command         ap_source done; 0.151 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.151 sec.
-Command     ap_source done; 0.151 sec.
+Command       ap_source done; 0.154 sec.
+Command     ap_source done; 0.155 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -330,30 +356,38 @@ Execute     config_compile -unsafe_math_optimizations=0
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.277 sec.
+Command   open_solution done; 0.3 sec.
 Execute   csim_design -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.352 sec.
-ERROR: [SIM 211-100] CSim failed with errors.
+Command     ap_source done; error code: 1; 0.453 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 3.719 sec.
-Command ap_source done; error code: 1; 4.012 sec.
+Command   csim_design done; error code: 2; 5.537 sec.
+Command ap_source done; error code: 1; 5.853 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:03:54 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:13:06 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -401,12 +435,12 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.133 sec.
+Command           ap_source done; 0.142 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.179 sec.
+Command         ap_source done; 0.187 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.182 sec.
-Command     ap_source done; 0.183 sec.
+Command       ap_source done; 0.191 sec.
+Command     ap_source done; 0.191 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -442,473 +476,38 @@ Execute     config_compile -unsafe_math_optimizations=0
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.307 sec.
+Command   open_solution done; 0.327 sec.
 Execute   csim_design -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.778 sec.
-Command ap_source done; error code: 1; 2.1 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:04:59 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.102 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.145 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.149 sec.
-Command     ap_source done; 0.149 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.275 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.603 sec.
-Command ap_source done; error code: 1; 1.894 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:05:17 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.102 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.147 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.15 sec.
-Command     ap_source done; 0.151 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.279 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.723 sec.
-Command ap_source done; error code: 1; 2.019 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:05:33 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.106 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.152 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.156 sec.
-Command     ap_source done; 0.156 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Command     import_lib done; 0.104 sec.
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.397 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-Command     ap_source done; 3.499 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
+Command     ap_source done; error code: 1; 0.499 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 6.979 sec.
-Command ap_source done; 7.392 sec.
+Command   csim_design done; error code: 2; 3.955 sec.
+Command ap_source done; error code: 1; 4.298 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:06:21 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.102 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.146 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.149 sec.
-Command     ap_source done; 0.149 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.272 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 0.625 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 4.177 sec.
-Command ap_source done; 4.464 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:06:50 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:14:24 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -997,254 +596,38 @@ Execute     config_compile -unsafe_math_optimizations=0
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.296 sec.
+Command   open_solution done; 0.283 sec.
 Execute   csim_design -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-Command     ap_source done; 0.545 sec.
+Command     ap_source done; 0.436 sec.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 5.036 sec.
-Command ap_source done; 5.348 sec.
+Command   csim_design done; 6.235 sec.
+Command ap_source done; 6.534 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:29:52 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.177 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.243 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.248 sec.
-Command     ap_source done; 0.248 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.419 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 2.381 sec.
-Command ap_source done; error code: 1; 2.818 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:31:15 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.134 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.19 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.195 sec.
-Command     ap_source done; 0.195 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.413 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 2.008 sec.
-Command ap_source done; error code: 1; 2.447 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:31:55 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:15:07 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -1294,232 +677,6 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/uti
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Command           ap_source done; 0.108 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.155 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.158 sec.
-Command     ap_source done; 0.158 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.289 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.804 sec.
-Command ap_source done; error code: 1; 2.109 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:32:36 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.11 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.156 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.159 sec.
-Command     ap_source done; 0.159 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.296 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; error code: 1; 0.265 sec.
-ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 3.817 sec.
-Command ap_source done; error code: 1; 4.128 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:33:40 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.115 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
 Command         ap_source done; 0.16 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
 Command       ap_source done; 0.163 sec.
@@ -1559,144 +716,38 @@ Execute     config_compile -unsafe_math_optimizations=0
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.287 sec.
+Command   open_solution done; 0.278 sec.
 Execute   csim_design -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     get_default_platform 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.763 sec.
-Command ap_source done; error code: 1; 2.067 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:34:01 +0200 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.111 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.165 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.168 sec.
-Command     ap_source done; 0.168 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_compile -no_signed_zeros=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-Execute     config_compile -unsafe_math_optimizations=0 
-INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
-INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
-INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.295 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-Command     ap_source done; 0.569 sec.
+Command     ap_source done; 0.468 sec.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 4.189 sec.
-Command ap_source done; 4.5 sec.
+Command   csim_design done; 3.975 sec.
+Command ap_source done; 4.268 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1 opened at Wed Jun 26 16:34:32 +0200 2019
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:17:00 +0200 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -1785,28 +836,394 @@ Execute     config_compile -unsafe_math_optimizations=0
 INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
 INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
 INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
-Command   open_solution done; 0.272 sec.
+Command   open_solution done; 0.273 sec.
 Execute   csim_design -quiet 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/main.cpp 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/software.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/stack.h 
-Execute     is_encrypted C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
-Execute     is_xip C:/Users/Jorjo80/Desktop/Uni/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
 Execute     get_default_platform 
 Execute     source run_sim.tcl 
-Command     ap_source done; 0.811 sec.
+Command     ap_source done; 0.542 sec.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 4.279 sec.
-Command ap_source done; 4.566 sec.
+Command   csim_design done; 5.484 sec.
+Command ap_source done; 5.772 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:19:37 +0200 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.139 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.185 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.19 sec.
+Command     ap_source done; 0.191 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Command   open_solution done; 0.346 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.457 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 8.58 sec.
+Command ap_source done; 8.942 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:21:28 +0200 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.11 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.154 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.158 sec.
+Command     ap_source done; 0.158 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Command   open_solution done; 0.282 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.437 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 8.466 sec.
+Command ap_source done; 8.762 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1 opened at Wed Jun 26 21:24:26 +0200 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.107 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.151 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.154 sec.
+Command     ap_source done; 0.154 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Command   open_solution done; 0.278 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/main.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/top.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/stack.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/software.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/hardware.cpp 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.h 
+Execute     is_encrypted H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     is_xip H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/fsm.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.4 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 8.559 sec.
+Command ap_source done; error code: 1; 8.851 sec.
 Execute cleanup_all 

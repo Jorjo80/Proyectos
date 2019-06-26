@@ -3,26 +3,24 @@
   <errorLogs>
     <logs>
       <synLog>
-        <logs message="ERROR: [HLS 200-70] Cannot find any design unit to elaborate.&#xD;&#xA;Error in linking the design.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="SystemC" solutionName="solution1" date="2019-06-26T15:59:31.043+0200"/>
+        <logs message="ERROR: [HLS 200-70] SC_THREAD is unsynthesizable; please turn it to SC_CTHREAD or SC_METHOD, or use #ifndef _SYNTHESIS_ to guard it from synthesis.&#xD;&#xA;Failed during preprocessing.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="SystemC" solutionName="solution1" date="2019-06-26T21:03:02.142+0200"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>
       <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:33:43.053+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:32:40.659+0200"/>
-        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:32:40.643+0200"/>
-        <logs message="Error: (E109) complete binding failed: port not bound: port 'TOPINO.producer_inst.port_3' (sc_in)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:233" projectName="SystemC" solutionName="solution1" date="2019-06-26T16:32:40.628+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:31:57.111+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:31:17.691+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:29:55.628+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:05:19.193+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:05:01.137+0200"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:03:56.983+0200"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:01:02.976+0200"/>
-        <logs message="@E Simulation failed." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:01:02.961+0200"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:00:32.126+0200"/>
-        <logs message="@E Simulation failed." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:00:32.126+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:24:35.542+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:24:35.536+0200"/>
+        <logs message="Error: (E112) get interface failed: port is not bound: port 'TOPINO.producer_inst.port_5' (sc_out)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:233" projectName="SystemC" solutionName="solution1" date="2019-06-26T21:24:35.457+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:13:10.495+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:13:10.495+0200"/>
+        <logs message="Error: (E112) get interface failed: port is not bound: port 'TOPINO.fsm_inst.port_9' (sc_out)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:233" projectName="SystemC" solutionName="solution1" date="2019-06-26T21:13:10.449+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:09:55.414+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:09:55.414+0200"/>
+        <logs message="Error: (E112) get interface failed: port is not bound: port 'TOPINO.fsm_inst.port_9' (sc_out)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:233" projectName="SystemC" solutionName="solution1" date="2019-06-26T21:09:55.352+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:07:57.409+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="SystemC" solutionName="solution1" date="2019-06-26T21:07:57.394+0200"/>
+        <logs message="Error: (E112) get interface failed: port is not bound: port 'TOPINO.fsm_inst.port_9' (sc_out)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:233" projectName="SystemC" solutionName="solution1" date="2019-06-26T21:07:57.362+0200"/>
       </csimLog>
     </logs>
   </errorLogs>

@@ -5,14 +5,15 @@
 ############################################################
 open_project SystemC
 set_top top
-add_files SystemC/fsm.h
-add_files SystemC/hardware.cpp
-add_files SystemC/hardware.h
-add_files SystemC/software.cpp
-add_files SystemC/software.h
-add_files SystemC/stack.h
 add_files SystemC/top.h
-add_files -tb SystemC/main.cpp
+add_files SystemC/stack.h
+add_files SystemC/software.h
+add_files SystemC/software.cpp
+add_files SystemC/hardware.h
+add_files SystemC/hardware.cpp
+add_files SystemC/fsm.h
+add_files SystemC/fsm.cpp
+add_files -tb SystemC/main.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z020clg484-1} -tool vivado
 create_clock -period 10 -name default
