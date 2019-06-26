@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hardware.h" path="C:\Users\USER1\AppData\Roaming\Xilinx\Vivado\systemcmatrixes\hardware.h"/>
+    <originFiles name="software.cpp" path="C:\Users\USER1\AppData\Roaming\Xilinx\Vivado\systemcmatrixes\software.cpp"/>
+    <originFiles name="software.h" path="C:\Users\USER1\AppData\Roaming\Xilinx\Vivado\systemcmatrixes\software.h"/>
+    <originFiles name="top.h" path="C:\Users\USER1\AppData\Roaming\Xilinx\Vivado\systemcmatrixes\top.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\Users\USER1\AppData\Roaming\Xilinx\Vivado\systemcmatrixes\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;systemcmatrixes/software.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:01:02 . Memory (MB): peak = 103.035 ; gain = 45.203" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:01:12 . Memory (MB): peak = 103.035 ; gain = 45.203" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;software::initialization&apos; into &apos;software::software&apos; (systemcmatrixes/software.h:19)." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:01:15 . Memory (MB): peak = 108.309 ; gain = 50.477" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:01:15 . Memory (MB): peak = 111.234 ; gain = 53.402" tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="INFO" keynum="891" content="Unrolling loop &apos;Loop-1&apos; (systemcmatrixes/software.cpp:11) in function &apos;software::senddata&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="INFO" keynum="891" content="Unrolling loop &apos;Loop-1.1&apos; (systemcmatrixes/software.cpp:14) in function &apos;software::senddata&apos; completely." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:01:17 . Memory (MB): peak = 135.406 ; gain = 77.574" tag=""/>
+	<Message prefix="[XFORM 203-631]" severity="WARNING" keynum="902" content="Renaming function &apos;software::senddata&apos; to &apos;senddata&apos; (systemcmatrixes/software.cpp:10)" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:01:17 . Memory (MB): peak = 137.418 ; gain = 79.586" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[SCA 200-203]" severity="ERROR" keynum="352" content="Cannot find top module &apos;top&apos;, please check the specified module name." tag=""/>
+	<Message prefix="[HLS 200-150]" severity="INFO" keynum="11" content="command &apos;sc_get_modules&apos; returned error code" tag=""/>
+	<Message prefix="[HLS 200-150]" severity="INFO" keynum="11" content="SystemC analyzing failed
+    while executing
+&quot;source C:/Users/USER1/AppData/Roaming/Xilinx/Vivado/systemcmatrixes/solution1/csynth.tcl&quot;
+    invoked from within
+&quot;hls::main C:/Users/USER1/AppData/Roaming/Xilinx/Vivado/systemcmatrixes/solution1/csynth.tcl&quot;
+    (&quot;uplevel&quot; body line 1)
+    invoked from within
+&quot;uplevel 1 hls::main {*}$args&quot;
+    (procedure &quot;hls_proc&quot; line 5)
+    invoked from within
+&quot;hls_proc $argv&quot;" tag=""/>
+</Messages>

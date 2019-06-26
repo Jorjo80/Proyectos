@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [SCA 200-203] Cannot find top module 'top', please check the specified module name.&#xD;&#xA;command 'sc_get_modules' returned error code&#xD;&#xA;SystemC analyzing failed&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/USER1/AppData/Roaming/Xilinx/Vivado/systemcmatrixes/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/USER1/AppData/Roaming/Xilinx/Vivado/systemcmatrixes/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:28:23.955+0200"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:43:28.112+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:43:28.096+0200"/>
+        <logs message="Error: (E112) get interface failed: port is not bound: port 'top.oursoftware.port_1' (sc_port)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:230" projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:43:28.018+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:42:08.493+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:42:08.478+0200"/>
+        <logs message="Error: (E519) wait() is only allowed in SC_THREADs and SC_CTHREADs: &#xD;&#xA;        in SC_METHODs use next_trigger() instead&#xD;&#xA;In file: ../../../../src/sysc/kernel/sc_wait.cpp:66" projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:42:08.431+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:40:37.999+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:37:57.689+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:34:53.540+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'software::senddata' to 'senddata' (systemcmatrixes/software.cpp:10)" projectName="systemcmatrixes" solutionName="solution1" date="2019-06-26T12:28:22.846+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
