@@ -8,7 +8,7 @@ class stack_read_if: virtual public sc_interface{
 	public:
 
 		//read a character
-		virtual bool nb_read(int&)=0;
+		virtual bool nb_read(double&)=0;
 
 };
 
@@ -16,7 +16,7 @@ class stack_write_if: virtual public sc_interface{
 	public:
 
 		//read a character
-		virtual bool nb_write(int)=0;
+		virtual bool nb_write(double)=0;
 
 		virtual void reset()=0;
 
@@ -26,13 +26,13 @@ class stack_write_if: virtual public sc_interface{
 class stack: public sc_module, public stack_write_if, public stack_read_if{
 
 	private:
-		int data[20];
+		double data[20];
 		int top;
 
 	public:
 		stack(sc_module_name nm):sc_module(nm),top(0){}
 
-		bool nb_write(int c){
+		bool nb_write(double c){
 			if(top < 20){
 				data[top++]=c;
 				return true;
@@ -44,7 +44,7 @@ class stack: public sc_module, public stack_write_if, public stack_read_if{
 			top=0;
 		}
 
-		bool nb_read(int &c){
+		bool nb_read(double &c){
 			if(top > 0){
 				c=data[--top];
 				return true;

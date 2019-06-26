@@ -5,6 +5,9 @@
     <originFiles name="software.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\software.h"/>
     <originFiles name="stack.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\stack.h"/>
     <originFiles name="top.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\top.h"/>
+    <originFiles name="fsm.h" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\fsm.h"/>
+    <originFiles name="software.cpp" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\software.cpp"/>
+    <originFiles name="hardware.cpp" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\hardware.cpp"/>
   </source>
   <testbench>
     <originFiles name="main.cpp" path="C:\Users\Jorjo80\Desktop\Uni\SystemC\main.cpp"/>

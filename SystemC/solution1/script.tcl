@@ -5,7 +5,10 @@
 ############################################################
 open_project SystemC
 set_top top
+add_files SystemC/fsm.h
+add_files SystemC/hardware.cpp
 add_files SystemC/hardware.h
+add_files SystemC/software.cpp
 add_files SystemC/software.h
 add_files SystemC/stack.h
 add_files SystemC/top.h

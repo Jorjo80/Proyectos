@@ -12,34 +12,20 @@ SC_MODULE(software){
 public:
 	sc_port<stack_read_if> in;
 	sc_in<bool> clock;
-	int ReadCharFromStack;
-	int matrixX[16];
-	void consume_data()
-	{
-		while(true)
-		{
-			for(int j= 0;j<16;j++)
-			{
-				wait();
-				if(in->nb_read(ReadCharFromStack))
-				{
-					cout << "R " << ReadCharFromStack << " at " << sc_time_stamp() << endl;
-					matrixX[j]=ReadCharFromStack;
-				}
-			}
-			printf("\n Matrix X = ");
-			for(int j= 0;j<16;j++)
-			{
-
-				printf("%d ", matrixX[j]);
-
-			}
-			printf("\n ");
-		}
-	}
-
+	double ReadCharFromStack;
+	double matrixX[16];
+	void SendMatA();
+	void SendMatB();
+	void ReceiveMatX();
+	void ReceiveSum();
 	SC_CTOR(software){
-		SC_THREAD(consume_data);
+		SC_THREAD(SendMatA);
+		sensitive << clock.pos();
+		SC_THREAD(SendMatB);
+		sensitive << clock.pos();
+		SC_THREAD(ReceiveMatX);
+		sensitive << clock.pos();
+		SC_THREAD(ReceiveSum);
 		sensitive << clock.pos();
 	}
 };

@@ -9,6 +9,13 @@
       <mgLog/>
       <packageLog/>
       <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:33:43.053+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:32:40.659+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:32:40.643+0200"/>
+        <logs message="Error: (E109) complete binding failed: port not bound: port 'TOPINO.producer_inst.port_3' (sc_in)&#xD;&#xA;In file: ../../../../src/sysc/communication/sc_port.cpp:233" projectName="SystemC" solutionName="solution1" date="2019-06-26T16:32:40.628+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:31:57.111+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:31:17.691+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:29:55.628+0200"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:05:19.193+0200"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:05:01.137+0200"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SystemC" solutionName="solution1" date="2019-06-26T16:03:56.983+0200"/>

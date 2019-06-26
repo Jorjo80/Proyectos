@@ -42,9 +42,24 @@
 			<location>C:/Users/Jorjo80/Desktop/Uni/SystemC/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/fsm.h</name>
+			<type>1</type>
+			<location>C:/Users/Jorjo80/Desktop/Uni/SystemC/fsm.h</location>
+		</link>
+		<link>
+			<name>source/hardware.cpp</name>
+			<type>1</type>
+			<location>C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.cpp</location>
+		</link>
+		<link>
 			<name>source/hardware.h</name>
 			<type>1</type>
 			<location>C:/Users/Jorjo80/Desktop/Uni/SystemC/hardware.h</location>
+		</link>
+		<link>
+			<name>source/software.cpp</name>
+			<type>1</type>
+			<location>C:/Users/Jorjo80/Desktop/Uni/SystemC/software.cpp</location>
 		</link>
 		<link>
 			<name>source/software.h</name>
