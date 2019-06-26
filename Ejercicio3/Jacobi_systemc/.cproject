@@ -166,6 +166,7 @@
                     </folderInfo>
                     					
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.954230878.2020594435" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.275570568.872749322">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.275570568.872749322" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.275570568">
@@ -181,6 +182,15 @@
                             <option id="gnu.cpp.compiler.option.preprocessor.def.328230501" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1872945737" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+>>>>>>> Stashed changes
+=======
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.954230878.1634658529" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.275570568.77063063">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.275570568.77063063" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.275570568">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.515139126" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.387001505" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 >>>>>>> Stashed changes
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
@@ -198,6 +208,7 @@
                             </option>
                             							
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                             <option id="gnu.cpp.compiler.option.other.other.29284565" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1282520790" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -205,6 +216,11 @@
                             <option id="gnu.cpp.compiler.option.other.other.1502138692" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.717449894" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+>>>>>>> Stashed changes
+=======
+                            <option id="gnu.cpp.compiler.option.other.other.403706885" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.665939304" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 >>>>>>> Stashed changes
                             						
                         </tool>
@@ -368,6 +384,7 @@
                     </folderInfo>
                     					
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1700587877.719473141" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.383181974.1850949631">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.383181974.1850949631" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.383181974">
@@ -383,6 +400,15 @@
                             <option id="gnu.cpp.compiler.option.preprocessor.def.1773541597" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.951297917" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+>>>>>>> Stashed changes
+=======
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1700587877.238442757" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.383181974.1934851553">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.383181974.1934851553" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.383181974">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.166954587" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1520462723" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 >>>>>>> Stashed changes
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
@@ -400,6 +426,7 @@
                             </option>
                             							
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                             <option id="gnu.cpp.compiler.option.other.other.421035096" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1387334613" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -407,6 +434,11 @@
                             <option id="gnu.cpp.compiler.option.other.other.893606627" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1921318633" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+>>>>>>> Stashed changes
+=======
+                            <option id="gnu.cpp.compiler.option.other.other.1995738738" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.178754821" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 >>>>>>> Stashed changes
                             						
                         </tool>

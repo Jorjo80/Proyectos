@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../main.cpp in debug mode
+csim.mk:77: recipe for target 'obj/main.o' failed
+In file included from ../../../main.cpp:3:0:
+../../../top.h:7:22: fatal error: producer.h: No such file or directory
+ #include "producer.h"
+                      ^
+compilation terminated.
+make: *** [obj/main.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************
