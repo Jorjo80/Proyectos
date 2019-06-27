@@ -3,18 +3,8 @@
 
 void fsm::control()
 {
-	int i=0;
-	if(i==0)
-	{
-		SendM_X->write(false);
-		SumSend->write(false);
-		RecM_B->write(false);
-		RecM_A->write(true);
-		RecM_X->write(false);
-		SumRec->write(false);
-		SendM_B->write(false);
-		SendM_A->write(true);
-	}
+	while(true){
+	//int i=0;
 	if(finishSendM_A.read())
 	{
 		if(finishRecM_A->read())
@@ -57,6 +47,7 @@ void fsm::control()
 			SumSend->write(false);
 			printf("\n all data sended \n");
 		}
+	}
 	}
 
 }

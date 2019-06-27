@@ -1,12 +1,10 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../main.cpp in debug mode
-   Compiling ../../../software.cpp in debug mode
-   Compiling ../../../hardware.cpp in debug mode
    Compiling ../../../fsm.cpp in debug mode
    Generating csim.exe
 
-Error: (E112) get interface failed: port is not bound: port 'TOPINO.producer_inst.port_5' (sc_out)
+Error: (E112) get interface failed: port is not bound: port 'TOPINO.fsm_inst.port_12' (sc_out)
 In file: ../../../../src/sysc/communication/sc_port.cpp:233
 ERR: [SIM 100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 3] *************** CSIM finish ***************

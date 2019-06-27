@@ -35,7 +35,8 @@ public:
 	void control();
 
 	SC_CTOR(fsm){
-
+		RecM_A->write(true);
+		SendM_A->write(true);
 		SC_THREAD(control);
 		sensitive << clock.pos();
 	}

@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Wed Jun 26 21:24:26 +0200 2019
+INFO: [HLS 200-10] For user 'Jorjo80' on host 'desktop-3oce3q5' (Windows NT_amd64 version 6.2) on Thu Jun 27 09:36:07 +0200 2019
 INFO: [HLS 200-10] In directory 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos'
 INFO: [HLS 200-10] Opening project 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC'.
 INFO: [HLS 200-10] Opening solution 'H:/Jorge/UPM/master/2oCuatri/HLS/Proyectos/Proyectos/SystemC/solution1'.
@@ -12,8 +12,6 @@ INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../main.cpp in debug mode
-   Compiling ../../../software.cpp in debug mode
-   Compiling ../../../hardware.cpp in debug mode
    Compiling ../../../fsm.cpp in debug mode
    Generating csim.exe
 
@@ -21,7 +19,7 @@ INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
         Copyright (c) 1996-2014 by all Contributors,
         ALL RIGHTS RESERVED
 
-Error: (E112) get interface failed: port is not bound: port 'TOPINO.producer_inst.port_5' (sc_out)
+Error: (E112) get interface failed: port is not bound: port 'TOPINO.fsm_inst.port_12' (sc_out)
 In file: ../../../../src/sysc/communication/sc_port.cpp:233
 @E Simulation failed: Function 'main' returns nonzero value '1'.
 ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
