@@ -1,6 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../software.cpp in debug mode
+   Compiling ../../../hardware.cpp in debug mode
    Generating csim.exe
 binding TOPINO.consumer_inst.port_3 to interface: 13stack_read_if
 binding TOPINO.consumer_inst.port_2 to interface: 14stack_write_if
@@ -11,10 +11,12 @@ binding TOPINO.producer_inst.port_2 to interface: 13stack_read_if
 binding TOPINO.producer_inst.port_1 to interface: 13stack_read_if
 binding TOPINO.producer_inst.port_0 to interface: 14stack_write_if
 
- Matrix A = 0.000000 2.000000 6.000000 12.000000 20.000000 30.000000 42.000000 56.000000 72.000000 90.000000 110.000000 132.000000 156.000000 182.000000 210.000000 240.000000 
- Matrix B = 0.000000 1.000000 2.000000 3.000000 
+ Matrix A = 0.000000 2.000000 8.000000 18.000000 32.000000 50.000000 72.000000 98.000000 128.000000 162.000000 200.000000 242.000000 288.000000 338.000000 392.000000 450.000000 
+ Matrix B = 0.000000 12.000000 24.000000 36.000000 
  
- Matrix X= 132.000000 156.000000 182.000000 210.000000 240.000000 0.000000 0.000000 2.000000 6.000000 12.000000 20.000000 30.000000 42.000000 56.000000 72.000000 90.000000 
- sum= 42.000000 
+ fin jacobi 
+
+ Matrix X= 1.000000 1.000000 1.000000 1.000000 1.000000 -2147483648.000000 -2147483648.000000 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 
+ error= 9645468358969285516624476741097415210242659050766854212447391377883381789968995983500705126582059008.000000 
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

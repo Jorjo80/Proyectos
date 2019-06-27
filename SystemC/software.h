@@ -6,6 +6,7 @@
 #include "systemc.h"
 #include "stack.h"
 #include "stdio.h"
+#include "math.h"
 
 
 SC_MODULE(software){
@@ -22,6 +23,7 @@ public:
 	double matrixB[4];
 	double matrixX[16];
 	double sum;
+	double error;
 	void Sending();
 	void Receiving();
 	void do_reset();

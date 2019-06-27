@@ -9,11 +9,11 @@ void software::Sending(){
 	int i = 0;
 	for(int j=0;j<16;j++)
 	{
-		matrixA[j]=(double)(j*(j+1.0));
+		matrixA[j]=(double)(2*j*j);
 	}
 	for(int j=0;j<4;j++)
 	{
-		matrixB[j]=(double)(j);
+		matrixB[j]=(double)(12*j);
 	}
 	while(true)
 	{
@@ -54,13 +54,14 @@ void software::Receiving()
 			sum=ReadSumFromStack;
 			i=1;
 		}
+		error=sqrt(sum);
 	}while(i==0);
 	printf("\n Matrix X= ");
 	for(int i=0;i<16;i++)
 	{
 		printf("%f ",matrixX[i]);
 	}
-	printf("\n sum= %f \n", sum);
+	printf("\n error= %f \n", error);
 
 }
 

@@ -4,6 +4,8 @@
 
 #include <systemc.h>
 #include "stack.h"
+#define iter 16
+#define n 4
 
 SC_MODULE(hardware){
 public:
@@ -16,6 +18,9 @@ public:
 
 	bool receive;
 	bool send;
+	bool calculate;
+	double sum;
+
 	double ReadAFromStack;
 	double ReadBFromStack;
 	double matrixA[16],matrixB[4],matrixX[16];

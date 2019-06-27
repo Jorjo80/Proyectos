@@ -10,6 +10,7 @@ void hardware::do_reset(){
 	ReadBFromStack=0;
 	send = false;
 	receive = true;
+	calculate = false;
 
 }
 
@@ -35,7 +36,7 @@ void hardware::Receiving(){
 			}
 		}
 		receive=false;
-		send=true;
+		calculate=true;
 	}
 	printf("\n Matrix A = ");
 	for(int j= 0;j<16;j++)
@@ -52,10 +53,6 @@ void hardware::Receiving(){
 
 void hardware::Sending(){
 	int i = 0;
-	for(int j=0;j<16;j++)
-	{
-		matrixX[j]=(double)(j*(j+1.0));
-	}
 	while(send)
 	{
 		for(int j=0;j<16;j++)
@@ -66,8 +63,6 @@ void hardware::Sending(){
 			}
 
 		}
-		double sum;
-		sum=matrixX[3]+matrixX[5];
 		wait();
 		if(SumPort->nb_write(sum))
 		{
@@ -77,12 +72,59 @@ void hardware::Sending(){
 	send=true;
 }
 
+void hardware::calculojacobi()
+{
+	int A[4][4];
+	for(int i=0; i<4; i++)
+	{
+		for(int k=0; k<4;k++)
+		{
+			A[i][k]=matrixA[i+k];
+		}
+	}
+	int x_prev[16], x_new[16];
+	double error;
+	for(int i= 0;i<iter;i++)
+	{
+		x_prev[i]=0;
+		x_new[i]=1;
+	}
+
+	for(int t=0; t<iter;t++)
+	{
+		x_prev[iter]=x_new[iter];
+		for(int i=0; i<n; i++)
+		{
+			double sigma=0.0;
+			for(int j=0; j<n;j++)
+			{
+				if(j!=i)
+				{
+					sigma=sigma+(A[i-1][j]*x_prev[j]);
+				}
+			}
+			x_new[i]=(1/((A[i-1][i])*(matrixB[i]-sigma)));
+		}
+	}
+	for(int q=0;q<iter;q++)
+	{
+		matrixX[q]=x_new[q];
+		sum+=(x_new[q]-x_prev[q])*(x_new[q]-x_prev[q]);
+	}
+	printf("\n fin jacobi \n");
+	calculate = false;
+	send = true;
+}
 
 void hardware::control(){
 
 	while(receive)
 	{
 		hardware::Receiving();
+	}
+	while(calculate)
+	{
+			hardware::calculojacobi();
 	}
 	while(send)
 	{
