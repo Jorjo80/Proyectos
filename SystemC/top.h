@@ -9,8 +9,11 @@
 
 class top: public sc_module{
 public:
-	sc_in<bool> clk_prod;
-	sc_in<bool> clk_cons;
+
+	sc_in<bool> clk;
+	sc_signal<bool> sendAB;
+	sc_signal<bool> sendXSum;
+
 
 	//channel to be used
 
@@ -27,13 +30,13 @@ public:
 		prod_inst.MatB(stk_inst_MatB);
 		prod_inst.MatX(stk_inst_MatX);
 		prod_inst.SumPort(stk_inst_Sum);
-		prod_inst.clock(clk_prod);
+		prod_inst.clock(clk);
 
 		cons_inst.MatA(stk_inst_MatA);
 		cons_inst.MatB(stk_inst_MatB);
 		cons_inst.MatX(stk_inst_MatX);
 		cons_inst.SumPort(stk_inst_Sum);
-		cons_inst.clock(clk_cons);
+		cons_inst.clock(clk);
 	}
 
 };

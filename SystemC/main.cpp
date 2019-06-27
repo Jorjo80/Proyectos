@@ -13,12 +13,9 @@ int sc_main(int argc,char* argv[]){
 
 	top *top_inst;
 	top_inst = new top("TOPINO");
-	top_inst->clk_prod(clock);
-	top_inst->clk_cons(clock);
-
+	top_inst->clk(clock);
 	//Start Simulation
 	sc_start(100000, SC_NS);
-
 
 	return 0;
 

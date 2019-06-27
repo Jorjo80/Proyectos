@@ -15,24 +15,22 @@ public:
 	sc_port<stack_write_if> MatB;
 	sc_port<stack_read_if> SumPort;
 
-	sc_in<bool> clock;
+	sc_in<bool > clock;
+
 	double ReadXFromStack, ReadSumFromStack;
 	double matrixA[16];
 	double matrixB[4];
 	double matrixX[16];
 	double sum;
-	void SendMatA();
-	void SendMatB();
-	void ReceiveMatX();
-	void ReceiveSum();
+	void Sending();
+	void Receiving();
+	void do_reset();
 	SC_CTOR(software){
-		SC_THREAD(SendMatA);
+		SC_THREAD(do_reset);
 		sensitive << clock.pos();
-		SC_THREAD(SendMatB);
+		SC_THREAD(Sending);
 		sensitive << clock.pos();
-		SC_THREAD(ReceiveMatX);
-		sensitive << clock.pos();
-		SC_THREAD(ReceiveSum);
+		SC_THREAD(Receiving);
 		sensitive << clock.pos();
 	}
 };

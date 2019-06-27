@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Wed Jun 26 16:34:32 +0200 2019
+# File generated on Thu Jun 27 17:49:51 +0200 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../main.cpp
+HLS_SOURCES = ../../../main.cpp ../../../hardware.cpp ../../../software.cpp
 
 TARGET := csim.exe
 
@@ -58,6 +58,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -75,6 +76,18 @@ all: $(TARGET)
 
 $(ObjDir)/main.o: ../../../main.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../main.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/main.d
+
+$(ObjDir)/hardware.o: ../../../hardware.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../hardware.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/hardware.d
+
+$(ObjDir)/software.o: ../../../software.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../software.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/software.d
